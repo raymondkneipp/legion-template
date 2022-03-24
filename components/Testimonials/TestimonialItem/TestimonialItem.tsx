@@ -25,7 +25,7 @@ const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
         </div>
         <div className="space-y-2">
           <figcaption>{name}</figcaption>
-          <div className="flex space-x-2">
+          <div className="flex space-x-2 text-gray-500">
             {[...Array(stars)].map((e, i) => (
               <FaStar />
             ))}
