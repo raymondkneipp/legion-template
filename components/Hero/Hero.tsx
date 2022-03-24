@@ -12,7 +12,7 @@ const Hero: NextPage = () => {
         objectFit="cover"
         objectPosition="top"
       />
-      <div className="relative flex flex-col space-y-6 items-center justify-center bg-black bg-opacity-70 py-80 h-96">
+      <div className="relative flex flex-col space-y-6 items-center justify-center bg-black bg-opacity-70 min-h-screen">
         <h1 className="font-bold text-5xl text-white text-center">
           A Great Tagline Will Go Here!
         </h1>
@@ -43,6 +43,10 @@ const Hero: NextPage = () => {
             d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
             fill="currentColor"
           ></path>
+          {/* <path
+            d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+          fill="#fff"
+          ></path> */}
         </svg>
       </div>
     </section>
