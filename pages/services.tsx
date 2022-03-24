@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { CTA, Layout, Services } from '../components';
 
-const Home: NextPage = () => {
+const ServicesPage: NextPage = () => {
   return (
     <Layout>
       <Services />
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default ServicesPage;

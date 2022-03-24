@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import {
   CTA,
-  FAQ,
   Hero,
   Layout,
   Services,
@@ -15,8 +14,7 @@ const Home: NextPage = () => {
       <Hero />
       <Services simple />
       <Trusted />
-      <FAQ />
-      <Testimonials />
+      <Testimonials simple />
       <CTA />
     </Layout>
   );
