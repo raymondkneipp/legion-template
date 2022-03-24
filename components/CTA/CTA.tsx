@@ -7,15 +7,15 @@ const CTA: NextPage = () => {
     <section className="bg-sky-700 relative">
       <div className="flex flex-col space-y-6 items-center justify-center py-20">
         <h2 className="font-bold text-5xl text-white text-center">
-          A Great Tagline Will Go Here!
+          Claim Your Free Estimate Today!
         </h2>
         <p className="text-white max-w-lg text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           deserunt earum magnam voluptatem assumenda deleniti.
         </p>
         <div className="gap-6 flex items-center">
-          <Button to="/" light>
-            Get Started
+          <Button to="/contact" light>
+            Free Estimate
           </Button>
         </div>
       </div>
