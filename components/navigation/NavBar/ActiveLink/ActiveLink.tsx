@@ -9,7 +9,9 @@ interface Props {
 const ActiveLink: NextPage<Props> = ({ to, children }) => {
   const router = useRouter();
   const styles = `${
-    router.pathname == to ? 'text-sky-700' : ''
+    router.pathname == to
+      ? 'text-sky-700'
+      : 'hover:bg-gray-200 transition-colors'
   } rounded-md py-2 px-4`;
 
   return (
