@@ -8,41 +8,28 @@ import {
   FaTiktok,
   FaRegCopyright,
 } from 'react-icons/fa';
+import PageLink from './PageLink/PageLink';
+import SocialIcon from './SocialIcon/SocialIcon';
 
 const Footer: NextPage = () => {
   return (
     <footer className="relative pb-10">
       <div className="container mx-auto flex flex-col items-center space-y-6 text-gray-500">
-        <div className="flex items-center space-x-12">
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-          <Link href="/services">
-            <a>Services</a>
-          </Link>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
+        <div className="flex items-center space-x-6">
+          <PageLink to="/" page="Home" />
+          <PageLink to="/about" page="About" />
+          <PageLink to="/services" page="Services" />
+          <PageLink to="/contact" page="Contact" />
         </div>
         <div className="flex items-center space-x-6">
-          <a href="https://www.instagram.com/?hl=en">
-            <FaInstagram size={25} />
-          </a>
-          <a href="https://www.facebook.com/">
-            <FaFacebook size={25} />
-          </a>
-          <a href="https://twitter.com/?lang=en">
-            <FaTwitter size={25} />
-          </a>
-          <a href="https://www.linkedin.com/">
-            <FaLinkedin size={25} />
-          </a>
-          <a href="https://www.tiktok.com/en/">
-            <FaTiktok size={25} />
-          </a>
+          <SocialIcon
+            to="https://www.instagram.com/?hl=en"
+            icon={FaInstagram}
+          />
+          <SocialIcon to="https://www.facebook.com/" icon={FaFacebook} />
+          <SocialIcon to="https://twitter.com/?lang=en" icon={FaTwitter} />
+          <SocialIcon to="https://www.linkedin.com/" icon={FaLinkedin} />
+          <SocialIcon to="https://www.tiktok.com/en/" icon={FaTiktok} />
         </div>
         <div className="flex items-center space-x-1">
           <FaRegCopyright />
