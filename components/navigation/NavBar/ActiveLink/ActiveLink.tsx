@@ -8,7 +8,9 @@ interface Props {
 
 const ActiveLink: NextPage<Props> = ({ to, children }) => {
   const router = useRouter();
-  const styles = `${router.pathname == to ? 'text-sky-700' : ''} `;
+  const styles = `${
+    router.pathname == to ? 'text-sky-700' : ''
+  } rounded-md py-2 px-4`;
 
   return (
     <Link href={to}>
