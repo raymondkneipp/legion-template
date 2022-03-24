@@ -11,21 +11,7 @@ import {
 
 const Footer: NextPage = () => {
   return (
-    <footer className="relative py-10">
-      <div className="absolute top-0 left-0 w-full overflow-hidden text-sky-700 rotate-180 pointer-events-none">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="relative block w-full h-16"
-        >
-          <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            fill="currentColor"
-          ></path>
-        </svg>
-      </div>
+    <footer className="relative pb-10">
       <div className="container mx-auto flex flex-col items-center space-y-6 text-gray-500">
         <div className="flex items-center space-x-12">
           <Link href="/">
