@@ -7,14 +7,13 @@ import {
   Services,
   Testimonials,
   Trusted,
-} from '../components/';
+} from '../components';
 
 const Home: NextPage = () => {
   return (
     <Layout>
       <Hero />
       <Services simple />
-      <Services />
       <Trusted />
       <FAQ />
       <Testimonials />
