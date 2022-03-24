@@ -1,12 +1,9 @@
 import type { NextPage } from 'next';
-import { FaGift } from 'react-icons/fa';
 import {
-  Alert,
   CTA,
   FAQ,
-  Footer,
   Hero,
-  NavBar,
+  Layout,
   Services,
   Testimonials,
   Trusted,
@@ -14,11 +11,7 @@ import {
 
 const Home: NextPage = () => {
   return (
-    <>
-      <Alert to="/" button="Learn More" icon={FaGift}>
-        Big News! We're offering 30% off all services.
-      </Alert>
-      <NavBar />
+    <Layout>
       <Hero />
       <Services simple />
       <Services />
@@ -26,8 +19,7 @@ const Home: NextPage = () => {
       <FAQ />
       <Testimonials />
       <CTA />
-      <Footer />
-    </>
+    </Layout>
   );
 };
 

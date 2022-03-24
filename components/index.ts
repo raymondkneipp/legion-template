@@ -9,3 +9,4 @@ export { default as Trusted } from './Trusted/Trusted';
 export { default as FAQ } from './FAQ/FAQ';
 export { default as Testimonials } from './Testimonials/Testimonials';
 export { default as CTA } from './CTA/CTA';
+export { default as Layout } from './Layout/Layout';
