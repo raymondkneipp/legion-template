@@ -4,7 +4,7 @@ import FAQItem from './FAQItem/FAQItem';
 
 const FAQ: NextPage = () => {
   return (
-    <section className="container mx-auto px-2 my-20 space-y-12">
+    <section className="container mx-auto px-2 my-36 space-y-12">
       <div className="space-y-6">
         <h2 className="font-bold text-3xl">Frequently Asked Questions</h2>
         <p className="text-gray-500 max-w-2xl">

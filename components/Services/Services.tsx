@@ -16,7 +16,7 @@ interface Props {
 
 const Services: NextPage<Props> = ({ simple }) => {
   return (
-    <section className="container mx-auto px-2 my-20 grid grid-cols-3 gap-12">
+    <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
       <div className="space-y-6">
         {simple ? (
           <h2 className="font-bold text-3xl">What We Offer</h2>

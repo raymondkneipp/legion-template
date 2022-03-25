@@ -9,7 +9,7 @@ import AboutItem from './AboutItem/AboutItem';
 
 const About: NextPage = () => {
   return (
-    <section className="container mx-auto px-2 my-20 grid grid-cols-3 gap-12">
+    <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
       <div className="space-y-6">
         <h1 className="font-bold text-5xl">
           We Are <span className="text-sky-700">Brand</span>

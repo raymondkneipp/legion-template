@@ -7,7 +7,7 @@ interface Props {
 
 const Testimonaials: NextPage<Props> = ({ simple }) => {
   return (
-    <section className="container mx-auto px-2 my-20 space-y-12">
+    <section className="container mx-auto px-2 my-36 space-y-12">
       <div className="space-y-6">
         <h2 className="font-bold text-3xl">Testimonials</h2>
       </div>

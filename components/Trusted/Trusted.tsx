@@ -3,7 +3,7 @@ import TrustedItem from './TrustedItem/TrustedItem';
 
 const Trusted: NextPage = () => {
   return (
-    <div className="bg-gray-100 my-20 py-20">
+    <div className="bg-gray-100 my-36 py-20">
       <section className="container mx-auto px-2 flex items-center flex-col space-y-2">
         <h2 className="text-3xl font-bold">
           Trusted by 120+ small business owners
