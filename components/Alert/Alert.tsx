@@ -12,7 +12,7 @@ interface Props {
 
 const Alert: NextPage<Props> = ({ to, button, icon, children }) => {
   return (
-    <div className="bg-sky-700 text-white text-center py-4">
+    <section className="bg-sky-700 text-white text-center py-4">
       <div className="container mx-auto px-2 flex items-center justify-between">
         <div className="flex items-center space-x-4 justify-center flex-1">
           <span>
@@ -25,7 +25,7 @@ const Alert: NextPage<Props> = ({ to, button, icon, children }) => {
         </div>
         <FaTimes />
       </div>
-    </div>
+    </section>
   );
 };
 
