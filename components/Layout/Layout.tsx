@@ -9,7 +9,7 @@ const Layout: NextPage = ({ children }) => {
         Big News! We're offering 30% off all services.
       </Alert>
       <NavBar />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   );
