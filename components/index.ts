@@ -11,3 +11,4 @@ export { default as Testimonials } from './Testimonials/Testimonials';
 export { default as CTA } from './CTA/CTA';
 export { default as Layout } from './Layout/Layout';
 export { default as About } from './About/About';
+export { default as Pricing } from './Pricing/Pricing';
