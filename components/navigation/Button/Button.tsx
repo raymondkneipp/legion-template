@@ -5,9 +5,10 @@ interface Props {
   to: string;
   secondary?: boolean;
   light?: boolean;
+  lg?: boolean;
 }
 
-const Button: NextPage<Props> = ({ to, secondary, light, children }) => {
+const Button: NextPage<Props> = ({ to, secondary, light, lg, children }) => {
   const base = 'font-bold inline-block text-center';
   const conditional = secondary
     ? 'hover:underline rounded-md px-1'
@@ -16,7 +17,9 @@ const Button: NextPage<Props> = ({ to, secondary, light, children }) => {
     ? 'text-white border-white'
     : 'text-sky-700 border-sky-700';
 
-  const styles = base + ' ' + conditional + ' ' + color;
+  const size = lg ? 'py-4 px-8 text-lg' : '';
+
+  const styles = base + ' ' + conditional + ' ' + color + ' ' + size;
 
   return (
     <Link href={to}>
