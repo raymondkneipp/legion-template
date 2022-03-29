@@ -9,7 +9,10 @@ interface Props {
 
 const SocialIcon: NextPage<Props> = ({ to, icon }) => {
   return (
-    <a className="rounded-md p-2 hover:bg-gray-200 transition-colors" href={to}>
+    <a
+      className="rounded-full p-2 hover:bg-gray-200 transition-colors"
+      href={to}
+    >
       {React.createElement(icon, { size: 25 })}
     </a>
   );

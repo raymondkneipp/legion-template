@@ -11,7 +11,7 @@ interface Props {
 
 const PricingItem: NextPage<Props> = ({ name, description, price, perks }) => {
   return (
-    <div className="flex flex-col items-stretch space-y-6 bg-gray-100 p-6 rounded-md">
+    <div className="flex flex-col items-stretch space-y-6 bg-gray-100 p-6 rounded-3xl">
       <div className="space-y-2">
         <h3 className="font-bold text-xl">{name}</h3>
         <p className="text-gray-500 text-sm">{description}</p>

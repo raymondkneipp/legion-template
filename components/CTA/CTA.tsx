@@ -29,7 +29,7 @@ const CTA: NextPage = () => {
             deserunt earum magnam voluptatem assumenda deleniti.
           </p>
           <div className="gap-6 flex items-center">
-            <Button to="/contact" light>
+            <Button to="/contact" secondary lg>
               Free Estimate
             </Button>
           </div>
