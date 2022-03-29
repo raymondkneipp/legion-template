@@ -31,9 +31,15 @@ const Footer: NextPage = () => {
           <SocialIcon to="https://www.linkedin.com/" icon={FaLinkedin} />
           <SocialIcon to="https://www.tiktok.com/en/" icon={FaTiktok} />
         </div>
-        <div className="flex items-center space-x-1">
-          <FaRegCopyright />
-          <span>2022 Brand, Inc. All rights reserved.</span>
+        <div className="space-y-2 flex items-center flex-col">
+          <div className="flex items-center space-x-1">
+            <FaRegCopyright />
+            <span>2022 Brand, Inc. All rights reserved.</span>
+          </div>
+          <div className="flex items-center space-x-2">
+            <PageLink to="/privacy-policy" page="Privacy Policy" />
+            <PageLink to="/terms-of-use" page="Terms of Use" />
+          </div>
         </div>
       </div>
     </footer>
