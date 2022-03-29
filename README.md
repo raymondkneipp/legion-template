@@ -1,5 +1,4 @@
 # TODO
 
 - Add react hook form
-- contact page
-- creact avatar component
+- Create input, submit, and textarea components and add them to contact page
