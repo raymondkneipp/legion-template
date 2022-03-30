@@ -7,7 +7,7 @@ const PrivacyPolicyPage: NextPage = () => {
     <Layout>
       <NextSeo title="Privacy Policy" description="CHANGE ME" />
 
-      <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
+      <section className="container mx-auto px-2 my-36 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="space-y-6">
           <div className="space-y-2">
             <Typography variant="h1">Privacy Policy</Typography>
@@ -216,6 +216,7 @@ const PrivacyPolicyPage: NextPage = () => {
                 href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
                 rel="external nofollow noopener"
                 target="_blank"
+                className="break-all"
               >
                 https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
               </a>

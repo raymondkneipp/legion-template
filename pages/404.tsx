@@ -41,7 +41,7 @@ const Custom404: NextPage = () => {
   return (
     <>
       <NextSeo title="404 Page Not Found" description="CHANGE ME" />
-      <div className="container mx-auto max-w-xl flex flex-col space-y-2 min-h-screen items-center justify-center text-center">
+      <div className="container mx-auto px-2 max-w-xl flex flex-col space-y-2 min-h-screen items-center justify-center text-center">
         <Image src="/logo.svg" width="80" height="80" layout="intrinsic" />
         <Typography color="primary" variant="h6" element="h1">
           404 ERROR

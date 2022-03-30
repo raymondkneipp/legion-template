@@ -7,7 +7,7 @@ const TermsOfUsePage: NextPage = () => {
     <Layout>
       <NextSeo title="Terms of Use" description="CHANGE ME" />
 
-      <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
+      <section className="container mx-auto px-2 my-36 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div className="space-y-6">
           <div className="space-y-2">
             <Typography variant="h1">Terms of Use</Typography>

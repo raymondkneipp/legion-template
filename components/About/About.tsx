@@ -20,7 +20,7 @@ const About: NextPage = () => {
           deleniti nihil animi voluptate illum repudiandae quisquam earum,
         </Typography>
       </div>
-      <div className="lg:col-span-2 grid grid-cols-2 gap-6">
+      <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
         <AboutItem
           title="Trusted Experts"
           content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
