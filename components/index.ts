@@ -14,3 +14,4 @@ export { default as About } from './About/About';
 export { default as Pricing } from './Pricing/Pricing';
 export { default as ContactForm } from './ContactForm/ContactForm';
 export { default as Typography } from './Typography/Typography';
+export { default as Divider } from './Divider/Divider';
