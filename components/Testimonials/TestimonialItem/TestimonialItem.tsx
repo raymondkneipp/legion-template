@@ -18,8 +18,6 @@ const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
           <Image
             src={`/testimonials/${image}`}
             layout="fill"
-            width="300"
-            height="300"
             objectFit="cover"
             alt={`${name}'s testimonial`}
           />
@@ -30,7 +28,7 @@ const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
           </Typography>
           <div className="flex space-x-2 text-gray-600">
             {[...Array(stars)].map((e, i) => (
-              <FaStar />
+              <FaStar key={i} />
             ))}
           </div>
         </div>
