@@ -79,7 +79,7 @@ const Typography: NextPage<Props> = ({
       size = 'text-base lg:text-lg';
       break;
     case 'h6':
-      size = 'text-base';
+      size = 'text-sm';
       break;
     case 'p':
       size = 'text-base';

@@ -10,7 +10,7 @@ import AboutItem from './AboutItem/AboutItem';
 
 const About: NextPage = () => {
   return (
-    <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
+    <section className="container mx-auto px-2 my-36 grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-y-12">
       <div className="space-y-6">
         <Typography variant="h1">
           We Are <span className="text-sky-700">Brand</span>
@@ -20,7 +20,7 @@ const About: NextPage = () => {
           deleniti nihil animi voluptate illum repudiandae quisquam earum,
         </Typography>
       </div>
-      <div className="col-span-2 grid grid-cols-2 gap-6">
+      <div className="lg:col-span-2 grid grid-cols-2 gap-6">
         <AboutItem
           title="Trusted Experts"
           content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"

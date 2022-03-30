@@ -16,7 +16,7 @@ const Pricing: NextPage = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <PricingItem
           name="Hobby"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
