@@ -7,7 +7,7 @@ import {
   FaShoppingCart,
   FaVectorSquare,
 } from 'react-icons/fa';
-import { Button } from '..';
+import { Button, Typography } from '..';
 import ServiceItem from './ServiceItem/ServiceItem';
 
 interface Props {
@@ -19,15 +19,14 @@ const Services: NextPage<Props> = ({ simple }) => {
     <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
       <div className="space-y-6">
         {simple ? (
-          <h2 className="font-bold text-3xl">What We Offer</h2>
+          <Typography variant="h2">What We Offer</Typography>
         ) : (
-          <h1 className="font-bold text-5xl">What We Offer</h1>
+          <Typography variant="h1">What We Offer</Typography>
         )}
-        <p className="text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint
-          explicabo eveniet rerum quis. Voluptate in ex et rerum totam fugiat,
-          similique officia dicta magni distinctio aliquid minima nam maxime.
-        </p>
+        <Typography variant="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet minus
+          quod magni hic repudiandae expedita pariatur, quae enim voluptates eum
+        </Typography>
         {simple && (
           <Button to="/services" secondary>
             All Services

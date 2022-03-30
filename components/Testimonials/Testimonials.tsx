@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import { Typography } from '..';
 import TestimonialItem from './TestimonialItem/TestimonialItem';
 
 interface Props {
@@ -9,7 +10,7 @@ const Testimonaials: NextPage<Props> = ({ simple }) => {
   return (
     <section className="container mx-auto px-2 my-36 space-y-12">
       <div className="space-y-6">
-        <h2 className="font-bold text-3xl">Testimonials</h2>
+        <Typography variant="h2">Testimonials</Typography>
       </div>
       <div className="grid grid-cols-3 gap-6">
         <TestimonialItem

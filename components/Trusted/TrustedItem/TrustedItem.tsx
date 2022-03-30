@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import { Typography } from '../..';
 
 interface Props {
   title: string;
@@ -8,8 +9,10 @@ interface Props {
 const TrustedItem: NextPage<Props> = ({ title, content }) => {
   return (
     <article className="flex items-center flex-col">
-      <h3 className="text-5xl text-sky-700 font-bold text-center">{title}</h3>
-      <p className="text-xl text-gray-500 text-center">{content}</p>
+      <Typography variant="h1" element="h3" color="primary">
+        {title}
+      </Typography>
+      <Typography variant="p">{content}</Typography>
     </article>
   );
 };

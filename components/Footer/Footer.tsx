@@ -8,13 +8,14 @@ import {
   FaTiktok,
   FaRegCopyright,
 } from 'react-icons/fa';
+import { Typography } from '..';
 import PageLink from './PageLink/PageLink';
 import SocialIcon from './SocialIcon/SocialIcon';
 
 const Footer: NextPage = () => {
   return (
     <footer className="relative pb-10">
-      <div className="container mx-auto flex flex-col items-center space-y-6 text-gray-500">
+      <div className="container mx-auto flex flex-col items-center space-y-6 text-gray-600">
         <div className="flex items-center space-x-6">
           <PageLink to="/" page="Home" />
           <PageLink to="/about" page="About" />
@@ -34,7 +35,9 @@ const Footer: NextPage = () => {
         <div className="space-y-2 flex items-center flex-col">
           <div className="flex items-center space-x-1">
             <FaRegCopyright />
-            <span>2022 Brand, Inc. All rights reserved.</span>
+            <Typography variant="p">
+              2022 Brand, Inc. All rights reserved.
+            </Typography>
           </div>
           <div className="flex items-center space-x-2">
             <PageLink to="/privacy-policy" page="Privacy Policy" />

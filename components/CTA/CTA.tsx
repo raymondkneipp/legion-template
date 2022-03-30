@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
-import { Button } from '..';
+import { Button, Typography } from '..';
 
 const CTA: NextPage = () => {
   return (
@@ -21,18 +21,18 @@ const CTA: NextPage = () => {
       </div>
       <section className="bg-sky-700 relative">
         <div className="flex flex-col space-y-6 items-center justify-center py-20">
-          <h2 className="font-bold text-5xl text-white text-center">
+          <Typography variant="h1" element="h2" color="light">
             Claim Your Free Estimate Today!
-          </h2>
-          <p className="text-white max-w-lg text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            deserunt earum magnam voluptatem assumenda deleniti.
-          </p>
-          <div className="gap-6 flex items-center">
-            <Button to="/contact" secondary lg>
-              Free Estimate
-            </Button>
+          </Typography>
+          <div className="max-w-lg text-center">
+            <Typography variant="lead" color="light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatum modi pariatur earum ducimus a, magnam similique,
+            </Typography>
           </div>
+          <Button to="/contact" secondary lg>
+            Free Estimate
+          </Button>
         </div>
         {/* https://www.shapedivider.app/ */}
         {/* Copy and replace path element only */}

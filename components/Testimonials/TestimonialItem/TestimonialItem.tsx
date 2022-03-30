@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
+import { Typography } from '../..';
 
 interface Props {
   quote: string;
@@ -11,7 +12,7 @@ interface Props {
 
 const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
   return (
-    <figure className="space-y-2">
+    <figure className="space-y-6 bg-gray-100 p-6 rounded-3xl">
       <div className="flex items-center space-x-6">
         <div className="rounded-full overflow-hidden relative h-28 w-28">
           <Image
@@ -24,17 +25,19 @@ const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
           />
         </div>
         <div className="space-y-2">
-          <figcaption>{name}</figcaption>
-          <div className="flex space-x-2 text-gray-500">
+          <Typography variant="p" element="figcaption">
+            {name}
+          </Typography>
+          <div className="flex space-x-2 text-gray-600">
             {[...Array(stars)].map((e, i) => (
               <FaStar />
             ))}
           </div>
         </div>
       </div>
-      <div className="flex-1 flex items-start flex-col space-y-2">
-        <blockquote className="text-lg text-gray-500">"{quote}"</blockquote>
-      </div>
+      <Typography variant="p" element="blockquote">
+        "{quote}"
+      </Typography>
     </figure>
   );
 };

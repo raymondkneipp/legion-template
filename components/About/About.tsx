@@ -5,20 +5,20 @@ import {
   FaHandshake,
   FaUsers,
 } from 'react-icons/fa';
+import { Typography } from '..';
 import AboutItem from './AboutItem/AboutItem';
 
 const About: NextPage = () => {
   return (
     <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
       <div className="space-y-6">
-        <h1 className="font-bold text-5xl">
+        <Typography variant="h1">
           We Are <span className="text-sky-700">Brand</span>
-        </h1>
-        <p className="text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sint
-          explicabo eveniet rerum quis. Voluptate in ex et rerum totam fugiat,
-          similique officia dicta magni distinctio aliquid minima nam maxime.
-        </p>
+        </Typography>
+        <Typography variant="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
+          deleniti nihil animi voluptate illum repudiandae quisquam earum,
+        </Typography>
       </div>
       <div className="col-span-2 grid grid-cols-2 gap-6">
         <AboutItem

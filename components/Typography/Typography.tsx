@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
-type Element = Variant;
+type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'lead';
+type Element = Variant | 'span' | 'figcaption' | 'blockquote';
 type Color = 'dark' | 'light' | 'primary';
 
 interface Props {
@@ -43,6 +43,7 @@ const Typography: NextPage<Props> = ({
       styles = `${textColor} font-bold`;
       break;
     case 'p':
+    case 'lead':
       switch (color) {
         case 'light':
           textColor = 'text-gray-200';
@@ -52,7 +53,7 @@ const Typography: NextPage<Props> = ({
           break;
         case 'dark':
         default:
-          textColor = 'text-gray-500';
+          textColor = 'text-gray-600';
       }
       styles = `${textColor}`;
       break;
@@ -73,6 +74,8 @@ const Typography: NextPage<Props> = ({
       size = 'text-xl';
       break;
     case 'h5':
+    case 'lead':
+      element = 'p';
       size = 'text-lg';
       break;
     case 'h6':

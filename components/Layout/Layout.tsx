@@ -5,9 +5,9 @@ import { Alert, Footer, NavBar } from '../';
 const Layout: NextPage = ({ children }) => {
   return (
     <>
-      {/* <Alert to="/services" button="Learn More" icon={FaGift}>
+      <Alert to="/services" button="Learn More" icon={FaGift}>
         Big News! We're offering 30% off all services.
-      </Alert> */}
+      </Alert>
       <NavBar />
       <main>{children}</main>
       <Footer />

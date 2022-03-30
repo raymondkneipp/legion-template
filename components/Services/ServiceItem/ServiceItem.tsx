@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 import { IconType } from 'react-icons';
+import { Typography } from '../..';
 
 interface Props {
   icon: IconType;
@@ -15,10 +16,10 @@ const ServiceItem: NextPage<Props> = ({ icon, title, content }) => {
         {React.createElement(icon, { color: 'white', size: '24' })}
       </div>
       <div className="space-y-2">
-        <header>
-          <h3 className="text-sky-700 font-bold text-xl">{title}</h3>
-        </header>
-        <p className="text-gray-500">{content}</p>
+        <Typography variant="h3" color="primary">
+          {title}
+        </Typography>
+        <Typography variant="p">{content}</Typography>
       </div>
     </article>
   );

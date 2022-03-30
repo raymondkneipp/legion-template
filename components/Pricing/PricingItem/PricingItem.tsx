@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import { FaCheck } from 'react-icons/fa';
-import { Button } from '../..';
+import { Button, Typography } from '../..';
 
 interface Props {
   name: string;
@@ -13,21 +13,25 @@ const PricingItem: NextPage<Props> = ({ name, description, price, perks }) => {
   return (
     <div className="flex flex-col items-stretch space-y-6 bg-gray-100 p-6 rounded-3xl">
       <div className="space-y-2">
-        <h3 className="font-bold text-xl">{name}</h3>
-        <p className="text-gray-500 text-sm">{description}</p>
+        <Typography variant="h3">{name}</Typography>
+        <Typography variant="p">{description}</Typography>
       </div>
-      <h4 className="font-bold text-4xl">
-        ${price}
-        <span className="text-gray-500 text-base"> / mo</span>
-      </h4>
+      <div className="flex items-baseline space-x-2">
+        <Typography variant="h1" element="h4">
+          ${price}
+        </Typography>
+        <Typography variant="p" element="span">
+          / mo
+        </Typography>
+      </div>
       <Button to="/">Buy {name}</Button>
       <div className="space-y-2">
-        <h5 className="text-sm uppercase font-bold">What's Included</h5>
+        <Typography variant="h6">WHAT'S INCLUDED</Typography>
         <ul className="space-y-2">
           {perks.map((perk) => (
             <li className="text-green-500 flex items-center space-x-2">
               <FaCheck size={12} />
-              <span className="text-gray-500">{perk}</span>
+              <Typography variant="p">{perk}</Typography>
             </li>
           ))}
         </ul>

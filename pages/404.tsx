@@ -11,6 +11,7 @@ import {
   FaHome,
   FaPhone,
 } from 'react-icons/fa';
+import { Typography } from '../components';
 
 interface Props {
   to: string;
@@ -22,17 +23,15 @@ interface Props {
 const LinkItem: NextPage<Props> = ({ to, icon, page, description }) => {
   return (
     <Link href={to}>
-      <a className="flex items-center justify-between space-x-6 hover:bg-gray-200 py-2 px-4 rounded-full transition-colors">
-        <span className="text-sky-700">
-          {React.createElement(icon, { size: 30 })}
-        </span>
-        <div className="flex-1">
-          <h3 className="text-lg">{page}</h3>
-          <p className="text-gray-500">{description}</p>
+      <a className="flex items-center justify-between space-x-6 hover:bg-gray-100 py-2 px-4 rounded-3xl transition-colors text-sky-700">
+        {React.createElement(icon, { size: 30 })}
+        <div className="flex-1 text-left">
+          <Typography variant="h6" element="h3">
+            {page}
+          </Typography>
+          <Typography variant="p">{description}</Typography>
         </div>
-        <span className="text-gray-500">
-          <FaAngleRight size={20} />
-        </span>
+        <FaAngleRight size={20} />
       </a>
     </Link>
   );
@@ -42,15 +41,17 @@ const Custom404: NextPage = () => {
   return (
     <>
       <NextSeo title="404 Page Not Found" description="CHANGE ME" />
-      <div className="container mx-auto max-w-xl flex flex-col space-y-2 min-h-screen items-center justify-center">
+      <div className="container mx-auto max-w-xl flex flex-col space-y-2 min-h-screen items-center justify-center text-center">
         <Image src="/logo.svg" width="80" height="80" layout="intrinsic" />
-        <h1 className="text-center text-sky-700 pt-16">404 ERROR</h1>
-        <h2 className="font-bold text-5xl text-center">
+        <Typography color="primary" variant="h6" element="h1">
+          404 ERROR
+        </Typography>
+        <Typography variant="h1" element="h2">
           This page does not exist.
-        </h2>
-        <p className="text-center text-gray-500 text-lg">
+        </Typography>
+        <Typography variant="p">
           The page you are looking for could not be found.
-        </p>
+        </Typography>
         <div className="flex flex-col items-stretch w-full space-y-2 pt-12">
           <LinkItem
             to="/"

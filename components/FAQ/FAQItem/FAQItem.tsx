@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import { Typography } from '../..';
 
 interface Props {
   title: string;
@@ -8,10 +9,10 @@ interface Props {
 const FAQItem: NextPage<Props> = ({ title, content }) => {
   return (
     <article className="space-y-2">
-      <header>
-        <h3 className="text-lg">{title}</h3>
-      </header>
-      <p className="text-gray-500">{content}</p>
+      <Typography variant="h4" color="primary">
+        {title}
+      </Typography>
+      <Typography variant="p">{content}</Typography>
     </article>
   );
 };

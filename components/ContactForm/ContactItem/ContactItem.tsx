@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 import { IconType } from 'react-icons';
+import { Typography } from '../..';
 
 interface Props {
   icon: IconType;
@@ -8,12 +9,13 @@ interface Props {
 
 const ContactItem: NextPage<Props> = ({ icon, children }) => {
   return (
-    <div className="flex items-center space-x-2 text-gray-500">
-      <div className="rounded-full inline-block p-4">
+    <Typography variant="p">
+      <span className="flex items-center space-x-6">
         {React.createElement(icon, { size: '24' })}
-      </div>
-      <p>{children}</p>
-    </div>
+
+        <span>{children}</span>
+      </span>
+    </Typography>
   );
 };
 

@@ -1,6 +1,6 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
-import { Button } from '..';
+import { Button, Typography } from '..';
 
 const Hero: NextPage = () => {
   return (
@@ -12,14 +12,16 @@ const Hero: NextPage = () => {
         objectFit="cover"
         objectPosition="top"
       />
-      <div className="relative flex flex-col space-y-6 items-center justify-center bg-black bg-opacity-70 min-h-screen">
-        <h1 className="font-bold text-5xl text-white text-center">
+      <div className="relative flex flex-col space-y-6 items-center justify-center bg-black bg-opacity-70 min-h-screen text-center">
+        <Typography variant="h1" color="light">
           A Great Tagline Will Go Here!
-        </h1>
-        <p className="text-white max-w-lg text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-          deserunt earum magnam voluptatem assumenda deleniti.
-        </p>
+        </Typography>
+        <div className="max-w-lg">
+          <Typography variant="lead" color="light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            deserunt earum magnam voluptatem assumenda deleniti.
+          </Typography>
+        </div>
         <div className="gap-6 flex items-center">
           <Button to="/" lg>
             Get Started

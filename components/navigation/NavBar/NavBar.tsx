@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Typography } from '../..';
 import ActiveLink from './ActiveLink/ActiveLink';
 
 const NavBar: NextPage = () => {
@@ -10,7 +11,9 @@ const NavBar: NextPage = () => {
         <Link href="/">
           <a className="flex items-center space-x-2 rounded-full">
             <Image src="/logo.svg" width="45" height="45" layout="fixed" />
-            <span className="font-bold text-lg text-sky-700">Brand</span>
+            <Typography variant="h4" color="primary" element="span">
+              Brand
+            </Typography>
           </a>
         </Link>
 
