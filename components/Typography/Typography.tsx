@@ -62,21 +62,21 @@ const Typography: NextPage<Props> = ({
   // Set size
   switch (variant) {
     case 'h1':
-      size = 'text-5xl';
+      size = 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl';
       break;
     case 'h2':
-      size = 'text-3xl';
+      size = 'text-2xl sm:text-3xl md:text-3xl lg:text-4xl';
       break;
     case 'h3':
-      size = 'text-2xl';
+      size = 'text-xl sm:text-2xl md:text-2xl lg:text-2xl';
       break;
     case 'h4':
-      size = 'text-xl';
+      size = 'text-lg sm:text-xl md:text-xl lg:text-xl';
       break;
     case 'h5':
     case 'lead':
       element = 'p';
-      size = 'text-lg';
+      size = 'text-base lg:text-lg';
       break;
     case 'h6':
       size = 'text-base';

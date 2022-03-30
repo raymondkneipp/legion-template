@@ -16,7 +16,7 @@ interface Props {
 
 const Services: NextPage<Props> = ({ simple }) => {
   return (
-    <section className="container mx-auto px-2 my-36 grid grid-cols-3 gap-12">
+    <section className="container mx-auto px-2 my-36 grid grid-cols-1 lg:grid-cols-3 lg:gap-12 gap-y-12">
       <div className="space-y-6">
         {simple ? (
           <Typography variant="h2">What We Offer</Typography>
@@ -33,7 +33,7 @@ const Services: NextPage<Props> = ({ simple }) => {
           </Button>
         )}
       </div>
-      <div className="col-span-2 grid grid-cols-2 gap-6">
+      <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
         <ServiceItem
           title="Marketing"
           content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"

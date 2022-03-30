@@ -8,11 +8,9 @@ interface Props {
 
 const Testimonaials: NextPage<Props> = ({ simple }) => {
   return (
-    <section className="container mx-auto px-2 my-36 space-y-12">
-      <div className="space-y-6">
-        <Typography variant="h2">Testimonials</Typography>
-      </div>
-      <div className="grid grid-cols-3 gap-6">
+    <section className="container mx-auto px-2 my-36 space-y-12 text-center sm:text-left">
+      <Typography variant="h2">Testimonials</Typography>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <TestimonialItem
           name="John Doe"
           quote="Sing like no one’s listening, love like you’ve never been hurt, dance like nobody’s watching, and live like it’s heaven on earth."

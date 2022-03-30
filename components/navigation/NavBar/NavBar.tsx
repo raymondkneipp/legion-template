@@ -17,7 +17,7 @@ const NavBar: NextPage = () => {
           </a>
         </Link>
 
-        <div className="flex items-center space-x-4">
+        <div className="md:flex items-center space-x-4 hidden">
           <ActiveLink to="/">Home</ActiveLink>
           <ActiveLink to="/about">About</ActiveLink>
           <ActiveLink to="/services">Services</ActiveLink>

@@ -20,7 +20,7 @@ const CTA: NextPage = () => {
         </svg>
       </div>
       <section className="bg-sky-700 relative">
-        <div className="flex flex-col space-y-6 items-center justify-center py-20">
+        <div className="flex flex-col space-y-6 items-center justify-center py-20 text-center">
           <Typography variant="h1" element="h2" color="light">
             Claim Your Free Estimate Today!
           </Typography>

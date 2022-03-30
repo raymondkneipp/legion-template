@@ -22,7 +22,7 @@ const Hero: NextPage = () => {
             deserunt earum magnam voluptatem assumenda deleniti.
           </Typography>
         </div>
-        <div className="gap-6 flex items-center">
+        <div className="gap-6 flex items-center flex-col sm:flex-row">
           <Button to="/" lg>
             Get Started
           </Button>

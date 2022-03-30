@@ -14,7 +14,7 @@ const Trusted: NextPage = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
           </Typography>
         </div>
-        <div className="flex items-center justify-around w-full">
+        <div className="flex flex-col space-y-6 sm:flex-row sm:space-y-0 items-center justify-around w-full">
           <TrustedItem title="100%" content="Satisfaction" />
           <TrustedItem title="746+" content="Happy Customers" />
           <TrustedItem title="24/7" content="Customer Support" />
