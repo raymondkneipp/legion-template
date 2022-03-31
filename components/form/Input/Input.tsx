@@ -11,7 +11,11 @@ interface Props {
 const Input: NextPage<Props> = ({ label, type = 'text', register }) => {
   return (
     <div className="flex flex-col space-y-1">
-      <Typography variant="label" htmlFor={label.replace(/\s/g, '')}>
+      <Typography
+        variant="h6"
+        element="label"
+        htmlFor={label.replace(/\s/g, '')}
+      >
         {label}
       </Typography>
       <input
