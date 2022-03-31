@@ -10,6 +10,7 @@ export { default as Submit } from './form/Submit/Submit';
 // Layout Components
 export { default as Layout } from './layout/Layout/Layout';
 export { default as Tall } from './layout/Tall/Tall';
+export { default as Wide } from './layout/Wide/Wide';
 
 // All Other Components
 export { default as Footer } from './Footer/Footer';
