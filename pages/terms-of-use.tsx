@@ -1,6 +1,13 @@
 import type { NextPage } from 'next';
 import { NextSeo } from 'next-seo';
-import { Container, Layout, Tall, Typography } from '../components';
+import {
+  Container,
+  Layout,
+  Tall,
+  Typography,
+  List,
+  ListItem,
+} from '../components';
 
 const TermsOfUsePage: NextPage = () => {
   return (
@@ -41,8 +48,8 @@ const TermsOfUsePage: NextPage = () => {
                 <Typography variant="p">
                   For the purposes of these Terms and Conditions:
                 </Typography>
-                <ul className="text-gray-700">
-                  <li>
+                <List>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Affiliate</strong> means an entity that controls,
                       is controlled by or is under common control with a party,
@@ -51,34 +58,34 @@ const TermsOfUsePage: NextPage = () => {
                       entitled to vote for election of directors or other
                       managing authority.
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Country</strong> refers to: California, United
                       States
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Company</strong> (referred to as either &quot;the
                       Company&quot;, &quot;We&quot;, &quot;Us&quot; or
                       &quot;Our&quot; in this Agreement) refers to Example LLC,
                       1234 Main St. CA 95014.
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Device</strong> means any device that can access
                       the Service such as a computer, a cellphone or a digital
                       tablet.
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Service</strong> refers to the Website.
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Terms and Conditions</strong> (also referred as
                       &quot;Terms&quot;) mean these Terms and Conditions that
@@ -93,16 +100,16 @@ const TermsOfUsePage: NextPage = () => {
                       </a>
                       .
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Third-party Social Media Service</strong> means
                       any services or content (including data, information,
                       products or services) provided by a third-party that may
                       be displayed, included or made available by the Service.
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>Website</strong> refers to Example Site,
                       accessible from{' '}
@@ -114,16 +121,16 @@ const TermsOfUsePage: NextPage = () => {
                         http://www.example.com
                       </a>
                     </Typography>
-                  </li>
-                  <li>
+                  </ListItem>
+                  <ListItem>
                     <Typography variant="p">
                       <strong>You</strong> means the individual accessing or
                       using the Service, or the company, or other legal entity
                       on behalf of which such individual is accessing or using
                       the Service, as applicable.
                     </Typography>
-                  </li>
-                </ul>
+                  </ListItem>
+                </List>
                 <Typography variant="h2" color="primary">
                   Acknowledgment
                 </Typography>
@@ -359,8 +366,8 @@ const TermsOfUsePage: NextPage = () => {
                   If you have any questions about these Terms and Conditions,
                   You can contact us:
                 </Typography>
-                <ul className="text-gray-700">
-                  <li>
+                <List>
+                  <ListItem>
                     By visiting this page on our website:{' '}
                     <a
                       href="http://www.example.com/terms-of-use"
@@ -369,8 +376,8 @@ const TermsOfUsePage: NextPage = () => {
                     >
                       http://www.example.com/terms-of-use
                     </a>
-                  </li>
-                </ul>
+                  </ListItem>
+                </List>
               </div>
             }
           />

@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import React from 'react';
 import { IconType } from 'react-icons';
+import { FaCircle } from 'react-icons/fa';
 import { Typography } from '../../..';
 
 interface Props {
