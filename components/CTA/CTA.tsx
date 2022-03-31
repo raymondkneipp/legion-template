@@ -7,7 +7,7 @@ const CTA: NextPage = () => {
     <div className="relative">
       <section className="bg-sky-700 relative">
         <Divider color="white" />
-        <div className="flex flex-col space-y-6 items-center justify-center py-28 text-center">
+        <div className="flex flex-col space-y-6 items-center justify-center pt-28 pb-36 text-center">
           <Typography variant="h1" element="h2" color="light">
             Claim Your Free Estimate Today!
           </Typography>
