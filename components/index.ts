@@ -12,6 +12,7 @@ export { default as Container } from './layout/Container/Container';
 export { default as Layout } from './layout/Layout/Layout';
 export { default as Tall } from './layout/Tall/Tall';
 export { default as Wide } from './layout/Wide/Wide';
+export { default as Centered } from './layout/Centered/Centered';
 
 // All Other Components
 export { default as Footer } from './Footer/Footer';
