@@ -19,7 +19,7 @@ const Services: NextPage<Props> = ({ simple }) => {
     <section className="container mx-auto px-2 my-36">
       <Tall
         master={
-          <div className="space-y-6">
+          <>
             {simple ? (
               <Typography variant="h2">What We Offer</Typography>
             ) : (
@@ -35,7 +35,7 @@ const Services: NextPage<Props> = ({ simple }) => {
                 All Services
               </Button>
             )}
-          </div>
+          </>
         }
         slave={
           <>

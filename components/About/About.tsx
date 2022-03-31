@@ -13,7 +13,7 @@ const About: NextPage = () => {
     <section className="container mx-auto px-2 my-36">
       <Tall
         master={
-          <div className="space-y-6">
+          <>
             <Typography variant="h1">
               We Are <span className="text-sky-700">Brand</span>
             </Typography>
@@ -21,7 +21,7 @@ const About: NextPage = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
               deleniti nihil animi voluptate illum repudiandae quisquam earum,
             </Typography>
-          </div>
+          </>
         }
         slave={
           <>
