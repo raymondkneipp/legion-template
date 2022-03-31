@@ -1,6 +1,11 @@
 import { NextPage } from 'next';
 import { FaCheck } from 'react-icons/fa';
-import { Button, Typography } from '../..';
+import {
+  Button,
+  Typography,
+  DescriptionList,
+  DescriptionListItem,
+} from '../..';
 
 interface Props {
   name: string;
@@ -25,17 +30,12 @@ const PricingItem: NextPage<Props> = ({ name, description, price, perks }) => {
         </Typography>
       </div>
       <Button to="/">Buy {name}</Button>
-      <div className="space-y-2">
-        <Typography variant="h6">WHAT'S INCLUDED</Typography>
-        <ul className="space-y-2">
-          {perks.map((perk) => (
-            <li className="text-green-500 flex items-center space-x-2">
-              <FaCheck size={12} />
-              <Typography variant="p">{perk}</Typography>
-            </li>
-          ))}
-        </ul>
-      </div>
+
+      <DescriptionList header="WHAT'S INCLUDED">
+        {perks.map((perk) => (
+          <DescriptionListItem icon={FaCheck}>{perk}</DescriptionListItem>
+        ))}
+      </DescriptionList>
     </div>
   );
 };

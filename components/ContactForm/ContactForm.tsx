@@ -1,8 +1,16 @@
 import { NextPage } from 'next';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
-import { Container, Input, Submit, Tall, Textarea, Typography } from '..';
-import ContactItem from './ContactItem/ContactItem';
+import {
+  Container,
+  DescriptionList,
+  DescriptionListItem,
+  Input,
+  Submit,
+  Tall,
+  Textarea,
+  Typography,
+} from '..';
 
 interface IFormValues {
   'Full Name': string;
@@ -29,11 +37,18 @@ const ContactForm: NextPage = () => {
                 Commodi ducimus magnam aliquam quae facere minus totam earum.
                 Deleniti
               </Typography>
-              <ContactItem icon={FaPhone}>+1 (987) 654-3210</ContactItem>
-              <ContactItem icon={FaEnvelope}>support@example.com</ContactItem>
-              <ContactItem icon={FaMapMarkerAlt}>
-                1234 Main St. CA 94015
-              </ContactItem>
+
+              <DescriptionList header="OTHER WAYS TO REACH US">
+                <DescriptionListItem icon={FaPhone}>
+                  +1 (987) 654-3210
+                </DescriptionListItem>
+                <DescriptionListItem icon={FaEnvelope}>
+                  support@example.com
+                </DescriptionListItem>
+                <DescriptionListItem icon={FaMapMarkerAlt}>
+                  1234 Main DescriptionSt. CA 94015
+                </DescriptionListItem>
+              </DescriptionList>
             </>
           }
           slave={
