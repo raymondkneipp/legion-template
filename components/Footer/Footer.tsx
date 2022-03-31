@@ -14,7 +14,7 @@ import SocialIcon from './SocialIcon/SocialIcon';
 
 const Footer: NextPage = () => {
   return (
-    <footer className="container mx-auto px-2 pb-10 space-y-6">
+    <footer className="container mx-auto px-2 my-10 space-y-6">
       <div className="flex flex-col items-center space-y-2 justify-center sm:flex-row sm:space-y-0 sm:space-x-4">
         <PageLink to="/" page="Home" />
         <PageLink to="/about" page="About" />

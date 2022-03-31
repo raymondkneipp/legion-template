@@ -4,10 +4,10 @@ import { Button, Divider, Typography } from '..';
 
 const CTA: NextPage = () => {
   return (
-    <div className="relative pb-8 md:pb-20">
+    <div className="relative">
       <section className="bg-sky-700 relative">
         <Divider color="white" />
-        <div className="flex flex-col space-y-6 items-center justify-center py-20 text-center">
+        <div className="flex flex-col space-y-6 items-center justify-center py-28 text-center">
           <Typography variant="h1" element="h2" color="light">
             Claim Your Free Estimate Today!
           </Typography>
@@ -22,7 +22,7 @@ const CTA: NextPage = () => {
           </Button>
         </div>
       </section>
-      <Divider color="sky-700" bottom />
+      <Divider color="white" bottom invert />
     </div>
   );
 };
