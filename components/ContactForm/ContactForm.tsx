@@ -1,9 +1,22 @@
 import { NextPage } from 'next';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
-import { Typography } from '..';
+import { Input, Submit, Textarea, Typography } from '..';
 import ContactItem from './ContactItem/ContactItem';
 
+interface IFormValues {
+  'Full Name': string;
+  Email: string;
+  Message: string;
+}
+
 const ContactForm: NextPage = () => {
+  const { register, handleSubmit } = useForm<IFormValues>();
+
+  const onSubmit: SubmitHandler<IFormValues> = (data) => {
+    alert(JSON.stringify(data));
+  };
+
   return (
     <section className="container mx-auto px-2 my-36 grid grid-cols-2 gap-12">
       <div className="space-y-6">
@@ -16,9 +29,15 @@ const ContactForm: NextPage = () => {
         <ContactItem icon={FaEnvelope}>support@example.com</ContactItem>
         <ContactItem icon={FaMapMarkerAlt}>1234 Main St. CA 94015</ContactItem>
       </div>
-      <div className="grid grid-cols-1 gap-6">
-        <div className="bg-sky-200 h-full w-full"></div>
-      </div>
+      <form
+        className="flex flex-col space-y-6"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <Input register={register} label="Full Name" />
+        <Input register={register} label="Email" type="email" />
+        <Textarea register={register} label="Message" />
+        <Submit>Send</Submit>
+      </form>
     </section>
   );
 };

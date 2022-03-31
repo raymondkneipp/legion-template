@@ -1,6 +1,10 @@
 export { default as NavBar } from './navigation/NavBar/NavBar';
 export { default as Button } from './navigation/Button/Button';
 
+export { default as Input } from './form/Input/Input';
+export { default as Textarea } from './form/Textarea/Textarea';
+export { default as Submit } from './form/Submit/Submit';
+
 export { default as Footer } from './Footer/Footer';
 export { default as Hero } from './Hero/Hero';
 export { default as Services } from './Services/Services';
