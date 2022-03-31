@@ -8,8 +8,10 @@ interface Props {
 
 const Testimonaials: NextPage<Props> = ({ simple }) => {
   return (
-    <section className="container mx-auto px-2 my-36 space-y-12 text-center sm:text-left">
-      <Typography variant="h2">Testimonials</Typography>
+    <section className="container mx-auto px-2 my-36 space-y-12">
+      <Typography variant="h2" className="text-center sm:text-left">
+        Testimonials
+      </Typography>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <TestimonialItem
           name="John Doe"
