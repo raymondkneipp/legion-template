@@ -7,6 +7,7 @@ import {
   Services,
   Testimonials,
   Stats,
+  News,
 } from '../components';
 
 const Home: NextPage = () => {
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <Hero />
       <Services simple />
       <Stats />
+      <News />
       <Testimonials simple />
       <CTA />
     </Layout>

@@ -29,6 +29,8 @@ export { default as ContactForm } from './ContactForm/ContactForm';
 export { default as Typography } from './Typography/Typography';
 export { default as Divider } from './Divider/Divider';
 export { default as IconCard } from './IconCard/IconCard';
+export { default as News } from './News/News';
+export { default as Card } from './Card/Card';
 
 // List Components and List Items Components
 export { default as List } from './list/List/List';
