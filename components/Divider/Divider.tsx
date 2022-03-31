@@ -7,12 +7,8 @@ interface Props {
   invert?: boolean;
 }
 
-{
-  /* https://www.shapedivider.app/ */
-}
-{
-  /* Copy and replace path element only */
-}
+/* https://www.shapedivider.app/ */
+/* Copy and replace path element only */
 
 const Divider: NextPage<Props> = ({
   color,

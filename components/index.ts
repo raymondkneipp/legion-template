@@ -8,6 +8,7 @@ export { default as Textarea } from './form/Textarea/Textarea';
 export { default as Submit } from './form/Submit/Submit';
 
 // Layout Components
+export { default as Container } from './layout/Container/Container';
 export { default as Layout } from './layout/Layout/Layout';
 export { default as Tall } from './layout/Tall/Tall';
 export { default as Wide } from './layout/Wide/Wide';
