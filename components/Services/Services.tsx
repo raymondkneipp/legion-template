@@ -7,8 +7,7 @@ import {
   FaShoppingCart,
   FaVectorSquare,
 } from 'react-icons/fa';
-import { Button, Tall, Typography } from '..';
-import ServiceItem from './ServiceItem/ServiceItem';
+import { Button, IconCard, Tall, Typography } from '..';
 
 interface Props {
   simple?: boolean;
@@ -39,34 +38,34 @@ const Services: NextPage<Props> = ({ simple }) => {
         }
         slave={
           <>
-            <ServiceItem
+            <IconCard
               title="Marketing"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaBullhorn}
             />
-            <ServiceItem
+            <IconCard
               title="Copywriting"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaPencilAlt}
             />
-            <ServiceItem
+            <IconCard
               title="Web Design"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaGlobe}
             />
-            <ServiceItem
+            <IconCard
               title="SEO Optimization"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaSearch}
             />
             {!simple && (
               <>
-                <ServiceItem
+                <IconCard
                   title="eCommerce"
                   content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
                   icon={FaShoppingCart}
                 />
-                <ServiceItem
+                <IconCard
                   title="Logo Design"
                   content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
                   icon={FaVectorSquare}

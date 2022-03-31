@@ -5,8 +5,7 @@ import {
   FaHandshake,
   FaUsers,
 } from 'react-icons/fa';
-import { Tall, Typography } from '..';
-import AboutItem from './AboutItem/AboutItem';
+import { IconCard, Tall, Typography } from '..';
 
 const About: NextPage = () => {
   return (
@@ -25,22 +24,22 @@ const About: NextPage = () => {
         }
         slave={
           <>
-            <AboutItem
+            <IconCard
               title="Trusted Experts"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaUsers}
             />
-            <AboutItem
+            <IconCard
               title="Our Mission"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaBullseye}
             />
-            <AboutItem
+            <IconCard
               title="What We Value"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaHandHoldingHeart}
             />
-            <AboutItem
+            <IconCard
               title="How We Can Help You"
               content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
               icon={FaHandshake}
