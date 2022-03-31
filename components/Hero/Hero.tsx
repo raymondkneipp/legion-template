@@ -31,7 +31,7 @@ const Hero: NextPage = () => {
           </Button>
         </div>
       </div>
-      <Divider color="white" bottom flip />
+      <Divider color="white" bottom invert />
     </section>
   );
 };
