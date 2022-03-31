@@ -10,8 +10,8 @@ const ActiveLink: NextPage<Props> = ({ to, children }) => {
   const router = useRouter();
   const styles = `${
     router.pathname == to
-      ? 'text-sky-700'
-      : 'hover:bg-gray-200 transition-colors'
+      ? 'bg-gray-200'
+      : 'hover:bg-sky-700 hover:text-white transition-colors'
   } rounded-xl py-2 px-4`;
 
   return (
