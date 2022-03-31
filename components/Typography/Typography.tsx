@@ -1,14 +1,15 @@
 import { NextPage } from 'next';
 import React from 'react';
 
-type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'lead';
-type Element = Variant | 'span' | 'figcaption' | 'blockquote';
+type Variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'lead' | 'label';
+type Element = Variant | 'span' | 'figcaption' | 'blockquote' | 'label';
 type Color = 'dark' | 'light' | 'primary';
 
 interface Props {
   variant: Variant;
   element?: Element;
   color?: Color;
+  [rest: string]: any;
 }
 
 const Typography: NextPage<Props> = ({
@@ -16,12 +17,13 @@ const Typography: NextPage<Props> = ({
   element = variant,
   color,
   children,
+  ...rest
 }) => {
   let styles: string;
   let textColor: string;
   let size: string;
 
-  // Set color
+  // Set color and font weight
   switch (variant) {
     case 'h1':
     case 'h2':
@@ -29,6 +31,7 @@ const Typography: NextPage<Props> = ({
     case 'h4':
     case 'h5':
     case 'h6':
+    case 'label':
       switch (color) {
         case 'light':
           textColor = 'text-white';
@@ -79,6 +82,7 @@ const Typography: NextPage<Props> = ({
       size = 'text-base lg:text-lg';
       break;
     case 'h6':
+    case 'label':
       size = 'text-sm';
       break;
     case 'p':
@@ -88,7 +92,7 @@ const Typography: NextPage<Props> = ({
 
   styles += ' ' + size;
 
-  return React.createElement(element, { className: styles }, children);
+  return React.createElement(element, { className: styles, ...rest }, children);
 };
 
 export default Typography;
