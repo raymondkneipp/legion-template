@@ -18,7 +18,7 @@ const ContactForm: NextPage = () => {
   };
 
   return (
-    <section className="container mx-auto px-2 my-36 grid grid-cols-2 gap-12">
+    <section className="container mx-auto px-2 my-36 grid grid-cols-1 md:grid-cols-2 gap-12">
       <div className="space-y-6">
         <Typography variant="h1">Contact Us</Typography>
         <Typography variant="lead">
