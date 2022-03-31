@@ -6,7 +6,7 @@ import {
   Layout,
   Services,
   Testimonials,
-  Trusted,
+  Stats,
 } from '../components';
 
 const Home: NextPage = () => {
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <NextSeo title="Home" description="CHANGE ME" />
       <Hero />
       <Services simple />
-      <Trusted />
+      <Stats />
       <Testimonials simple />
       <CTA />
     </Layout>

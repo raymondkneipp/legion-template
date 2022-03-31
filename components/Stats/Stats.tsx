@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
 import { Container, Divider, Typography } from '..';
-import TrustedItem from './TrustedItem/TrustedItem';
+import StatsItem from './StatsItem/StatsItem';
 
-const Trusted: NextPage = () => {
+const Stats: NextPage = () => {
   return (
     <div className="relative">
       <div className="bg-gray-100 my-36 relative">
@@ -18,9 +18,9 @@ const Trusted: NextPage = () => {
               </Typography>
             </div>
             <div className="flex flex-col space-y-6 sm:flex-row sm:space-y-0 items-center justify-around w-full">
-              <TrustedItem title="100%" content="Satisfaction" />
-              <TrustedItem title="746+" content="Happy Customers" />
-              <TrustedItem title="24/7" content="Customer Support" />
+              <StatsItem title="100%" content="Satisfaction" />
+              <StatsItem title="746+" content="Happy Customers" />
+              <StatsItem title="24/7" content="Customer Support" />
             </div>
           </section>
         </Container>
@@ -30,4 +30,4 @@ const Trusted: NextPage = () => {
   );
 };
 
-export default Trusted;
+export default Stats;

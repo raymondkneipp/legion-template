@@ -6,7 +6,7 @@ interface Props {
   content: string;
 }
 
-const TrustedItem: NextPage<Props> = ({ title, content }) => {
+const StatsItem: NextPage<Props> = ({ title, content }) => {
   return (
     <article className="flex items-center flex-col">
       <Typography variant="h1" element="h3" color="primary">
@@ -17,4 +17,4 @@ const TrustedItem: NextPage<Props> = ({ title, content }) => {
   );
 };
 
-export default TrustedItem;
+export default StatsItem;
