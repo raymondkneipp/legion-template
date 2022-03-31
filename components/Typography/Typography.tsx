@@ -9,7 +9,7 @@ interface Props {
   variant: Variant;
   element?: Element;
   color?: Color;
-  className: string;
+  className?: string;
   [rest: string]: any;
 }
 
