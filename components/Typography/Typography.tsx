@@ -9,6 +9,7 @@ interface Props {
   variant: Variant;
   element?: Element;
   color?: Color;
+  className: string;
   [rest: string]: any;
 }
 
@@ -16,6 +17,7 @@ const Typography: NextPage<Props> = ({
   variant,
   element = variant,
   color,
+  className,
   children,
   ...rest
 }) => {
@@ -90,7 +92,7 @@ const Typography: NextPage<Props> = ({
       break;
   }
 
-  styles += ' ' + size;
+  styles += ' ' + size + ' ' + className;
 
   return React.createElement(element, { className: styles, ...rest }, children);
 };
