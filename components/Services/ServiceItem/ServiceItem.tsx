@@ -12,7 +12,7 @@ interface Props {
 const ServiceItem: NextPage<Props> = ({ icon, title, content }) => {
   return (
     <article className="flex items-start space-x-6">
-      <div className="bg-sky-700 rounded-full inline-block p-4">
+      <div className="bg-sky-700 rounded-xl inline-block p-4">
         {React.createElement(icon, { color: 'white', size: '24' })}
       </div>
       <div className="space-y-2">

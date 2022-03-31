@@ -12,7 +12,7 @@ const ActiveLink: NextPage<Props> = ({ to, children }) => {
     router.pathname == to
       ? 'text-sky-700'
       : 'hover:bg-gray-200 transition-colors'
-  } rounded-full py-2 px-4`;
+  } rounded-xl py-2 px-4`;
 
   return (
     <Link href={to}>

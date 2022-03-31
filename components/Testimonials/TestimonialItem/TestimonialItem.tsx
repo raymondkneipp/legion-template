@@ -12,9 +12,9 @@ interface Props {
 
 const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
   return (
-    <figure className="space-y-6 bg-gray-100 p-6 rounded-3xl">
+    <figure className="space-y-6 bg-gray-100 p-6 rounded-xl">
       <div className="flex flex-col space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0 md:flex-col md:space-y-6 md:space-x-0 items-center lg:space-x-6 lg:space-y-0 lg:flex-row">
-        <div className="rounded-full overflow-hidden relative h-28 w-28">
+        <div className="rounded-xl overflow-hidden relative h-28 w-28">
           <Image
             src={`/testimonials/${image}`}
             layout="fill"

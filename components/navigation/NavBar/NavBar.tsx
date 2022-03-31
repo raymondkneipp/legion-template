@@ -9,7 +9,7 @@ const NavBar: NextPage = () => {
     <nav className="border-b border-gray-300 py-4">
       <div className="container mx-auto flex items-center justify-between px-2">
         <Link href="/">
-          <a className="flex items-center space-x-2 rounded-full">
+          <a className="flex items-center space-x-2 rounded-xl">
             <Image src="/logo.svg" width="45" height="45" layout="fixed" />
             <Typography variant="h4" color="primary" element="span">
               Brand

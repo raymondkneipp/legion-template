@@ -9,7 +9,7 @@ interface Props {
 
 const Button: NextPage<Props> = ({ to, secondary, lg, children }) => {
   const base =
-    'font-bold inline-block text-center rounded-full transition-colors';
+    'font-bold inline-block text-center rounded-xl transition-colors';
   const theme = !secondary
     ? 'bg-sky-700 text-white hover:bg-sky-500'
     : 'bg-gray-200 text-sky-700 hover:bg-white';
