@@ -24,10 +24,10 @@ const Hero: NextPage = () => {
               deserunt earum magnam voluptatem assumenda deleniti.
             </Typography>
             <div className="gap-6 flex items-center flex-row flex-wrap justify-center">
-              <Button to="/" lg>
+              <Button to="/contact" lg>
                 Get Started
               </Button>
-              <Button to="/" secondary lg>
+              <Button to="/services" secondary lg>
                 Learn More
               </Button>
             </div>
