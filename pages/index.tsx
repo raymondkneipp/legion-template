@@ -8,6 +8,7 @@ import {
   Testimonials,
   Stats,
   News,
+  Points,
 } from '../components';
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Services simple />
       <Stats />
       <News />
+      <Points />
       <Testimonials simple />
       <CTA />
     </Layout>

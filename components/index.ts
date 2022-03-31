@@ -13,6 +13,7 @@ export { default as Layout } from './layout/Layout/Layout';
 export { default as Tall } from './layout/Tall/Tall';
 export { default as Wide } from './layout/Wide/Wide';
 export { default as Centered } from './layout/Centered/Centered';
+export { default as Tile } from './layout/Tile/Tile';
 
 // All Other Components
 export { default as Footer } from './Footer/Footer';
@@ -30,6 +31,7 @@ export { default as Typography } from './Typography/Typography';
 export { default as Divider } from './Divider/Divider';
 export { default as IconCard } from './IconCard/IconCard';
 export { default as News } from './News/News';
+export { default as Points } from './Points/Points';
 export { default as Card } from './Card/Card';
 
 // List Components and List Items Components

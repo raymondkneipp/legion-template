@@ -8,7 +8,7 @@ const News: NextPage = () => {
         <Wide
           master={
             <>
-              <Typography variant="h2">We Want You To Succeed</Typography>
+              <Typography variant="h2">Read The Latest News</Typography>
               <div className="max-w-2xl">
                 <Typography variant="lead">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
