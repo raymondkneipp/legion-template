@@ -19,7 +19,7 @@ import PageLink from './PageLink/PageLink';
 
 const Footer: NextPage = () => {
   return (
-    <footer className="my-10">
+    <footer className="py-10 bg-gray-100">
       <Container>
         <Tall
           master={
@@ -82,7 +82,7 @@ const Footer: NextPage = () => {
           }
         />
 
-        <div className="space-x-1 flex items-center justify-center text-gray-600 my-10">
+        <div className="space-x-1 flex items-center justify-center text-gray-600 pt-10">
           <FaRegCopyright />
           <Typography variant="p">
             2022 Brand, Inc. All rights reserved.
