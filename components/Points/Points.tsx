@@ -13,6 +13,7 @@ const Points: NextPage = () => {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
             light
             stack
+            center
           />
           <IconCard
             icon={FaMedal}
@@ -20,6 +21,7 @@ const Points: NextPage = () => {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
             light
             stack
+            center
           />
           <IconCard
             icon={FaMedal}
@@ -27,6 +29,7 @@ const Points: NextPage = () => {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
             light
             stack
+            center
           />
           <IconCard
             icon={FaMedal}
@@ -34,6 +37,7 @@ const Points: NextPage = () => {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
             light
             stack
+            center
           />
           <IconCard
             icon={FaMedal}
@@ -41,6 +45,7 @@ const Points: NextPage = () => {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
             light
             stack
+            center
           />
           <IconCard
             icon={FaMedal}
@@ -48,6 +53,7 @@ const Points: NextPage = () => {
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
             light
             stack
+            center
           />
         </Tile>
       </Container>

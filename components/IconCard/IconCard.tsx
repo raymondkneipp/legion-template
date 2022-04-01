@@ -9,6 +9,7 @@ interface Props {
   content: string;
   stack?: boolean;
   light?: boolean;
+  center?: boolean;
 }
 
 const IconCard: NextPage<Props> = ({
@@ -17,10 +18,11 @@ const IconCard: NextPage<Props> = ({
   content,
   stack = false,
   light = false,
+  center = false,
 }) => (
   <article
-    className={`flex items-start space-x-6 ${
-      stack ? 'flex-col space-x-0 space-y-6' : ''
+    className={`flex space-x-6 ${stack ? 'flex-col space-x-0 space-y-6' : ''} ${
+      center ? 'items-center text-center' : 'items-start'
     }`}
   >
     <div className="bg-sky-600 rounded-xl inline-block p-4">
