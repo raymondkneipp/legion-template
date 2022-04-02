@@ -1,5 +1,4 @@
 import type { NextPage } from 'next';
-import { FaGift } from 'react-icons/fa';
 import { Banner, Button, Footer, NavBar, Typography } from '../../';
 
 const Layout: NextPage = ({ children }) => {
@@ -9,7 +8,7 @@ const Layout: NextPage = ({ children }) => {
         <Typography variant="p" color="light">
           Big News! We're offering 30% off all services.
         </Typography>
-        <Button secondary to="/" sm>
+        <Button secondary to="/services" sm>
           Learn More
         </Button>
       </Banner>
