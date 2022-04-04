@@ -1,5 +1,5 @@
 ---
-title: Smith
-post: 934
-tagline: We are the best post ever!
+title: Smith B
+post: 932
+tagline: We are the best post ever!!
 ---
