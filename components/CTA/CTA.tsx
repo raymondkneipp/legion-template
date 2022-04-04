@@ -23,7 +23,7 @@ const CTA: NextPage = () => {
           </div>
         </Container>
       </section>
-      <Divider color="gray-100" bottom flip />
+      <Divider color="white" bottom flip />
     </div>
   );
 };

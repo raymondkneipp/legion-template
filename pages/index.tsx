@@ -11,18 +11,10 @@ import {
   News,
   Points,
 } from '../components';
-import { attributes, react as HomeContent } from '../content/home.md';
 
 const Home: NextPage = () => {
-  let { title, cats } = attributes;
   return (
     <Layout>
-      <h1>{title}</h1>
-      <h1>{title}</h1>
-      <h1>{title}</h1>
-      <h1>{title}</h1>
-      <h1>{title}</h1>
-      <HomeContent />
       <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       <NextSeo title="Home" description="CHANGE ME" />
       <Hero />

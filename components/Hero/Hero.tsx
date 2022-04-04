@@ -2,8 +2,10 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import { Button, Container, Divider, Typography } from '..';
 import Centered from '../layout/Centered/Centered';
+import { attributes } from '../../content/site.md';
 
 const Hero: NextPage = () => {
+  let { name, post } = attributes;
   return (
     <section className="relative">
       <Image
@@ -17,7 +19,7 @@ const Hero: NextPage = () => {
         <Container>
           <Centered className="min-h-screen">
             <Typography variant="h1" color="light">
-              A Great Tagline Will Go Here!
+              Welcome to {name} American Legion Post {post}
             </Typography>
             <Typography variant="lead" color="light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia

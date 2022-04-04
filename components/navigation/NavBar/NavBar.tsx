@@ -5,9 +5,11 @@ import { useState } from 'react';
 import { Container, Typography } from '../..';
 import ActiveLink from './ActiveLink/ActiveLink';
 import MenuButton from './MenuButton/MenuButton';
+import { attributes, react as SiteSettings } from '../../../content/site.md';
 
 const NavBar: NextPage = () => {
   const [show, setShow] = useState(false);
+  let { post } = attributes;
 
   return (
     <nav className="bg-white border-b border-gray-300 py-2 sticky top-0 left-0 right-0 z-50">
@@ -23,7 +25,7 @@ const NavBar: NextPage = () => {
                 layout="fixed"
               />
               <Typography variant="h4" color="primary" element="span">
-                Brand
+                Post {post}
               </Typography>
             </a>
           </Link>

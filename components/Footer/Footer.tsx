@@ -19,7 +19,7 @@ import PageLink from './PageLink/PageLink';
 
 const Footer: NextPage = () => {
   return (
-    <footer className="py-10 bg-gray-100">
+    <footer className="py-10">
       <Container>
         <Tall
           master={
@@ -27,8 +27,8 @@ const Footer: NextPage = () => {
               <Image
                 src="/American-Legion-Emblem.png"
                 alt="Logo"
-                width={45}
-                height={45}
+                width={80}
+                height={80}
                 layout="fixed"
               />
               <Typography variant="p">
