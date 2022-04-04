@@ -7,7 +7,7 @@ const CTA: NextPage = () => {
       <section className="bg-sky-700 relative">
         <Divider color="white" />
         <Container>
-          <div className="pt-28 pb-36">
+          <div className="py-36">
             <Centered>
               <Typography variant="h1" element="h2" color="light">
                 Claim Your Free Estimate Today!
@@ -23,7 +23,7 @@ const CTA: NextPage = () => {
           </div>
         </Container>
       </section>
-      <Divider color="gray-100" bottom invert />
+      <Divider color="gray-100" bottom flip />
     </div>
   );
 };

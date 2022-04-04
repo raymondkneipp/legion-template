@@ -6,9 +6,9 @@ const Stats: NextPage = () => {
   return (
     <div className="relative">
       <div className="bg-gray-100 my-36 relative">
-        <Divider color="white" invert flip />
+        <Divider color="white" />
         <Container>
-          <section className="space-y-6 pt-36 pb-28">
+          <section className="space-y-6 py-36">
             <div className="space-y-2 flex items-center flex-col text-center">
               <Typography variant="h2">
                 Trusted by 120+ small business owners
