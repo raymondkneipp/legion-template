@@ -17,6 +17,7 @@ const NavBar: NextPage = () => {
             <a className="flex items-center space-x-2 rounded-xl">
               <Image
                 src="/American-Legion-Emblem.png"
+                alt="Logo"
                 width="80"
                 height="80"
                 layout="fixed"
