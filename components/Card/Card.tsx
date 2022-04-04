@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 import { Typography } from '..';
 
 interface Props {
@@ -11,7 +12,7 @@ interface Props {
 const Card: NextPage<Props> = ({ image, date, title, content }) => (
   <div className="rounded-xl shadow-md flex flex-col">
     <div className="h-60 relative rounded-t-xl overflow-hidden">
-      <h6>image</h6>
+      <Image src={image} alt={title} layout="fill" objectFit="cover" />
     </div>
     <div className="p-6 space-y-6 flex flex-col flex-1">
       <Typography variant="h3">{title}</Typography>

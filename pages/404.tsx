@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { IconType } from 'react-icons';
@@ -42,7 +43,13 @@ const Custom404: NextPage = () => {
       <NextSeo title="404 Page Not Found" description="CHANGE ME" />
       <Centered>
         <div className="max-w-xl flex flex-col space-y-2 min-h-screen items-center justify-center text-center">
-          <h6>image</h6>
+          <Image
+            src="/logo.svg"
+            width="80"
+            height="80"
+            layout="intrinsic"
+            alt="Logo"
+          />
           <Typography color="primary" variant="h6" element="h1">
             404 ERROR
           </Typography>
