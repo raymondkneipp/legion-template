@@ -4,4 +4,9 @@ mission: Post General Meetings are held on the 2nd Wednesday of each month
   Clubroom
 vision: By default, all entries created or edited in the Netlify CMS are
   committed directly into the main repository branch.
+officers:
+  - title: Boss
+    name: Boss Man
+    description: "A convenient JavaScript snippet, which lets you create beautiful
+      buttons, where people can add events to their calendars "
 ---
