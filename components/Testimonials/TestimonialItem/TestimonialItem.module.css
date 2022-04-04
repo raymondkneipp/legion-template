@@ -17,7 +17,7 @@
 }
 
 .testimonialItem__quote {
-  @apply text-center;
+  @apply text-center space-y-2;
   grid-area: 'quote';
 }
 

@@ -1,13 +1,13 @@
 import { NextPage } from 'next';
-import {
-  FaBullseye,
-  FaHandHoldingHeart,
-  FaHandshake,
-  FaUsers,
-} from 'react-icons/fa';
+import { FaBullseye, FaEye } from 'react-icons/fa';
 import { Container, IconCard, Tall, Typography } from '..';
+import { attributes as legion } from '../../content/legion.md';
+import { attributes as about } from '../../content/about.md';
 
 const About: NextPage = () => {
+  let { post, tagline } = legion;
+  let { mission, vision } = about;
+
   return (
     <section className="my-36">
       <Container>
@@ -15,35 +15,18 @@ const About: NextPage = () => {
           master={
             <>
               <Typography variant="h1">
-                We Are <span className="text-sky-700">Brand</span>
+                We Are <span className="text-sky-700">Post {post}</span>
               </Typography>
-              <Typography variant="lead">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo
-                deleniti nihil animi voluptate illum repudiandae quisquam earum,
-              </Typography>
+              <Typography variant="lead">{tagline}</Typography>
             </>
           }
           slave={
             <>
-              <IconCard
-                title="Trusted Experts"
-                content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
-                icon={FaUsers}
-              />
+              <IconCard title="Our Vision" content={vision} icon={FaEye} />
               <IconCard
                 title="Our Mission"
-                content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
+                content={mission}
                 icon={FaBullseye}
-              />
-              <IconCard
-                title="What We Value"
-                content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
-                icon={FaHandHoldingHeart}
-              />
-              <IconCard
-                title="How We Can Help You"
-                content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
-                icon={FaHandshake}
               />
             </>
           }

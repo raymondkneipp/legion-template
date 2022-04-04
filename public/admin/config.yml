@@ -1,19 +1,43 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-publish_mode: editorial_workflow
 media_folder: public/img
 public_folder: img
 collections:
-  - name: 'settings'
-    label: 'Settings'
+  - name: 'setup'
+    label: 'Setup'
     files:
-      - label: 'site'
-        name: 'site'
-        file: 'site.md'
+      - label: 'Legion'
+        name: 'legion'
+        file: 'legion.md'
         fields:
-          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Post', name: 'post', widget: 'number' }
+          - { label: 'Tagline', name: 'tagline', widget: 'string' }
+      - label: 'About'
+        name: 'about'
+        file: 'about.md'
+        fields:
+          - { label: 'Mission', name: 'mission', widget: 'string' }
+          - { label: 'Vision', name: 'vision', widget: 'string' }
+          - label: 'Post Officers'
+            name: 'officers'
+            widget: list
+            fields:
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Name', name: 'name', widget: 'text' }
+              - { label: 'Description', name: 'description', widget: 'text' }
+      - label: 'Contact'
+        name: 'contact'
+        file: 'contact.md'
+        fields:
+          - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Phone', name: 'phone', widget: 'string' }
+          - { label: 'Info', name: 'info', widget: 'string' }
+          - { label: 'Address', name: 'address', widget: 'string' }
+          - { label: 'City', name: 'city', widget: 'string' }
+          - { label: 'State', name: 'state', widget: 'string' }
+          - { label: 'Zip', name: 'zip', widget: 'number' }
 
   - name: 'pages'
     label: 'Pages'

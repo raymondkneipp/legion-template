@@ -8,10 +8,10 @@ interface Props {
   quote: string;
   name: string;
   image: string;
-  stars: number;
+  title: string;
 }
 
-const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
+const TestimonialItem: NextPage<Props> = ({ quote, name, image, title }) => {
   return (
     <figure className={styles.testimonialItem__grid}>
       <div className={styles.testimonialItem__image}>
@@ -23,18 +23,14 @@ const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
         />
       </div>
       <div className={styles.testimonialItem__header}>
-        <Typography variant="p" element="figcaption">
+        <Typography variant="lead" element="figcaption" color="primary">
           {name}
         </Typography>
-        <div className="flex space-x-2 text-gray-600">
-          {[...Array(stars)].map((e, i) => (
-            <FaStar key={i} />
-          ))}
-        </div>
+        <Typography variant="p">{title}</Typography>
       </div>
       <div className={styles.testimonialItem__quote}>
         <Typography variant="p" element="blockquote">
-          &quot;{quote}&quot;
+          {quote}
         </Typography>
       </div>
     </figure>

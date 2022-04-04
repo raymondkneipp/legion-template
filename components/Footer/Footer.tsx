@@ -16,8 +16,10 @@ import {
   Typography,
 } from '..';
 import PageLink from './PageLink/PageLink';
+import { attributes } from '../../content/legion.md';
 
 const Footer: NextPage = () => {
+  let { tagline, title, post } = attributes;
   return (
     <footer className="py-10">
       <Container>
@@ -31,10 +33,7 @@ const Footer: NextPage = () => {
                 height={80}
                 layout="fixed"
               />
-              <Typography variant="p">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                optio? Odio repudiandae ipsa ipsam non id iusto, incidunt ullam
-              </Typography>
+              <Typography variant="p">{tagline}</Typography>
             </>
           }
           slave={
@@ -54,12 +53,6 @@ const Footer: NextPage = () => {
                 </DescriptionListItem>
               </DescriptionList>
               <DescriptionList header="LEGAL">
-                <DescriptionListItem>
-                  <PageLink to="/privacy-policy" page="Privacy Policy" />
-                </DescriptionListItem>
-                <DescriptionListItem>
-                  <PageLink to="/terms-of-use" page="Terms of Use" />
-                </DescriptionListItem>
                 <DescriptionListItem>
                   <PageLink to="/not-found" page="404" />
                 </DescriptionListItem>
@@ -91,7 +84,7 @@ const Footer: NextPage = () => {
         <div className="space-x-1 flex items-center justify-center text-gray-600 pt-10">
           <FaRegCopyright />
           <Typography variant="p">
-            2022 Brand, Inc. All rights reserved.
+            {new Date().getFullYear()} {title} American Legion Post {post}
           </Typography>
         </div>
       </Container>
