@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const withPlugins = require('next-compose-plugins');
+const optimizedImages = require('next-optimized-images');
+
+const nextConfig = withPlugins([[optimizedImages, {}]], {
   reactStrictMode: true,
   webpack: (cfg) => {
     cfg.module.rules.push({
@@ -9,6 +12,6 @@ const nextConfig = {
     });
     return cfg;
   },
-};
+});
 
 module.exports = nextConfig;

@@ -27,8 +27,8 @@ const Footer: NextPage = () => {
               <Image
                 src="/American-Legion-Emblem.png"
                 alt="Logo"
-                width={45}
-                height={45}
+                width={80}
+                height={80}
                 layout="fixed"
               />
               <Typography variant="p">
