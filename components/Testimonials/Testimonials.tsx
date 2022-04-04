@@ -28,12 +28,13 @@ const Testimonaials: NextPage<Props> = ({ simple }) => {
           }
           slave={
             <>
-              {officers.slice(0, length).map((officer: IOfficer) => (
+              {officers.slice(0, length).map((officer: IOfficer, i: number) => (
                 <TestimonialItem
                   name={officer.name}
                   quote={officer.description}
                   image="6.jpg"
                   title={officer.title}
+                  key={i}
                 />
               ))}
             </>
