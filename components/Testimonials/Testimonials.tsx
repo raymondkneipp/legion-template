@@ -7,6 +7,12 @@ interface Props {
   simple?: boolean;
 }
 
+interface IOfficer {
+  name: string;
+  description: string;
+  title: string;
+}
+
 const Testimonaials: NextPage<Props> = ({ simple }) => {
   let { officers } = attributes;
   let length = simple ? 3 : officers.length;
@@ -22,14 +28,12 @@ const Testimonaials: NextPage<Props> = ({ simple }) => {
           }
           slave={
             <>
-              {officers.slice(0, length).map((officer) => (
+              {officers.slice(0, length).map((officer: IOfficer) => (
                 <TestimonialItem
                   name={officer.name}
                   quote={officer.description}
                   image="6.jpg"
                   title={officer.title}
-                  phone={officer.phone}
-                  email={officer.email}
                 />
               ))}
             </>
