@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Container, Typography } from '../..';
@@ -15,13 +14,7 @@ const NavBar: NextPage = () => {
         <div className="flex items-center justify-between">
           <Link href="/">
             <a className="flex items-center space-x-2 rounded-xl">
-              <Image
-                src="/American-Legion-Emblem.png"
-                alt="Logo"
-                width="80"
-                height="80"
-                layout="fixed"
-              />
+              <h6>imgae</h6>
               <Typography variant="h4" color="primary" element="span">
                 Brand
               </Typography>

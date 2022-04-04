@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import {
   FaInstagram,
   FaFacebook,
@@ -24,13 +23,7 @@ const Footer: NextPage = () => {
         <Tall
           master={
             <>
-              <Image
-                src="/American-Legion-Emblem.png"
-                alt="Logo"
-                width={80}
-                height={80}
-                layout="fixed"
-              />
+              <h6>image</h6>
               <Typography variant="p">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
                 optio? Odio repudiandae ipsa ipsam non id iusto, incidunt ullam

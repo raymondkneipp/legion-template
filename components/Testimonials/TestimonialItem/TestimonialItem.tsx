@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 import { Typography } from '../..';
 import styles from './TestimonialItem.module.css';
@@ -15,12 +14,7 @@ const TestimonialItem: NextPage<Props> = ({ quote, name, image, stars }) => {
   return (
     <figure className={styles.testimonialItem__grid}>
       <div className={styles.testimonialItem__image}>
-        <Image
-          src={`/testimonials/${image}`}
-          layout="fill"
-          objectFit="cover"
-          alt={`${name}'s testimonial`}
-        />
+        <h6>iamge</h6>
       </div>
       <div className={styles.testimonialItem__header}>
         <Typography variant="p" element="figcaption">

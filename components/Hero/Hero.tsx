@@ -1,18 +1,10 @@
 import { NextPage } from 'next';
-import Image from 'next/image';
 import { Button, Container, Divider, Typography } from '..';
 import Centered from '../layout/Centered/Centered';
 
 const Hero: NextPage = () => {
   return (
     <section className="relative">
-      <Image
-        src="/hero.jpg"
-        alt="CHANGE ME"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top"
-      />
       <div className="relative bg-black bg-opacity-70">
         <Container>
           <Centered className="min-h-screen">
