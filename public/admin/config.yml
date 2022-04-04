@@ -9,14 +9,14 @@ collections:
     files:
       - label: 'Legion'
         name: 'legion'
-        file: 'legion.md'
+        file: 'content/legion.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Post', name: 'post', widget: 'number' }
           - { label: 'Tagline', name: 'tagline', widget: 'string' }
       - label: 'About'
         name: 'about'
-        file: 'about.md'
+        file: 'content/about.md'
         fields:
           - { label: 'Mission', name: 'mission', widget: 'string' }
           - { label: 'Vision', name: 'vision', widget: 'string' }
@@ -29,7 +29,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text' }
       - label: 'Contact'
         name: 'contact'
-        file: 'contact.md'
+        file: 'content/contact.md'
         fields:
           - { label: 'Email', name: 'email', widget: 'string' }
           - { label: 'Phone', name: 'phone', widget: 'string' }
