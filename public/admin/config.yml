@@ -12,7 +12,8 @@ collections:
         name: 'site'
         file: 'site.md'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Post', name: 'post', widget: 'number' }
 
   - name: 'pages'
     label: 'Pages'
