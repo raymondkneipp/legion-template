@@ -11,8 +11,8 @@ interface Props {
 const Button: NextPage<Props> = ({ to, secondary, lg, sm, children }) => {
   const base = 'inline-block text-center rounded-xl transition-colors';
   const theme = !secondary
-    ? 'bg-sky-700 text-white hover:bg-sky-500'
-    : 'bg-gray-200 text-sky-700 hover:bg-white';
+    ? 'bg-sky-800 text-white hover:bg-sky-600'
+    : 'bg-gray-200 text-sky-800 hover:bg-white';
   let size;
 
   switch (true) {

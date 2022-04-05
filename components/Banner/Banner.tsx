@@ -4,7 +4,7 @@ import { Container } from '..';
 
 const Banner: NextPage = ({ children }) => {
   return (
-    <aside className="bg-sky-700 text-center py-3">
+    <aside className="bg-sky-800 text-center py-3">
       <Container>
         <div className="flex items-center justify-center space-x-4">
           {children}

@@ -4,7 +4,7 @@ import { Button, Container, Divider, Typography, Centered } from '..';
 const CTA: NextPage = () => {
   return (
     <div className="relative">
-      <section className="bg-sky-700 relative">
+      <section className="bg-sky-800 relative">
         <Divider color="white" />
         <Container>
           <div className="py-36">

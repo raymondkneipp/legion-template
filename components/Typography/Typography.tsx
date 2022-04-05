@@ -38,7 +38,7 @@ const Typography: NextPage<Props> = ({
           textColor = 'text-white';
           break;
         case 'primary':
-          textColor = 'text-sky-700';
+          textColor = 'text-sky-800';
           break;
         case 'dark':
         default:
@@ -53,7 +53,7 @@ const Typography: NextPage<Props> = ({
           textColor = 'text-gray-200';
           break;
         case 'primary':
-          textColor = 'text-sky-700';
+          textColor = 'text-sky-800';
           break;
         case 'dark':
         default:

@@ -7,17 +7,13 @@ collections:
   - name: 'setup'
     label: 'Setup'
     files:
-      - label: 'Legion'
-        name: 'legion'
-        file: 'content/legion.md'
-        fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Post', name: 'post', widget: 'number' }
-          - { label: 'Tagline', name: 'tagline', widget: 'string' }
       - label: 'About'
         name: 'about'
         file: 'content/about.md'
         fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Post', name: 'post', widget: 'number' }
+          - { label: 'Tagline', name: 'tagline', widget: 'string' }
           - { label: 'Mission', name: 'mission', widget: 'string' }
           - { label: 'Vision', name: 'vision', widget: 'string' }
           - label: 'Post Officers'

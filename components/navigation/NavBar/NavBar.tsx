@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { Container, Typography } from '../..';
 import ActiveLink from './ActiveLink/ActiveLink';
 import MenuButton from './MenuButton/MenuButton';
-import { attributes, react as SiteSettings } from '../../../content/legion.md';
+import { attributes } from '../../../content/about.md';
 
 const NavBar: NextPage = () => {
   const [show, setShow] = useState(false);

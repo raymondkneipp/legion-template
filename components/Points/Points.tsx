@@ -4,7 +4,7 @@ import { Container, IconCard, Tile } from '..';
 
 const Points: NextPage = () => {
   return (
-    <section className="my-10 py-20 bg-sky-700">
+    <section className="my-10 py-20 bg-sky-800">
       <Container>
         <Tile>
           <IconCard

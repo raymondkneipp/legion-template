@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import { Button, Container, Divider, Typography } from '..';
 import Centered from '../layout/Centered/Centered';
-import { attributes } from '../../content/legion.md';
+import { attributes } from '../../content/about.md';
 
 const Hero: NextPage = () => {
   let { title, post, tagline } = attributes;

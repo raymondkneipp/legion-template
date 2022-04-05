@@ -16,7 +16,7 @@ import {
   Typography,
 } from '..';
 import PageLink from './PageLink/PageLink';
-import { attributes } from '../../content/legion.md';
+import { attributes } from '../../content/about.md';
 
 const Footer: NextPage = () => {
   let { tagline, title, post } = attributes;
