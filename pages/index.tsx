@@ -1,31 +1,34 @@
-import type { NextPage } from 'next';
-import { NextSeo } from 'next-seo';
-import Script from 'next/script';
+import type { NextPage } from "next";
+import { NextSeo } from "next-seo";
+import Script from "next/script";
 import {
-  CTA,
-  Hero,
-  Layout,
-  Services,
-  Testimonials,
-  Stats,
-  News,
-  Points,
-} from '../components';
+	CTA,
+	Hero,
+	Layout,
+	Services,
+	Testimonials,
+	Stats,
+	News,
+	Points,
+	Meeting,
+	Pricing,
+} from "../components";
 
 const Home: NextPage = () => {
-  return (
-    <Layout>
-      <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
-      <NextSeo title="Home" description="CHANGE ME" />
-      <Hero />
-      <Services simple />
-      <Stats />
-      <News />
-      <Points />
-      <Testimonials simple />
-      <CTA />
-    </Layout>
-  );
+	return (
+		<Layout>
+			<Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
+			<NextSeo title="Home" description="CHANGE ME" />
+			<Hero />
+			<Meeting />
+			<Pricing />
+			<Stats />
+			<News />
+			<Points />
+			<Testimonials simple />
+			<CTA />
+		</Layout>
+	);
 };
 
 export default Home;
