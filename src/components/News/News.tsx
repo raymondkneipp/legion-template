@@ -1,26 +1,43 @@
 import { NextPage } from "next";
 import { Card, Container, Typography, Wide } from "..";
 
-const News: NextPage<any> = ({ newsList }) => {
+interface Props {
+	simple?: boolean;
+	newsList: {
+		attributes: {
+			thumbnail: string;
+			date: string;
+			title: string;
+			content: string;
+		};
+	}[];
+}
+
+const News: NextPage<Props> = ({ simple = false, newsList }) => {
+	const length = simple ? 3 : newsList.length;
+	console.log({ length, newsList });
+
 	return (
 		<section className="my-36">
 			<Container>
 				<Wide
 					master={
 						<>
-							<Typography variant="h2">Read The Latest News</Typography>
-							<div className="max-w-2xl">
-								<Typography variant="lead">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit.
-									Inventore sit debitis facilis, corrupti eius hic quo tempora
-									repellat rem quibusdam velit non quod dicta
-								</Typography>
-							</div>
+							{simple ? (
+								<Typography variant="h2">Read The Latest News</Typography>
+							) : (
+								<Typography variant="h1">Read The Latest News</Typography>
+							)}
+							<Typography variant="lead">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Inventore sit debitis facilis, corrupti eius hic quo tempora
+								repellat rem quibusdam velit non quod dicta
+							</Typography>
 						</>
 					}
 					slave={
 						<>
-							{newsList.map((item: any, i: number) => {
+							{newsList.slice(0, length).map((item: any, i: number) => {
 								return (
 									<Card
 										key={i}
@@ -31,24 +48,6 @@ const News: NextPage<any> = ({ newsList }) => {
 									/>
 								);
 							})}
-							<Card
-								image="/extras/1.jpg"
-								date="6 May 22"
-								title="Lorem, ipsum dolor sit amet"
-								content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at nobis distinctio inventore qui consectetur veniam enim. Odio in eveniet voluptatibus iusto odit vel, asperiores voluptatem magni excepturi nam ipsam?"
-							/>
-							<Card
-								image="/extras/2.jpg"
-								date="6 May 22"
-								title="Lorem, ipsum dolor sit amet"
-								content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at nobis distinctio inventore qui consectetur veniam enim. Odio in eveniet voluptatibus iusto odit vel, asperiores voluptatem magni excepturi nam ipsam?"
-							/>
-							<Card
-								image="/extras/3.jpg"
-								date="6 May 22"
-								title="Lorem, ipsum dolor sit amet"
-								content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at nobis distinctio inventore qui consectetur veniam enim. Odio in eveniet voluptatibus iusto odit vel, asperiores voluptatem magni excepturi nam ipsam?"
-							/>
 						</>
 					}
 				/>
