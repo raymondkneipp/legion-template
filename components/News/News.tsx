@@ -24,7 +24,7 @@ const News: NextPage<any> = ({ newsList }) => {
 								return (
 									<Card
 										key={i}
-										image={item.attributes.thumbnail}
+										image={`/${item.attributes.thumbnail}`}
 										date={item.attributes.date}
 										title={item.attributes.title}
 										content={item.html}
