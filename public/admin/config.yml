@@ -17,6 +17,29 @@ collections:
         fields:
           - { label: "Post Number", name: "number", widget: "number" }
           - { label: "Post Name", name: "name", widget: "string" }
+          - label: "Theme Color"
+            name: "theme"
+            widget: "select"
+            options:
+              [
+                "red",
+                "orange",
+                "amber",
+                "yellow",
+                "lime",
+                "green",
+                "emerald",
+                "teal",
+                "cyan",
+                "sky",
+                "blue",
+                "indigo",
+                "violet",
+                "purple",
+                "fuchsia",
+                "pink",
+                "rose",
+              ]
       - label: "Address"
         name: "address"
         file: "content/address.md"
@@ -51,11 +74,12 @@ collections:
               required: true,
             }
           - {
+              # change to select options if needed
               label: "Hero Tint",
               name: "tint",
               widget: "number",
               required: true,
-            } # change to select options if needed
+            }
           - {
               label: "Hero Tagline",
               name: "tagline",
