@@ -3,7 +3,7 @@ info: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod te
 email: info@legionpost877.com
 phone: (987) 654-3210
 address: 123 Main St.
-city: New York
-state: Mainville
+city: Mainville
+state: Florida
 zip: 12345
 ---

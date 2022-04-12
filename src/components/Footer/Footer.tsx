@@ -18,6 +18,7 @@ import {
 import PageLink from "./PageLink/PageLink";
 import { attributes as about } from "../../../content/about.md";
 import { attributes as social } from "../../../content/social.md";
+import { attributes as contact } from "../../../content/contact.md";
 
 interface ISocial {
 	account: string;
@@ -25,7 +26,8 @@ interface ISocial {
 }
 
 const Footer: NextPage = () => {
-	let { tagline, title, post } = about;
+	let { title, post } = about;
+	let { address, city, state, zip } = contact;
 	let { socials } = social;
 	return (
 		<footer className="py-10">
@@ -40,7 +42,10 @@ const Footer: NextPage = () => {
 								height={80}
 								layout="fixed"
 							/>
-							<Typography variant="p">{tagline}</Typography>
+							<Typography variant="p">
+								{title} American Legion Post {post} located on {address} {city},{" "}
+								{state} {zip}
+							</Typography>
 						</>
 					}
 					slave={
