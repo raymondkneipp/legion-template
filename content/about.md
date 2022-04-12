@@ -1,8 +1,5 @@
 ---
-title: Anaïs
-post: 72
-tagline: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt.
+description: The American Legion was chartered and incorporated by Congress in 1919 as a patriotic veterans organization devoted to mutual helpfulness.
 mission: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

@@ -74,13 +74,6 @@ collections:
               required: true,
             }
           - {
-              # change to select options if needed
-              label: "Hero Tint",
-              name: "tint",
-              widget: "number",
-              required: true,
-            }
-          - {
               label: "Hero Tagline",
               name: "tagline",
               widget: "string",
