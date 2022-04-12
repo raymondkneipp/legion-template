@@ -22,7 +22,7 @@ const Meeting: NextPage = () => {
 				<Tall
 					master={
 						<>
-							<Typography variant="h2">Next Meeting</Typography>
+							<Typography variant="h2">Upcoming Meeting</Typography>
 							<Typography variant="lead">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
 								minus quod magni hic repudiandae expedita pariatur, quae enim

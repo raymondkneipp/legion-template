@@ -16,10 +16,17 @@ import {
 	Typography,
 } from "..";
 import PageLink from "./PageLink/PageLink";
-import { attributes } from "../../content/about.md";
+import { attributes as about } from "../../content/about.md";
+import { attributes as social } from "../../content/social.md";
+
+interface ISocial {
+	account: string;
+	link: string;
+}
 
 const Footer: NextPage = () => {
-	let { tagline, title, post } = attributes;
+	let { tagline, title, post } = about;
+	let { socials } = social;
 	return (
 		<footer className="py-10">
 			<Container>
@@ -64,24 +71,11 @@ const Footer: NextPage = () => {
 								</DescriptionListItem>
 							</DescriptionList>
 							<DescriptionList header="SOCIAL">
-								<DescriptionListItem icon={FaFacebook}>
-									<PageLink to="https://www.facebook.com/" page="Facebook" />
-								</DescriptionListItem>
-								<DescriptionListItem icon={FaInstagram}>
-									<PageLink
-										to="https://www.instagram.com/?hl=en"
-										page="Instagram"
-									/>
-								</DescriptionListItem>
-								<DescriptionListItem icon={FaTwitter}>
-									<PageLink to="https://twitter.com/?lang=en" page="Twitter" />
-								</DescriptionListItem>
-								<DescriptionListItem icon={FaLinkedin}>
-									<PageLink to="https://www.linkedin.com/" page="LinkedIn" />
-								</DescriptionListItem>
-								<DescriptionListItem icon={FaTiktok}>
-									<PageLink to="https://www.tiktok.com/en/" page="TikTok" />
-								</DescriptionListItem>
+								{socials.map((social: ISocial, i: number) => (
+									<DescriptionListItem key={i}>
+										<PageLink to={social.link} page={social.account} />
+									</DescriptionListItem>
+								))}
 							</DescriptionList>
 						</div>
 					}

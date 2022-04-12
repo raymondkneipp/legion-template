@@ -13,22 +13,31 @@ import {
 	Meeting,
 	Pricing,
 } from "../components";
+import { getNews } from "../utils";
 
-const Home: NextPage = () => {
+const Home: NextPage<any> = ({ newsList }) => {
 	return (
 		<Layout>
 			<Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
 			<NextSeo title="Home" description="CHANGE ME" />
 			<Hero />
+			<News newsList={newsList} />
 			<Meeting />
 			<Pricing />
 			<Stats />
-			<News />
 			<Points />
 			<Testimonials simple />
 			<CTA />
 		</Layout>
 	);
+};
+
+Home.getInitialProps = async () => {
+	const newsList = await getNews();
+
+	return {
+		newsList,
+	};
 };
 
 export default Home;

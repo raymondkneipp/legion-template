@@ -14,6 +14,7 @@ const Hero: NextPage = () => {
 				layout="fill"
 				objectFit="cover"
 				objectPosition="top"
+				priority={true}
 			/>
 			<div className="relative bg-black bg-opacity-70">
 				<Container>
