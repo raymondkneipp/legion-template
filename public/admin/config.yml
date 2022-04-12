@@ -50,7 +50,6 @@ collections:
           - { label: "Zip", name: "zip", widget: "number" }
       - label: "News"
         name: "news"
-        file: "content/news.md"
         folder: "content/news"
         create: true
         slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
