@@ -12,7 +12,7 @@ import {
 	FaList,
 } from "react-icons/fa";
 import { Button, Container, IconCard, Tall, Typography } from "..";
-import { attributes } from "../../content/contact.md";
+import { attributes } from "../../../content/contact.md";
 
 const Meeting: NextPage = () => {
 	const { address, city, state, zip } = attributes;

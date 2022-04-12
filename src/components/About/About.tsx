@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { FaBullseye, FaEye } from "react-icons/fa";
 import { Container, IconCard, Tall, Typography } from "..";
-import { attributes } from "../../content/about.md";
+import { attributes } from "../../../content/about.md";
 
 const About: NextPage = () => {
 	let { mission, vision, post, tagline } = attributes;

@@ -16,8 +16,8 @@ import {
 	Typography,
 } from "..";
 import PageLink from "./PageLink/PageLink";
-import { attributes as about } from "../../content/about.md";
-import { attributes as social } from "../../content/social.md";
+import { attributes as about } from "../../../content/about.md";
+import { attributes as social } from "../../../content/social.md";
 
 interface ISocial {
 	account: string;
