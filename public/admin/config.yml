@@ -69,8 +69,9 @@ collections:
         file: "content/affiliated.md"
         widget: list
         fields:
-          - name: "system_item"
-            label: "System Item"
+          - { label: "Title", name: "title", widget: "string" }
+          - name: "links"
+            label: "Links"
             widget: list
             fields:
               - { label: "Text", name: "text", widget: string }
