@@ -9,7 +9,7 @@ interface Props {
 const PageLink: NextPage<Props> = ({ to, page }) => {
 	return (
 		<Link href={to}>
-			<a className="rounded-sm hover:underline text-gray-600">{page}</a>
+			<a className="rounded hover:underline text-gray-600">{page}</a>
 		</Link>
 	);
 };

@@ -25,7 +25,7 @@ const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
 					<Typography variant="lead" color="primary">
 						{format(parseISO(date), "EEEE, MMMM do, yyyy")}
 					</Typography>
-					<div className="overflow-hidden rounded-sm">
+					<div className="overflow-hidden rounded">
 						<Image
 							src={`/${thumbnail}`}
 							width="400"

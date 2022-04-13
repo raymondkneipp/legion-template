@@ -17,8 +17,24 @@ collections:
         fields:
           - { label: "Post Number", name: "number", widget: "number" }
           - { label: "Post Name", name: "name", widget: "string" }
+      - label: "Theme"
+        name: "theme"
+        file: "content/theme.md"
+        fields:
+          - label: "Border Radius"
+            name: "radius"
+            widget: "select"
+            options:
+              - { label: "None", value: "rounded-none" }
+              - { label: "Small", value: "rounded-sm" }
+              - { label: "Default", value: "rounded" }
+              - { label: "Medium", value: "rounded-md" }
+              - { label: "Large", value: "rounded-lg" }
+              - { label: "XL", value: "rounded-xl" }
+              - { label: "XXL", value: "rounded-2xl" }
+              - { label: "XXXL", value: "rounded-3xl" }
           - label: "Theme Color"
-            name: "theme"
+            name: "color"
             widget: "select"
             options:
               [

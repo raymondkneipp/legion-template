@@ -1,0 +1,4 @@
+---
+color: sky
+radius: rounded
+---

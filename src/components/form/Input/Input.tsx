@@ -21,7 +21,7 @@ const Input: NextPage<Props> = ({ label, type = "text", register }) => {
 			<input
 				type={type}
 				id={label.replace(/\s/g, "")}
-				className="border border-gray-300 rounded-sm p-3"
+				className="border border-gray-300 rounded p-3"
 				required
 				{...register(label, { required: true })}
 			/>

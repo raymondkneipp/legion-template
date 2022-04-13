@@ -20,7 +20,7 @@ const Textarea: NextPage<Props> = ({ label, rows = 4, register }) => {
 			</Typography>
 			<textarea
 				id={label.replace(/\s/g, "")}
-				className="border border-gray-300 rounded-sm p-3 resize-y"
+				className="border border-gray-300 rounded p-3 resize-y"
 				required
 				rows={rows}
 				{...register(label, { required: true })}
