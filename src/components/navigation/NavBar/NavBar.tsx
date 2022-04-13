@@ -15,7 +15,7 @@ const NavBar: NextPage = () => {
 			<Container>
 				<div className="flex items-center justify-between">
 					<Link href="/">
-						<a className="flex items-center space-x-2 rounded-xl">
+						<a className="flex items-center space-x-2 rounded-sm">
 							<Image
 								src="/American-Legion-Emblem.png"
 								alt="Logo"

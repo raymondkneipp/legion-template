@@ -1,17 +1,17 @@
-import { NextPage } from 'next';
-import Link from 'next/link';
+import { NextPage } from "next";
+import Link from "next/link";
 
 interface Props {
-  to: string;
-  page: string;
+	to: string;
+	page: string;
 }
 
 const PageLink: NextPage<Props> = ({ to, page }) => {
-  return (
-    <Link href={to}>
-      <a className="rounded-xl hover:underline text-gray-600">{page}</a>
-    </Link>
-  );
+	return (
+		<Link href={to}>
+			<a className="rounded-sm hover:underline text-gray-600">{page}</a>
+		</Link>
+	);
 };
 
 export default PageLink;

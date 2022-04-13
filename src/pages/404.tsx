@@ -23,7 +23,7 @@ interface Props {
 const LinkItem: NextPage<Props> = ({ to, icon, page, description }) => {
 	return (
 		<Link href={to}>
-			<a className="flex items-center justify-between space-x-6 hover:bg-gray-100 py-2 px-4 rounded-xl transition-colors text-sky-800">
+			<a className="flex items-center justify-between space-x-6 hover:bg-gray-100 py-2 px-4 rounded-sm transition-colors text-sky-800">
 				{React.createElement(icon, { size: 30 })}
 				<div className="flex-1 text-left">
 					<Typography variant="h6" element="h3">

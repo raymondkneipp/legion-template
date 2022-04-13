@@ -25,7 +25,7 @@ const IconCard: NextPage<Props> = ({
 			center ? "items-center text-center" : "items-start"
 		}`}
 	>
-		<div className="bg-sky-700 rounded-xl inline-block p-4">
+		<div className="bg-sky-700 rounded-sm inline-block p-4">
 			{React.createElement(icon, { color: "white", size: "24" })}
 		</div>
 		<div className="space-y-2">
