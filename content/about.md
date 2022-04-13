@@ -5,40 +5,31 @@ vision: Veterans still serving Our Comrades, Our community, Our State, and Our N
 history: Since our charter in 1944, we have been welcoming Veterans from all branches of our Armed Forces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odio assumenda nulla vel alias, sequi corporis dignissimos sunt dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odio assumenda nulla vel alias, sequi corporis dignissimos sunt dolorum.
 officers:
   - title: Commander
-    name: Mark Spain
+    name: Lee Stegmann
+    image: img/1.jpg
     description: The Post Commander is the Chief Executive Officer of the Post.
       He/she presides over all meetings of the Post and has general supervision
       over all business and affairs of the Post.
-  - title: Commander
-    name: Mark Spain
-    description: The Post Commander is the Chief Executive Officer of the Post.
-      He/she presides over all meetings of the Post and has general supervision
-      over all business and affairs of the Post.
-  - title: Commander
-    name: Mark Spain
-    description: The Post Commander is the Chief Executive Officer of the Post.
-      He/she presides over all meetings of the Post and has general supervision
-      over all business and affairs of the Post.
-  - title: Commander
-    name: Mark Spain
-    description: The Post Commander is the Chief Executive Officer of the Post.
-      He/she presides over all meetings of the Post and has general supervision
-      over all business and affairs of the Post.
-  - title: Commander
-    name: Mark Spain
-    description: The Post Commander is the Chief Executive Officer of the Post.
-      He/she presides over all meetings of the Post and has general supervision
-      over all business and affairs of the Post.
-  - title: Commander
-    name: Mark Spain
-    description: The Post Commander is the Chief Executive Officer of the Post.
-      He/she presides over all meetings of the Post and has general supervision
-      over all business and affairs of the Post.
-  - title: Commander
-    name: Mark Spain
-    description: The Post Commander is the Chief Executive Officer of the Post.
-      He/she presides over all meetings of the Post and has general supervision
-      over all business and affairs of the Post.
+  - title: Membership Chairman
+    name: Bob Kamman
+    image: img/2.jpg
+    description: The 1 st Vice-Commander shall assume and discharge the duties of the office of Commander in the absence or disability of the Commander. He/she also chairs the Membership Committee.
+  - title: Post Activities Chairman
+    name: Kirk Minnich
+    image: img/3.jpg
+    description: The 2 nd Vice Commander assists the Commander with all duties. He/she should be interested in developing Post activities, and in the entertainment features which mark all meetings. The 2 nd Vice Commander also chairs the Post Activities Committee.
+  - title: Finance Officer
+    name: Randy Lindsey
+    image: img/4.jpg
+    description: The Finance Officer is responsible for the management and accounting of all Post funds. He/she makes all deposits, and writes all checks against Post funds. The Finance Officer also chairs the Post Finance Committee.
+  - title: Chaplain
+    name: Jerry Porter
+    image: img/5.jpg
+    description: The Post chaplain shall be charged with the spiritual welfare of the Post comrades and will offer divine but nonsectarian service in the event of dedications, funerals, public functions, etc.. He/she also chairs the VAVS Committee.
+  - title: Sergeant-at-Arms
+    name: Ralph Caskey
+    image: img/6.jpg
+    description: The Sergeant-At-Arms shall preserve order at meetings and shall perform such other duties as maybe from time to time assigned by the Post Executive Committee. He/she also chairs the Uniformed Ceremonies Committee
 faqDescription: Are you eligible? Here are a few frequently asked questions regarding American Legion eligibility. For any other eligibility questions, feel free to contact us.
 faq:
   - question: What are the eligibility dates for membership in The American Legion?

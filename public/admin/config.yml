@@ -115,6 +115,12 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+              - {
+                  label: "Picture",
+                  name: "image",
+                  widget: "image",
+                  required: true,
+                }
           - {
               label: "FAQ Description",
               name: "faqDescription",

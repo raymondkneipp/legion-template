@@ -11,6 +11,7 @@ interface IOfficer {
 	name: string;
 	description: string;
 	title: string;
+	image: string;
 }
 
 const Testimonaials: NextPage<Props> = ({ simple }) => {
@@ -32,7 +33,7 @@ const Testimonaials: NextPage<Props> = ({ simple }) => {
 								<TestimonialItem
 									name={officer.name}
 									quote={officer.description}
-									image="4.jpg"
+									image={`/${officer.image}`}
 									title={officer.title}
 									key={i}
 								/>
