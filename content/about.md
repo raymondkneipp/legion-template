@@ -1,17 +1,8 @@
 ---
 description: The American Legion was chartered and incorporated by Congress in 1919 as a patriotic veterans organization devoted to mutual helpfulness.
-mission: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-vision: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+mission: We are committed to the support of veterans, active duty military, their families and the township community.
+vision: Veterans still serving Our Comrades, Our community, Our State, and Our Nation
+history: Since our charter in 1944, we have been welcoming Veterans from all branches of our Armed Forces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odio assumenda nulla vel alias, sequi corporis dignissimos sunt dolorum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odio assumenda nulla vel alias, sequi corporis dignissimos sunt dolorum.
 officers:
   - title: Commander
     name: Mark Spain

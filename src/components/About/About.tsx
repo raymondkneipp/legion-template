@@ -1,11 +1,10 @@
 import { NextPage } from "next";
-import { FaBullseye, FaEye } from "react-icons/fa";
+import { FaBook, FaBullseye, FaEye } from "react-icons/fa";
 import { Container, IconCard, Tall, Typography } from "..";
-import { attributes } from "../../../content/about.md";
+import { attributes as about } from "../../../content/about.md";
+import { attributes as post } from "../../../content/post.md";
 
 const About: NextPage = () => {
-	let { mission, vision, post, tagline } = attributes;
-
 	return (
 		<section className="my-36">
 			<Container>
@@ -13,19 +12,30 @@ const About: NextPage = () => {
 					master={
 						<>
 							<Typography variant="h1">
-								We Are <span className="text-sky-800">Post {post}</span>
+								We Are <span className="text-sky-800">Post {post.number}</span>
 							</Typography>
-							<Typography variant="lead">{tagline}</Typography>
+							<Typography variant="lead">{about.description}</Typography>
 						</>
 					}
 					slave={
 						<>
-							<IconCard title="Our Vision" content={vision} icon={FaEye} />
+							<IconCard
+								title="Our Vision"
+								content={about.vision}
+								icon={FaEye}
+							/>
 							<IconCard
 								title="Our Mission"
-								content={mission}
+								content={about.mission}
 								icon={FaBullseye}
 							/>
+							<div className="sm:col-span-2">
+								<IconCard
+									title="Our History"
+									content={about.history}
+									icon={FaBook}
+								/>
+							</div>
 						</>
 					}
 				/>

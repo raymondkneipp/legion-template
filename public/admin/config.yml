@@ -96,8 +96,14 @@ collections:
               required: true,
             }
           - {
-              label: "mission",
+              label: "Mission",
               name: "mission",
+              widget: "string",
+              required: true,
+            }
+          - {
+              label: "history",
+              name: "history",
               widget: "string",
               required: true,
             }
