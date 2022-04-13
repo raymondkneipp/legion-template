@@ -22,7 +22,7 @@ const FAQ: NextPage = () => {
 					slave={
 						<>
 							{about.faq.map((item: IFAQ, i: number) => (
-								<FAQItem title={item.question} content={item.answer} />
+								<FAQItem key={i} title={item.question} content={item.answer} />
 							))}
 						</>
 					}
