@@ -27,7 +27,7 @@ const Hero: NextPage = () => {
 							{tagline}
 						</Typography>
 						<div className="gap-6 flex items-center flex-row flex-wrap justify-center">
-							<Button to="/join" lg>
+							<Button to="/apply" lg>
 								Become a Member
 							</Button>
 							<Button to="/contact" secondary lg>

@@ -16,7 +16,7 @@ const CTA: NextPage = () => {
 								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 								Voluptatum modi pariatur earum ducimus a, magnam similique,
 							</Typography>
-							<Button to="/join" secondary lg>
+							<Button to="/apply" secondary lg>
 								Become a Member
 							</Button>
 						</Centered>

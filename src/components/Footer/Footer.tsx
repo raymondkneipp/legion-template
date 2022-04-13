@@ -58,6 +58,9 @@ const Footer: NextPage = () => {
 									<PageLink to="/news" page="News" />
 								</DescriptionListItem>
 								<DescriptionListItem>
+									<PageLink to="/events" page="Events" />
+								</DescriptionListItem>
+								<DescriptionListItem>
 									<PageLink to="/contact" page="Contact" />
 								</DescriptionListItem>
 							</DescriptionList>
@@ -69,7 +72,7 @@ const Footer: NextPage = () => {
 									<PageLink to="/admin" page="Login" />
 								</DescriptionListItem>
 								<DescriptionListItem>
-									<PageLink to="/not-found" page="404" />
+									<PageLink to="/apply" page="Apply" />
 								</DescriptionListItem>
 							</DescriptionList>
 							<DescriptionList header="SOCIAL">
