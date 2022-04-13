@@ -11,7 +11,8 @@ import {
 	Textarea,
 	Typography,
 } from "..";
-import { attributes } from "../../../content/contact.md";
+import { attributes as contact } from "../../../content/contact.md";
+import { attributes as address } from "../../../content/address.md";
 
 interface IFormValues {
 	"Full Name": string;
@@ -20,7 +21,6 @@ interface IFormValues {
 }
 
 const ContactForm: NextPage = () => {
-	let { info, email, phone, address, city, state, zip } = attributes;
 	const { register, handleSubmit } = useForm<IFormValues>();
 
 	const onSubmit: SubmitHandler<IFormValues> = (data) => {
@@ -34,18 +34,18 @@ const ContactForm: NextPage = () => {
 					master={
 						<>
 							<Typography variant="h1">Contact Us</Typography>
-							<Typography variant="lead">{info}</Typography>
+							<Typography variant="lead">{contact.description}</Typography>
 
 							<DescriptionList header="OTHER WAYS TO REACH US">
 								<DescriptionListItem icon={FaPhone}>
-									{phone}
+									{contact.phone}
 								</DescriptionListItem>
 
 								<DescriptionListItem icon={FaEnvelope}>
-									{email}
+									{contact.email}
 								</DescriptionListItem>
 								<DescriptionListItem icon={FaMapMarkerAlt}>
-									{address} {city} {state} {zip}
+									{address.street} {address.city} {address.state} {address.zip}
 								</DescriptionListItem>
 							</DescriptionList>
 						</>
