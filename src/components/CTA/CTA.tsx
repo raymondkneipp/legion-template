@@ -13,8 +13,10 @@ const CTA: NextPage = () => {
 								Join Our Post Today!
 							</Typography>
 							<Typography variant="lead" color="light">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-								Voluptatum modi pariatur earum ducimus a, magnam similique,
+								If you have served at least one day of active military duty
+								since December 7, 1941 and were honorably discharged or you are
+								still serving active military duty honorably, you are eligible
+								to join.
 							</Typography>
 							<Button to="/apply" secondary lg>
 								Become a Member
