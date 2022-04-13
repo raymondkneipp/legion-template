@@ -67,15 +67,18 @@ collections:
       - label: "Affiliated Websites"
         name: "affiliated"
         file: "content/affiliated.md"
-        widget: list
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - name: "links"
-            label: "Links"
+          - name: "lists"
+            label: "Lists"
             widget: list
             fields:
-              - { label: "Text", name: "text", widget: string }
-              - { label: "Link", name: "link", widget: string }
+              - { label: "Title", name: "title", widget: string }
+              - label: "List"
+                name: "list"
+                widget: list
+                fields:
+                  - { label: "Text", name: "text", widget: string }
+                  - { label: "Link", name: "link", widget: string }
       - label: "Contact"
         name: "contact"
         file: "content/contact.md"
