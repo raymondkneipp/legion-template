@@ -15,7 +15,6 @@ interface Props {
 
 const News: NextPage<Props> = ({ simple = false, newsList }) => {
 	const length = simple ? 3 : newsList.length;
-	console.log({ length, newsList });
 
 	return (
 		<section className="my-36">
