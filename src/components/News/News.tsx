@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import { Card, Container, Typography, Wide } from "..";
+import { format, parseISO, formatISO } from "date-fns";
 
 interface Props {
 	simple?: boolean;
@@ -36,7 +37,10 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 									<Card
 										key={i}
 										image={`/${item.attributes.thumbnail}`}
-										date={item.attributes.date}
+										date={format(
+											parseISO(item.attributes.date),
+											"MMMM do yyyy"
+										)}
 										title={item.attributes.title}
 										content={item.html}
 									/>
