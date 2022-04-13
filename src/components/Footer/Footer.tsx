@@ -19,6 +19,7 @@ import PageLink from "./PageLink/PageLink";
 import { attributes as post } from "../../../content/post.md";
 import { attributes as address } from "../../../content/address.md";
 import { attributes as contact } from "../../../content/contact.md";
+import Centered from "../layout/Centered/Centered";
 
 interface ISocial {
 	account: string;
@@ -85,14 +86,15 @@ const Footer: NextPage = () => {
 						</div>
 					}
 				/>
-
-				<div className="space-x-1 flex items-center justify-center text-gray-600 pt-10">
-					<FaRegCopyright />
-					<Typography variant="p">
-						{new Date().getFullYear()} {post.name} American Legion Post{" "}
-						{post.number}
-					</Typography>
-				</div>
+				<Centered>
+					<span className="flex items-center space-x-1 text-gray-600 pt-10">
+						<FaRegCopyright />
+						<Typography variant="p">
+							{new Date().getFullYear()} {post.name} American Legion Post{" "}
+							{post.number}
+						</Typography>
+					</span>
+				</Centered>
 			</Container>
 		</footer>
 	);

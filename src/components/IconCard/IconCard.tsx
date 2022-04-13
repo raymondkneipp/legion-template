@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 import { IconType } from "react-icons";
 import { Typography } from "..";
+import { useTheme } from "../../store/ThemeContext";
 
 interface Props {
 	icon: IconType;
@@ -19,24 +20,28 @@ const IconCard: NextPage<Props> = ({
 	stack = false,
 	light = false,
 	center = false,
-}) => (
-	<article
-		className={`flex space-x-6 ${stack ? "flex-col space-x-0 space-y-6" : ""} ${
-			center ? "items-center text-center" : "items-start"
-		}`}
-	>
-		<div className="bg-sky-700 rounded inline-block p-4">
-			{React.createElement(icon, { color: "white", size: "24" })}
-		</div>
-		<div className="space-y-2">
-			<Typography variant="h3" color={light ? "light" : "primary"}>
-				{title}
-			</Typography>
-			<Typography variant="p" color={light ? "light" : "dark"}>
-				{content}
-			</Typography>
-		</div>
-	</article>
-);
+}) => {
+	const { color, radius } = useTheme();
+
+	return (
+		<article
+			className={`flex space-x-6 ${
+				stack ? "flex-col space-x-0 space-y-6" : ""
+			} ${center ? "items-center text-center" : "items-start"}`}
+		>
+			<div className={`bg-${color}-700 inline-block p-4 ${radius}`}>
+				{React.createElement(icon, { color: "white", size: "24" })}
+			</div>
+			<div className="space-y-2">
+				<Typography variant="h3" color={light ? "light" : "primary"}>
+					{title}
+				</Typography>
+				<Typography variant="p" color={light ? "light" : "dark"}>
+					{content}
+				</Typography>
+			</div>
+		</article>
+	);
+};
 
 export default IconCard;

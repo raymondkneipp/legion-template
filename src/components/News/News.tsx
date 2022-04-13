@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import { Card, Container, Typography, Wide } from "..";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
+import { useTheme } from "../../store/ThemeContext";
 
 interface Props {
 	simple?: boolean;
@@ -17,6 +18,7 @@ interface Props {
 
 const News: NextPage<Props> = ({ simple = false, newsList }) => {
 	const length = simple ? 3 : newsList.length;
+	const { radius } = useTheme();
 
 	return (
 		<section className="my-36">
@@ -36,7 +38,7 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 							{newsList.slice(0, length).map((item: any, i: number) => {
 								return (
 									<Link href={`/news/${item.slug}`} key={i}>
-										<a className="h-full block">
+										<a className={`h-full block ${radius}`}>
 											<Card
 												image={`/${item.attributes.thumbnail}`}
 												date={format(

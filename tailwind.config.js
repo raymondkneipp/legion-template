@@ -6,7 +6,13 @@ module.exports = {
 	safelist: [
 		"text-gray-100",
 		{
-			pattern: /(bg|text)-(red|green|blue)-(800|600)/,
+			pattern:
+				/(bg|text)-(red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple)-(600|700|800)/,
+			variants: ["hover"],
+		},
+		"rounded",
+		{
+			pattern: /rounded-(none|sm|md|lg|xl|2xl|3xl)/,
 		},
 	],
 	theme: {

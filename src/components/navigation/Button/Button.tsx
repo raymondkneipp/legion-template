@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
+import { useTheme } from "../../../store/ThemeContext";
 
 interface Props {
 	to: string;
@@ -9,11 +10,12 @@ interface Props {
 }
 
 const Button: NextPage<Props> = ({ to, secondary, lg, sm, children }) => {
-	const base =
-		"inline-block text-center rounded transition-colors inline-flex items-center space-x-2 justify-center";
+	const { color, radius } = useTheme();
+
+	const base = `inline-block text-center transition-colors inline-flex items-center space-x-2 justify-center ${radius}`;
 	const theme = !secondary
-		? `bg-sky-800 text-white hover:bg-sky-600`
-		: "bg-gray-200 text-sky-800 hover:bg-white";
+		? `bg-${color}-800 text-white hover:bg-${color}-600`
+		: `bg-gray-200 text-${color}-800 hover:bg-white`;
 	let size;
 
 	switch (true) {

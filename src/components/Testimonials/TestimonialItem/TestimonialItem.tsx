@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { Typography } from "../..";
+import { useTheme } from "../../../store/ThemeContext";
 import styles from "./TestimonialItem.module.css";
 
 interface Props {
@@ -12,9 +13,11 @@ interface Props {
 }
 
 const TestimonialItem: NextPage<Props> = ({ quote, name, image, title }) => {
+	const { radius } = useTheme();
+
 	return (
-		<figure className={styles.testimonialItem__grid}>
-			<div className={styles.testimonialItem__image}>
+		<figure className={`${styles.testimonialItem__grid} ${radius}`}>
+			<div className={`${styles.testimonialItem__image} ${radius}`}>
 				<Image
 					src={image}
 					layout="fill"

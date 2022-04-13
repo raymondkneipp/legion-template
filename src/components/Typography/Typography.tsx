@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
+import { useTheme } from "../../store/ThemeContext";
 
 type Variant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "lead";
 type Element = Variant | "span" | "figcaption" | "blockquote" | "label" | "dt";
@@ -21,6 +22,8 @@ const Typography: NextPage<Props> = ({
 	children,
 	...rest
 }) => {
+	const { color: c } = useTheme();
+
 	let styles: string;
 	let textColor: string;
 	let size: string;
@@ -38,7 +41,7 @@ const Typography: NextPage<Props> = ({
 					textColor = "text-white";
 					break;
 				case "primary":
-					textColor = "text-sky-800";
+					textColor = `text-${c}-800`;
 					break;
 				case "dark":
 				default:
@@ -53,7 +56,7 @@ const Typography: NextPage<Props> = ({
 					textColor = "text-gray-200";
 					break;
 				case "primary":
-					textColor = "text-sky-800";
+					textColor = `text-${c}-800`;
 					break;
 				case "dark":
 				default:

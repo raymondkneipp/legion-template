@@ -1,10 +1,13 @@
 import { NextPage } from "next";
 import { Button, Container, Divider, Typography, Centered } from "..";
+import { useTheme } from "../../store/ThemeContext";
 
 const CTA: NextPage = () => {
+	const { color } = useTheme();
+
 	return (
 		<div className="relative">
-			<section className="bg-sky-800 relative">
+			<section className={`bg-${color}-800 relative`}>
 				<Divider color="white" />
 				<Container>
 					<div className="py-36">

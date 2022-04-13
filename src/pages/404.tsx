@@ -12,6 +12,7 @@ import {
 	FaPhone,
 } from "react-icons/fa";
 import { Centered, Container, Typography } from "../components";
+import { useTheme } from "../store/ThemeContext";
 
 interface Props {
 	to: string;
@@ -21,9 +22,13 @@ interface Props {
 }
 
 const LinkItem: NextPage<Props> = ({ to, icon, page, description }) => {
+	const { color, radius } = useTheme();
+
 	return (
 		<Link href={to}>
-			<a className="flex items-center justify-between space-x-6 hover:bg-gray-100 py-2 px-4 rounded transition-colors text-sky-800">
+			<a
+				className={`flex items-center justify-between space-x-6 hover:bg-gray-100 py-2 px-4 ${radius} transition-colors text-${color}-800`}
+			>
 				{React.createElement(icon, { size: 30 })}
 				<div className="flex-1 text-left">
 					<Typography variant="h6" element="h3">

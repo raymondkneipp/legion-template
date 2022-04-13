@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import { UseFormRegister } from "react-hook-form";
 import { Typography } from "../..";
+import { useTheme } from "../../../store/ThemeContext";
 
 interface Props {
 	label: string;
@@ -9,6 +10,8 @@ interface Props {
 }
 
 const Input: NextPage<Props> = ({ label, type = "text", register }) => {
+	const { radius } = useTheme();
+
 	return (
 		<div className="flex flex-col space-y-1">
 			<Typography
@@ -21,7 +24,7 @@ const Input: NextPage<Props> = ({ label, type = "text", register }) => {
 			<input
 				type={type}
 				id={label.replace(/\s/g, "")}
-				className="border border-gray-300 rounded p-3"
+				className={`border border-gray-300 p-3 ${radius}`}
 				required
 				{...register(label, { required: true })}
 			/>

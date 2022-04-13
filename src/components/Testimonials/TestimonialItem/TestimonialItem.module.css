@@ -3,11 +3,11 @@
 		"image"
 		"header"
 		"quote";
-	@apply bg-gray-100 rounded p-6 grid gap-6;
+	@apply bg-gray-100 p-6 grid gap-6;
 }
 
 .testimonialItem__image {
-	@apply rounded overflow-hidden relative h-48 w-full;
+	@apply overflow-hidden relative h-48 w-full;
 	grid-area: "image";
 }
 

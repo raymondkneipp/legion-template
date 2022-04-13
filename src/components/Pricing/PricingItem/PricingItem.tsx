@@ -6,6 +6,7 @@ import {
 	DescriptionList,
 	DescriptionListItem,
 } from "../..";
+import { useTheme } from "../../../store/ThemeContext";
 
 interface Props {
 	name: string;
@@ -15,8 +16,12 @@ interface Props {
 }
 
 const PricingItem: NextPage<Props> = ({ name, description, price, perks }) => {
+	const { radius } = useTheme();
+
 	return (
-		<div className="flex flex-col items-stretch space-y-6 bg-gray-100 p-6 rounded">
+		<div
+			className={`flex flex-col items-stretch space-y-6 bg-gray-100 p-6 ${radius}`}
+		>
 			<div className="space-y-2">
 				<Typography variant="h3">{name}</Typography>
 				<Typography variant="p">{description}</Typography>

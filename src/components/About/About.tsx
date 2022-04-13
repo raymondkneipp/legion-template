@@ -3,8 +3,11 @@ import { FaBook, FaBullseye, FaEye } from "react-icons/fa";
 import { Container, IconCard, Tall, Typography } from "..";
 import { attributes as about } from "../../../content/about.md";
 import { attributes as post } from "../../../content/post.md";
+import { useTheme } from "../../store/ThemeContext";
 
 const About: NextPage = () => {
+	const { color } = useTheme();
+
 	return (
 		<section className="my-36">
 			<Container>
@@ -12,7 +15,10 @@ const About: NextPage = () => {
 					master={
 						<>
 							<Typography variant="h1">
-								We Are <span className="text-sky-800">Post {post.number}</span>
+								We Are{" "}
+								<Typography variant="h1" element="span" color="primary">
+									Post {post.number}
+								</Typography>
 							</Typography>
 							<Typography variant="lead">{about.description}</Typography>
 						</>

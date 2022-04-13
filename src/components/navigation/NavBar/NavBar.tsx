@@ -6,16 +6,18 @@ import { Container, Typography } from "../..";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
 import { attributes as post } from "../../../../content/post.md";
+import { useTheme } from "../../../store/ThemeContext";
 
 const NavBar: NextPage = () => {
 	const [show, setShow] = useState(false);
+	const { radius } = useTheme();
 
 	return (
 		<nav className="bg-white border-b border-gray-300 py-2 sticky top-0 left-0 right-0 z-50">
 			<Container>
 				<div className="flex items-center justify-between">
 					<Link href="/">
-						<a className="flex items-center space-x-2 rounded">
+						<a className={`flex items-center space-x-2 ${radius}`}>
 							<Image
 								src="/American-Legion-Emblem.png"
 								alt="Logo"

@@ -1,4 +1,4 @@
 ---
-color: sky
-radius: rounded
+color: red
+radius: rounded-3xl
 ---
