@@ -13,10 +13,8 @@ const CTA: NextPage = () => {
 								Join Our Post Today!
 							</Typography>
 							<Typography variant="lead" color="light">
-								If you have served at least one day of active military duty
-								since December 7, 1941 and were honorably discharged or you are
-								still serving active military duty honorably, you are eligible
-								to join.
+								Join our post and be a part of the largest veteran organization
+								reaching over two million members.
 							</Typography>
 							<Button to="/apply" secondary lg>
 								Become a Member
@@ -25,7 +23,7 @@ const CTA: NextPage = () => {
 					</div>
 				</Container>
 			</section>
-			<Divider color="white" bottom flip />
+			<Divider color="gray-100" bottom flip />
 		</div>
 	);
 };

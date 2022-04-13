@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import { Card, Container, Typography, Wide } from "..";
-import { format, parseISO, formatISO } from "date-fns";
+import { format, parseISO } from "date-fns";
+import Link from "next/link";
 
 interface Props {
 	simple?: boolean;
@@ -34,16 +35,19 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 						<>
 							{newsList.slice(0, length).map((item: any, i: number) => {
 								return (
-									<Card
-										key={i}
-										image={`/${item.attributes.thumbnail}`}
-										date={format(
-											parseISO(item.attributes.date),
-											"MMMM do yyyy"
-										)}
-										title={item.attributes.title}
-										content={item.html}
-									/>
+									<Link href={`/news/${item.slug}`} key={i}>
+										<a className="h-full block">
+											<Card
+												image={`/${item.attributes.thumbnail}`}
+												date={format(
+													parseISO(item.attributes.date),
+													"MMMM do yyyy"
+												)}
+												title={item.attributes.title}
+												content={item.html}
+											/>
+										</a>
+									</Link>
 								);
 							})}
 						</>

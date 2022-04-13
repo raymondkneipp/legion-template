@@ -34,6 +34,7 @@ export { default as News } from "./News/News";
 export { default as Points } from "./Points/Points";
 export { default as Card } from "./Card/Card";
 export { default as Meeting } from "./Meeting/Meeting";
+export { default as Post } from "./Post/Post";
 
 // List Components and List Items Components
 export { default as List } from "./list/List/List";

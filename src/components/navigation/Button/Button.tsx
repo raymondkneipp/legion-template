@@ -9,9 +9,10 @@ interface Props {
 }
 
 const Button: NextPage<Props> = ({ to, secondary, lg, sm, children }) => {
-	const base = "inline-block text-center rounded-sm transition-colors";
+	const base =
+		"inline-block text-center rounded-sm transition-colors inline-flex items-center space-x-2 justify-center";
 	const theme = !secondary
-		? "bg-sky-800 text-white hover:bg-sky-600"
+		? `bg-sky-800 text-white hover:bg-sky-600`
 		: "bg-gray-200 text-sky-800 hover:bg-white";
 	let size;
 

@@ -67,7 +67,7 @@ const Typography: NextPage<Props> = ({
 	switch (variant) {
 		case "h1":
 			size =
-				"leading-normal sm:leading-normal md:leading-normal lg:leading-normal text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
+				"leading-normal sm:leading-normal md:leading-normal lg:leading-snug text-2xl sm:text-3xl md:text-4xl lg:text-5xl";
 			break;
 		case "h2":
 			size = "text-2xl sm:text-3xl md:text-3xl lg:text-4xl";

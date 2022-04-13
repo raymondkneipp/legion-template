@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Card: NextPage<Props> = ({ image, date, title, content }) => (
-	<div className="rounded-sm shadow-md flex flex-col">
+	<div className="rounded-sm shadow-md flex flex-col h-full">
 		<div className="h-60 relative rounded-sm overflow-hidden">
 			<Image src={image} alt={title} layout="fill" objectFit="cover" />
 		</div>

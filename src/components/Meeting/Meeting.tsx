@@ -1,17 +1,6 @@
 import { NextPage } from "next";
-import {
-	FaBullhorn,
-	FaPencilAlt,
-	FaGlobe,
-	FaSearch,
-	FaShoppingCart,
-	FaVectorSquare,
-	FaMapMarkerAlt,
-	FaCalendar,
-	FaClock,
-	FaList,
-} from "react-icons/fa";
-import { Button, Container, IconCard, Tall, Typography } from "..";
+import { FaMapMarkerAlt, FaCalendar, FaClock, FaList } from "react-icons/fa";
+import { Container, IconCard, Tall, Typography } from "..";
 import { attributes as address } from "../../../content/address.md";
 
 const Meeting: NextPage = () => {

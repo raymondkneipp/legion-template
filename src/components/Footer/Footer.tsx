@@ -27,7 +27,7 @@ interface ISocial {
 
 const Footer: NextPage = () => {
 	return (
-		<footer className="py-10">
+		<footer className="py-10 bg-gray-100">
 			<Container>
 				<Tall
 					master={
