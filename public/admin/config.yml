@@ -73,8 +73,8 @@ collections:
             widget: list
             fields:
               - { label: "Title", name: "title", widget: string }
-              - label: "List"
-                name: "list"
+              - label: "Links"
+                name: "links"
                 widget: list
                 fields:
                   - { label: "Text", name: "text", widget: string }
