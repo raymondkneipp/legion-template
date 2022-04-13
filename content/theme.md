@@ -1,4 +1,4 @@
 ---
-radius: rounded-3xl
+radius: rounded-xl
 color: violet
 ---
