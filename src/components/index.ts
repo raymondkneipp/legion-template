@@ -1,6 +1,7 @@
 // Navigation Components
 export { default as NavBar } from "./navigation/NavBar/NavBar";
 export { default as Button } from "./navigation/Button/Button";
+export { default as PageLink } from "./navigation/PageLink/PageLink";
 
 // Form Components
 export { default as Input } from "./form/Input/Input";

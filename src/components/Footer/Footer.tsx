@@ -1,25 +1,18 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import {
-	FaInstagram,
-	FaFacebook,
-	FaTwitter,
-	FaLinkedin,
-	FaTiktok,
-	FaRegCopyright,
-} from "react-icons/fa";
+import { FaRegCopyright } from "react-icons/fa";
 import {
 	Container,
 	DescriptionList,
 	DescriptionListItem,
 	Tall,
 	Typography,
+	PageLink,
+	Centered,
 } from "..";
-import PageLink from "./PageLink/PageLink";
 import { attributes as post } from "../../../content/post.md";
 import { attributes as address } from "../../../content/address.md";
 import { attributes as contact } from "../../../content/contact.md";
-import Centered from "../layout/Centered/Centered";
 
 interface ISocial {
 	account: string;
@@ -67,7 +60,7 @@ const Footer: NextPage = () => {
 							</DescriptionList>
 							<DescriptionList header="OTHER">
 								<DescriptionListItem>
-									<PageLink to="/links" page="Affiliated Websites" />
+									<PageLink to="/affiliated" page="Affiliated Websites" />
 								</DescriptionListItem>
 								<DescriptionListItem>
 									<PageLink to="/admin" page="Login" />

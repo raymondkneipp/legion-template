@@ -64,6 +64,17 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - label: "Affiliated Websites"
+        name: "affiliated"
+        file: "content/affiliated.md"
+        widget: list
+        fields:
+          - name: "system_item"
+            label: "System Item"
+            widget: list
+            fields:
+              - { label: "Text", name: "text", widget: string }
+              - { label: "Link", name: "link", widget: string }
       - label: "Contact"
         name: "contact"
         file: "content/contact.md"
