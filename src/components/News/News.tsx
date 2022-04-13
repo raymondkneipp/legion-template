@@ -28,11 +28,6 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 							) : (
 								<Typography variant="h1">Read The Latest News</Typography>
 							)}
-							<Typography variant="lead">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Inventore sit debitis facilis, corrupti eius hic quo tempora
-								repellat rem quibusdam velit non quod dicta
-							</Typography>
 						</>
 					}
 					slave={

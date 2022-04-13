@@ -12,10 +12,10 @@ import {
 	FaList,
 } from "react-icons/fa";
 import { Button, Container, IconCard, Tall, Typography } from "..";
-import { attributes } from "../../../content/contact.md";
+import { attributes as address } from "../../../content/address.md";
 
 const Meeting: NextPage = () => {
-	const { address, city, state, zip } = attributes;
+	const { street, city, state, zip } = address;
 	return (
 		<section className="my-36">
 			<Container>
@@ -34,7 +34,7 @@ const Meeting: NextPage = () => {
 						<>
 							<IconCard
 								title="Location"
-								content={`${address} ${city}, ${state} ${zip}`}
+								content={`${street} ${city}, ${state} ${zip}`}
 								icon={FaMapMarkerAlt}
 							/>
 							<IconCard

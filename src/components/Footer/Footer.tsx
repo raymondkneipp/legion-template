@@ -16,8 +16,8 @@ import {
 	Typography,
 } from "..";
 import PageLink from "./PageLink/PageLink";
-import { attributes as about } from "../../../content/about.md";
-import { attributes as social } from "../../../content/social.md";
+import { attributes as post } from "../../../content/post.md";
+import { attributes as address } from "../../../content/address.md";
 import { attributes as contact } from "../../../content/contact.md";
 
 interface ISocial {
@@ -26,9 +26,6 @@ interface ISocial {
 }
 
 const Footer: NextPage = () => {
-	let { title, post } = about;
-	let { address, city, state, zip } = contact;
-	let { socials } = social;
 	return (
 		<footer className="py-10">
 			<Container>
@@ -43,8 +40,8 @@ const Footer: NextPage = () => {
 								layout="fixed"
 							/>
 							<Typography variant="p">
-								{title} American Legion Post {post} located on {address} {city},{" "}
-								{state} {zip}
+								{post.name} American Legion Post {post.number} located on{" "}
+								{address.street} {address.city}, {address.state} {address.zip}
 							</Typography>
 						</>
 					}
@@ -76,7 +73,7 @@ const Footer: NextPage = () => {
 								</DescriptionListItem>
 							</DescriptionList>
 							<DescriptionList header="SOCIAL">
-								{socials.map((social: ISocial, i: number) => (
+								{contact.socials.map((social: ISocial, i: number) => (
 									<DescriptionListItem key={i}>
 										<PageLink to={social.link} page={social.account} />
 									</DescriptionListItem>
@@ -89,7 +86,8 @@ const Footer: NextPage = () => {
 				<div className="space-x-1 flex items-center justify-center text-gray-600 pt-10">
 					<FaRegCopyright />
 					<Typography variant="p">
-						{new Date().getFullYear()} {title} American Legion Post {post}
+						{new Date().getFullYear()} {post.name} American Legion Post{" "}
+						{post.number}
 					</Typography>
 				</div>
 			</Container>

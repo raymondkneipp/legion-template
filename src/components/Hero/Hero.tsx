@@ -2,14 +2,15 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { Button, Container, Divider, Typography } from "..";
 import Centered from "../layout/Centered/Centered";
-import { attributes } from "../../../content/about.md";
+import { attributes as home } from "../../../content/home.md";
+import { attributes as post } from "../../../content/post.md";
 
 const Hero: NextPage = () => {
-	let { title, post, tagline } = attributes;
+	let { image, tagline } = home;
 	return (
 		<section className="relative">
 			<Image
-				src="/hero.jpg"
+				src={`/${image}`}
 				alt="CHANGE ME"
 				layout="fill"
 				objectFit="cover"
@@ -20,7 +21,7 @@ const Hero: NextPage = () => {
 				<Container>
 					<Centered className="min-h-screen">
 						<Typography variant="h1" color="light">
-							Welcome to {title} American Legion Post {post}
+							Welcome to {post.name} American Legion Post {post.number}
 						</Typography>
 						<Typography variant="lead" color="light">
 							{tagline}

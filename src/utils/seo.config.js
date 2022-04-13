@@ -1,7 +1,7 @@
-import { attributes } from "./../../content/about.md";
+import { attributes as post } from "./../../content/post.md";
 
 export default {
-	titleTemplate: `%s | ${attributes.title} American Legion Post ${attributes.post}`,
+	titleTemplate: `%s | ${post.name} American Legion Post ${post.number}`,
 	twitter: {
 		handle: "@handle",
 		site: "@site",

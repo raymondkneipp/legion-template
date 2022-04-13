@@ -5,11 +5,10 @@ import { useState } from "react";
 import { Container, Typography } from "../..";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
-import { attributes } from "../../../../content/about.md";
+import { attributes as post } from "../../../../content/post.md";
 
 const NavBar: NextPage = () => {
 	const [show, setShow] = useState(false);
-	let { post } = attributes;
 
 	return (
 		<nav className="bg-white border-b border-gray-300 py-2 sticky top-0 left-0 right-0 z-50">
@@ -25,7 +24,7 @@ const NavBar: NextPage = () => {
 								layout="fixed"
 							/>
 							<Typography variant="h4" color="primary" element="span">
-								Post {post}
+								Post {post.number}
 							</Typography>
 						</a>
 					</Link>

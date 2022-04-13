@@ -23,8 +23,8 @@ const Home: NextPage<any> = ({ newsList }) => {
 			<Hero />
 			<News newsList={newsList} simple />
 			<Meeting />
-			<Pricing />
 			<Stats />
+			<Pricing />
 			<Points />
 			<Testimonials simple />
 			<CTA />
