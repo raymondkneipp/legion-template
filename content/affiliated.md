@@ -1,6 +1,12 @@
 ---
 description: Links to other websites associated with The American Legion.
 lists:
+  - title: Veteran Programs and Services
+    links:
+      - text: Department of Veterans Affairs
+        link: https://www.va.gov
+      - text: Disabled American Veterans
+        link: https://www.dav.org
   - title: Military Branches
     links:
       - text: The United States Army
@@ -13,6 +19,8 @@ lists:
         link: https://www.af.mil
       - text: The United States Coast Guard
         link: https://www.uscg.mil
+      - link: https://www.defense.gov
+        text: The Pentagon
   - title: Military Academies
     links:
       - text: United State Military Academy
@@ -35,4 +43,6 @@ lists:
         text: The United States Senate
       - link: https://www.house.gov
         text: The United States House Of Representatives
+      - text: "The United State Supreme Court: judiciary & U. S. Courts"
+        link: https://www.uscourts.gov
 ---
