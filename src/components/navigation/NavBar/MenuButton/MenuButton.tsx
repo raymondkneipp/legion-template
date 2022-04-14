@@ -16,6 +16,7 @@ const MenuButton: NextPage<Props> = ({ show, setShow }) => {
 			type="button"
 			onClick={() => setShow(!show)}
 			className={`p-3 hover:bg-gray-200 transition-colors block md:hidden ${radius}`}
+			aria-label="menu"
 		>
 			{show ? <FaTimes size={20} /> : <FaBars size={20} />}
 		</button>
