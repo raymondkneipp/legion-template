@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import { FaRegCopyright } from "react-icons/fa";
 import {
 	Container,
@@ -8,6 +7,7 @@ import {
 	Tall,
 	Typography,
 	PageLink,
+	Logo,
 } from "@components/index";
 import { attributes as post } from "@content/post.md";
 import { attributes as address } from "@content/address.md";
@@ -25,13 +25,7 @@ const Footer: NextPage = () => {
 				<Tall
 					master={
 						<>
-							<Image
-								src="/img/American-Legion-Emblem.png"
-								alt="Logo"
-								width={80}
-								height={80}
-								layout="fixed"
-							/>
+							<Logo />
 							<Typography variant="p">
 								{post.name} American Legion Post {post.number} located on{" "}
 								{address.street} {address.city}, {address.state} {address.zip}

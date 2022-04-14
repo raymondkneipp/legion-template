@@ -35,6 +35,7 @@ export { default as Points } from "./Points/Points";
 export { default as Card } from "./Card/Card";
 export { default as Meeting } from "./Meeting/Meeting";
 export { default as Post } from "./Post/Post";
+export { default as Logo } from "./Logo/Logo";
 
 // List Components and List Items Components
 export { default as List } from "./list/List/List";

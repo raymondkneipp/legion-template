@@ -1,8 +1,7 @@
 import { NextPage } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Container, Typography } from "@components/index";
+import { Container, Typography, Logo } from "@components/index";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
 import { attributes as post } from "@content/post.md";
@@ -18,13 +17,7 @@ const NavBar: NextPage = () => {
 				<div className="flex items-center justify-between">
 					<Link href="/">
 						<a className={`flex items-center space-x-2 ${radius}`}>
-							<Image
-								src="/img/American-Legion-Emblem.png"
-								alt="Logo"
-								width="80"
-								height="80"
-								layout="fixed"
-							/>
+							<Logo />
 							<Typography variant="h4" color="primary" element="span">
 								Post {post.number}
 							</Typography>
