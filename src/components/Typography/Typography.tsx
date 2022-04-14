@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import { useTheme } from "store/ThemeContext";
+import { useTheme } from "../../store/ThemeContext";
 
 type Variant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "lead";
 type Element = Variant | "span" | "figcaption" | "blockquote" | "label" | "dt";

@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IconType } from "react-icons";
@@ -11,8 +10,8 @@ import {
 	FaHome,
 	FaPhone,
 } from "react-icons/fa";
-import { Centered, Container, Typography } from "components/index";
-import { useTheme } from "store/ThemeContext";
+import { Centered, Container, Logo, Typography } from "../components/index";
+import { useTheme } from "../store/ThemeContext";
 
 interface Props {
 	to: string;
@@ -48,13 +47,7 @@ const Custom404: NextPage = () => {
 			<NextSeo title="404 Page Not Found" description="CHANGE ME" />
 			<Centered className="min-h-screen">
 				<div className="flex flex-col space-y-2 items-center justify-center">
-					<Image
-						src="/American-Legion-Emblem.png"
-						width="100"
-						height="100"
-						layout="intrinsic"
-						alt="Logo"
-					/>
+					<Logo />
 					<Typography color="primary" variant="h6" element="h1">
 						404 ERROR
 					</Typography>

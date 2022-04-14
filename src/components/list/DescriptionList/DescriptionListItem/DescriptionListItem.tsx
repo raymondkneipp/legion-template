@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
 import { IconType } from "react-icons";
-import { Typography } from "components/index";
+import { Typography } from "../../../../components/index";
 
 interface Props {
 	icon?: IconType;

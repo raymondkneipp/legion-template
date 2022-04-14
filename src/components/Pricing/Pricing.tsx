@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Container, Typography, Wide } from "components/index";
+import { Container, Typography, Wide } from "../../components/index";
 import PricingItem from "./PricingItem/PricingItem";
 
 const Pricing: NextPage = () => {

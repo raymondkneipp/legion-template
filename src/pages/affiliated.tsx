@@ -8,8 +8,8 @@ import {
 	PageLink,
 	Typography,
 	Wide,
-} from "components/index";
-import { attributes as affiliated } from "content/affiliated.md";
+} from "../components/index";
+import { attributes as affiliated } from "../../content/affiliated.md";
 
 const AffiliatedPage: NextPage = () => {
 	return (

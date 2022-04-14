@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { useTheme } from "store/ThemeContext";
+import { useTheme } from "../../../store/ThemeContext";
 
 const Submit: NextPage = ({ children }) => {
 	const { color, radius } = useTheme();

@@ -5,8 +5,8 @@ import {
 	Divider,
 	Typography,
 	Centered,
-} from "components/index";
-import { useTheme } from "store/ThemeContext";
+} from "../../components/index";
+import { useTheme } from "../../store/ThemeContext";
 
 const CTA: NextPage = () => {
 	const { color } = useTheme();

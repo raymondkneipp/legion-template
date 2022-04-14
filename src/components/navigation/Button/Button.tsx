@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { useTheme } from "store/ThemeContext";
+import { useTheme } from "../../../store/ThemeContext";
 
 interface Props {
 	to: string;

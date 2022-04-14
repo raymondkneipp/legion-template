@@ -16,3 +16,4 @@
 - section spacing component
 - logo component
 - better post not found page
+- add alias

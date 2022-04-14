@@ -1,10 +1,10 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
-import SEO from "utils/seo.config";
+import SEO from "../utils/seo.config";
 import { useState } from "react";
-import { ThemeContext } from "store/ThemeContext";
-import { attributes as theme } from "content/theme.md";
+import { ThemeContext } from "../store/ThemeContext";
+import { attributes as theme } from "../../content/theme.md";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [color] = useState(theme.color);

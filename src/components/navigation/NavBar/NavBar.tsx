@@ -1,11 +1,11 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import { useState } from "react";
-import { Container, Typography, Logo } from "components/index";
+import { Container, Typography, Logo } from "../../../components/index";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
-import { attributes as post } from "content/post.md";
-import { useTheme } from "store/ThemeContext";
+import { attributes as post } from "../../../../content/post.md";
+import { useTheme } from "../../../store/ThemeContext";
 
 const NavBar: NextPage = () => {
 	const [show, setShow] = useState(false);

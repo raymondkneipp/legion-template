@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import { CTA, Layout, News } from "components/index";
-import { getNews } from "utils/index";
+import { CTA, Layout, News } from "../../components/index";
+import { getNews } from "../../utils/index";
 
 const NewsPage: NextPage<any> = ({ newsList }) => {
 	return (

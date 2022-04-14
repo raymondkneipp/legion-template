@@ -1,9 +1,14 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { Button, Container, Divider, Typography } from "components/index";
-import Centered from "../layout/Centered/Centered";
-import { attributes as home } from "content/home.md";
-import { attributes as post } from "content/post.md";
+import {
+	Button,
+	Container,
+	Divider,
+	Typography,
+	Centered,
+} from "../../components/index";
+import { attributes as home } from "../../../content/home.md";
+import { attributes as post } from "../../../content/post.md";
 
 const Hero: NextPage = () => {
 	return (
