@@ -1,4 +1,4 @@
 ---
 radius: rounded-xl
-color: violet
+color: sky
 ---
