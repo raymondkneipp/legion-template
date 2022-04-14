@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Container, Divider, Typography, Centered } from "@components/index";
+import { Container, Divider, Typography, Centered } from "components/index";
 import StatsItem from "./StatsItem/StatsItem";
 
 const Stats: NextPage = () => {

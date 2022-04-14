@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { Banner, Footer, NavBar, Typography } from "@components/index";
-import { attributes as banner } from "@content/banner.md";
+import { Banner, Footer, NavBar, Typography } from "components/index";
+import { attributes as banner } from "content/banner.md";
 
 const Layout: NextPage = ({ children }) => {
 	return (

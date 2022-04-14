@@ -8,10 +8,10 @@ import {
 	Typography,
 	PageLink,
 	Logo,
-} from "@components/index";
-import { attributes as post } from "@content/post.md";
-import { attributes as address } from "@content/address.md";
-import { attributes as contact } from "@content/contact.md";
+} from "components/index";
+import { attributes as post } from "content/post.md";
+import { attributes as address } from "content/address.md";
+import { attributes as contact } from "content/contact.md";
 
 interface ISocial {
 	account: string;

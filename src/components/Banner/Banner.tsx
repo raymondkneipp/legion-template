@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import React from "react";
-import { Container } from "@components/index";
-import { useTheme } from "@store/ThemeContext";
+import { Container } from "components/index";
+import { useTheme } from "store/ThemeContext";
 
 const Banner: NextPage = ({ children }) => {
 	const { color } = useTheme();

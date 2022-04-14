@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { UseFormRegister } from "react-hook-form";
-import { Typography } from "@components/index";
-import { useTheme } from "@store/ThemeContext";
+import { Typography } from "components/index";
+import { useTheme } from "store/ThemeContext";
 
 interface Props {
 	label: string;

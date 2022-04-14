@@ -11,8 +11,8 @@ import {
 	Points,
 	Meeting,
 	Pricing,
-} from "@components/index";
-import { getNews } from "@utils/index";
+} from "components/index";
+import { getNews } from "utils/index";
 
 const Home: NextPage<any> = ({ newsList }) => {
 	return (

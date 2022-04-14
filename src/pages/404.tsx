@@ -11,8 +11,8 @@ import {
 	FaHome,
 	FaPhone,
 } from "react-icons/fa";
-import { Centered, Container, Typography } from "@components/index";
-import { useTheme } from "@store/ThemeContext";
+import { Centered, Container, Typography } from "components/index";
+import { useTheme } from "store/ThemeContext";
 
 interface Props {
 	to: string;

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const fs = require("fs");
+const path = require("path");
 
 const nextConfig = {
 	reactStrictMode: true,
@@ -9,6 +10,7 @@ const nextConfig = {
 			loader: "frontmatter-markdown-loader",
 			// options: { mode: ["react-component"] },
 		});
+
 		return cfg;
 	},
 	i18n: {

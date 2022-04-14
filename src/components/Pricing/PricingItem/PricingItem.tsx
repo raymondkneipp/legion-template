@@ -5,8 +5,8 @@ import {
 	Typography,
 	DescriptionList,
 	DescriptionListItem,
-} from "@components/index";
-import { useTheme } from "@store/ThemeContext";
+} from "components/index";
+import { useTheme } from "store/ThemeContext";
 
 interface Props {
 	name: string;

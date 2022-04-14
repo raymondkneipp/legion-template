@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { Dispatch, SetStateAction } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useTheme } from "@store/ThemeContext";
+import { useTheme } from "store/ThemeContext";
 
 interface Props {
 	show: boolean;

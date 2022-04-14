@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import { Centered, Layout, Post, Typography } from "@components/index";
+import { Centered, Layout, Post, Typography } from "components/index";
 
 const NewsPostPage: NextPage<any> = ({ post }) => {
 	if (!post) {
@@ -29,7 +29,7 @@ const NewsPostPage: NextPage<any> = ({ post }) => {
 
 NewsPostPage.getInitialProps = async ({ query }) => {
 	const { slug } = query;
-	const post = await import(`@content/news/${slug}.md`).catch((error) => {
+	const post = await import(`content/news/${slug}.md`).catch((error) => {
 		return null;
 	});
 

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { Typography } from "@components/index";
-import { useTheme } from "@store/ThemeContext";
+import { Typography } from "components/index";
+import { useTheme } from "store/ThemeContext";
 import styles from "./TestimonialItem.module.css";
 
 interface Props {

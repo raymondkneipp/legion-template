@@ -1,7 +1,7 @@
 import { NextPage } from "next";
-import { Container, Typography, Wide } from "@components/index";
+import { Container, Typography, Wide } from "components/index";
 import TestimonialItem from "./TestimonialItem/TestimonialItem";
-import { attributes as about } from "@content/about.md";
+import { attributes as about } from "content/about.md";
 
 interface Props {
 	simple?: boolean;

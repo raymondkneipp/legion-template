@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { Container, Typography, Button } from "@components/index";
+import { Container, Typography, Button } from "components/index";
 import { format, parseISO } from "date-fns";
 import { FaArrowLeft } from "react-icons/fa";
-import { useTheme } from "@store/ThemeContext";
+import { useTheme } from "store/ThemeContext";
 import { useRouter } from "next/router";
 
 interface Props {
