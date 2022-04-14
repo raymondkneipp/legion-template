@@ -12,7 +12,6 @@ import {
 import { attributes as affiliated } from "../../content/affiliated.md";
 
 const AffiliatedPage: NextPage = () => {
-	console.log(affiliated);
 	return (
 		<Layout>
 			<NextSeo title="Affiliated Websites" description="CHANGE ME" />
@@ -36,11 +35,11 @@ const AffiliatedPage: NextPage = () => {
 									affiliated.lists &&
 									affiliated.lists.map((list: any, i: number) => (
 										<DescriptionList header={list.title} key={i}>
-											<DescriptionListItem>
-												{list.links.map((item: any, j: number) => (
-													<PageLink to={item.link} page={item.text} key={j} />
-												))}
-											</DescriptionListItem>
+											{list.links.map((item: any, j: number) => (
+												<DescriptionListItem key={j + i}>
+													<PageLink to={item.link} page={item.text} />
+												</DescriptionListItem>
+											))}
 										</DescriptionList>
 									))}
 							</>
