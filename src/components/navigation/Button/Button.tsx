@@ -7,9 +7,17 @@ interface Props {
 	secondary?: boolean;
 	lg?: boolean;
 	sm?: boolean;
+	onClick?: (e: any) => void;
 }
 
-const Button: NextPage<Props> = ({ to, secondary, lg, sm, children }) => {
+const Button: NextPage<Props> = ({
+	to,
+	secondary,
+	lg,
+	sm,
+	onClick,
+	children,
+}) => {
 	const { color, radius } = useTheme();
 
 	const base = `inline-block text-center transition-colors inline-flex items-center space-x-2 justify-center ${radius}`;
@@ -33,7 +41,9 @@ const Button: NextPage<Props> = ({ to, secondary, lg, sm, children }) => {
 
 	return (
 		<Link href={to}>
-			<a className={styles}>{children}</a>
+			<a className={styles} onClick={onClick}>
+				{children}
+			</a>
 		</Link>
 	);
 };

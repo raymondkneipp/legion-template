@@ -2,8 +2,9 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { Container, Typography, Button } from "..";
 import { format, parseISO } from "date-fns";
-import Centered from "../layout/Centered/Centered";
 import { FaArrowLeft } from "react-icons/fa";
+import { useTheme } from "../../store/ThemeContext";
+import { useRouter } from "next/router";
 
 interface Props {
 	title: string;
@@ -13,11 +14,20 @@ interface Props {
 }
 
 const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
+	const { radius } = useTheme();
+	const router = useRouter();
+
 	return (
 		<section className="my-36">
 			<Container prose>
 				<div className="space-y-6">
-					<Button to="/news">
+					<Button
+						to="/news"
+						onClick={(e: any) => {
+							e.preventDefault();
+							router.back();
+						}}
+					>
 						<FaArrowLeft />
 						<span>Back</span>
 					</Button>
@@ -25,7 +35,7 @@ const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
 					<Typography variant="lead" color="primary">
 						{format(parseISO(date), "EEEE, MMMM do, yyyy")}
 					</Typography>
-					<div className="overflow-hidden rounded">
+					<div className={`overflow-hidden ${radius}`}>
 						<Image
 							src={`/${thumbnail}`}
 							width="400"
