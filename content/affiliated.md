@@ -1,4 +1,5 @@
 ---
+description: Links to other websites associated with The American Legion.
 lists:
   - title: Military Branches
     links:

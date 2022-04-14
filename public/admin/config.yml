@@ -68,6 +68,7 @@ collections:
         name: "affiliated"
         file: "content/affiliated.md"
         fields:
+          - { label: "Description", name: "description", widget: "text" }
           - name: "lists"
             label: "Lists"
             widget: list

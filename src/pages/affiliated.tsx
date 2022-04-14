@@ -21,12 +21,7 @@ const AffiliatedPage: NextPage = () => {
 						master={
 							<>
 								<Typography variant="h1">Affiliated Websites</Typography>
-								<Typography variant="lead">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-									odio iure suscipit a eum fugit illum. Deserunt, voluptatum
-									possimus aliquam laudantium ipsam praesentium reprehenderit,
-									maxime numquam quibusdam iure facilis fugit.
-								</Typography>
+								<Typography variant="lead">{affiliated.description}</Typography>
 							</>
 						}
 						slave={
