@@ -38,7 +38,7 @@ const AffiliatedPage: NextPage = () => {
 										<DescriptionList header={list.title} key={i}>
 											<DescriptionListItem>
 												{list.links.map((item: any, j: number) => (
-													<PageLink to={item.link} page={item.title} key={j} />
+													<PageLink to={item.link} page={item.text} key={j} />
 												))}
 											</DescriptionListItem>
 										</DescriptionList>
