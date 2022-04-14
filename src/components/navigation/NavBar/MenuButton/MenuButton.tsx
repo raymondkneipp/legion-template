@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { Dispatch, SetStateAction } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { useTheme } from "../../../../store/ThemeContext";
+import { useTheme } from "@store/ThemeContext";
 
 interface Props {
 	show: boolean;
@@ -10,6 +10,7 @@ interface Props {
 
 const MenuButton: NextPage<Props> = ({ show, setShow }) => {
 	const { radius } = useTheme();
+
 	return (
 		<button
 			type="button"

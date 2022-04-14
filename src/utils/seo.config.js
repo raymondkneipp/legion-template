@@ -1,4 +1,4 @@
-import { attributes as post } from "./../../content/post.md";
+import { attributes as post } from "@content/post.md";
 
 export default {
 	titleTemplate: `%s | ${post.name} American Legion Post ${post.number}`,

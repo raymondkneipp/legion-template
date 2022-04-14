@@ -1,8 +1,8 @@
 import { NextPage } from "next";
 import { FaBook, FaBullseye, FaEye } from "react-icons/fa";
-import { Container, IconCard, Tall, Typography } from "..";
-import { attributes as about } from "../../../content/about.md";
-import { attributes as post } from "../../../content/post.md";
+import { Container, IconCard, Tall, Typography } from "@components/index";
+import { attributes as about } from "@content/about.md";
+import { attributes as post } from "@content/post.md";
 
 const About: NextPage = () => {
 	return (

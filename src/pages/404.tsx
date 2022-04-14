@@ -11,8 +11,8 @@ import {
 	FaHome,
 	FaPhone,
 } from "react-icons/fa";
-import { Centered, Container, Typography } from "../components";
-import { useTheme } from "../store/ThemeContext";
+import { Centered, Container, Typography } from "@components/index";
+import { useTheme } from "@store/ThemeContext";
 
 interface Props {
 	to: string;
@@ -46,8 +46,8 @@ const Custom404: NextPage = () => {
 	return (
 		<Container>
 			<NextSeo title="404 Page Not Found" description="CHANGE ME" />
-			<Centered>
-				<div className="max-w-xl flex flex-col space-y-2 min-h-screen items-center justify-center text-center">
+			<Centered className="min-h-screen">
+				<div className="flex flex-col space-y-2 items-center justify-center">
 					<Image
 						src="/American-Legion-Emblem.png"
 						width="100"
@@ -64,32 +64,32 @@ const Custom404: NextPage = () => {
 					<Typography variant="p">
 						The page you are looking for could not be found.
 					</Typography>
-					<div className="flex flex-col items-stretch w-full space-y-2 pt-12">
-						<LinkItem
-							to="/"
-							icon={FaHome}
-							page="Home"
-							description="Go back to start"
-						/>
-						<LinkItem
-							to="/about"
-							icon={FaBookOpen}
-							page="About Us"
-							description="Learn about our company"
-						/>
-						<LinkItem
-							to="/services"
-							icon={FaCog}
-							page="Services"
-							description="View the services our company has to offer"
-						/>
-						<LinkItem
-							to="/contact"
-							icon={FaPhone}
-							page="Contact Us"
-							description="Find a way to get ahold of us"
-						/>
-					</div>
+				</div>
+				<div className="flex flex-col items-stretch w-full space-y-2 pt-12">
+					<LinkItem
+						to="/"
+						icon={FaHome}
+						page="Home"
+						description="Go back to start"
+					/>
+					<LinkItem
+						to="/about"
+						icon={FaBookOpen}
+						page="About Us"
+						description="Learn about our company"
+					/>
+					<LinkItem
+						to="/services"
+						icon={FaCog}
+						page="Services"
+						description="View the services our company has to offer"
+					/>
+					<LinkItem
+						to="/contact"
+						icon={FaPhone}
+						page="Contact Us"
+						description="Find a way to get ahold of us"
+					/>
 				</div>
 			</Centered>
 		</Container>

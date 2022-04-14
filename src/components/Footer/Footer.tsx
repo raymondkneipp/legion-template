@@ -8,11 +8,10 @@ import {
 	Tall,
 	Typography,
 	PageLink,
-	Centered,
-} from "..";
-import { attributes as post } from "../../../content/post.md";
-import { attributes as address } from "../../../content/address.md";
-import { attributes as contact } from "../../../content/contact.md";
+} from "@components/index";
+import { attributes as post } from "@content/post.md";
+import { attributes as address } from "@content/address.md";
+import { attributes as contact } from "@content/contact.md";
 
 interface ISocial {
 	account: string;
@@ -27,7 +26,7 @@ const Footer: NextPage = () => {
 					master={
 						<>
 							<Image
-								src="/American-Legion-Emblem.png"
+								src="/img/American-Legion-Emblem.png"
 								alt="Logo"
 								width={80}
 								height={80}
@@ -79,15 +78,13 @@ const Footer: NextPage = () => {
 						</div>
 					}
 				/>
-				<Centered>
-					<span className="flex items-center space-x-1 text-gray-600 pt-10">
-						<FaRegCopyright />
-						<Typography variant="p">
-							{new Date().getFullYear()} {post.name} American Legion Post{" "}
-							{post.number}
-						</Typography>
-					</span>
-				</Centered>
+				<div className="flex items-center justify-center text-center space-x-1 text-gray-600 pt-10">
+					<FaRegCopyright />
+					<Typography variant="p">
+						{new Date().getFullYear()} {post.name} American Legion Post{" "}
+						{post.number}
+					</Typography>
+				</div>
 			</Container>
 		</footer>
 	);

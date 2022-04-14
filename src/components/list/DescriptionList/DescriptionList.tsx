@@ -1,6 +1,5 @@
 import { NextPage } from "next";
-import { IconType } from "react-icons";
-import { Typography } from "../..";
+import { Typography } from "@components/index";
 
 interface Props {
 	header: string;

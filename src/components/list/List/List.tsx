@@ -1,9 +1,7 @@
-import { NextPage } from 'next';
-import { IconType } from 'react-icons';
-import { Typography } from '../..';
+import { NextPage } from "next";
 
 const List: NextPage = ({ children }) => (
-  <ul className="space-y-4">{children}</ul>
+	<ul className="space-y-4">{children}</ul>
 );
 
 export default List;

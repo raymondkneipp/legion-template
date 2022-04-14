@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import { ContactForm, Layout } from "../components";
+import { ContactForm, Layout } from "@components/index";
 
 const ContactPage: NextPage = () => {
 	return (

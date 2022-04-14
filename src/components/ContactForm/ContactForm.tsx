@@ -10,9 +10,9 @@ import {
 	Tall,
 	Textarea,
 	Typography,
-} from "..";
-import { attributes as contact } from "../../../content/contact.md";
-import { attributes as address } from "../../../content/address.md";
+} from "@components/index";
+import { attributes as contact } from "@content/contact.md";
+import { attributes as address } from "@content/address.md";
 
 interface IFormValues {
 	"Full Name": string;

@@ -1,10 +1,9 @@
 import { NextPage } from "next";
 import { FaMapMarkerAlt, FaCalendar, FaClock, FaList } from "react-icons/fa";
-import { Container, IconCard, Tall, Typography } from "..";
-import { attributes as address } from "../../../content/address.md";
+import { Container, IconCard, Tall, Typography } from "@components/index";
+import { attributes as address } from "@content/address.md";
 
 const Meeting: NextPage = () => {
-	const { street, city, state, zip } = address;
 	return (
 		<section className="my-36">
 			<Container>
@@ -23,7 +22,7 @@ const Meeting: NextPage = () => {
 						<>
 							<IconCard
 								title="Location"
-								content={`${street} ${city}, ${state} ${zip}`}
+								content={`${address.street} ${address.city}, ${address.state} ${address.zip}`}
 								icon={FaMapMarkerAlt}
 							/>
 							<IconCard

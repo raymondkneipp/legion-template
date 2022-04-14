@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { useTheme } from "../../../store/ThemeContext";
+import { useTheme } from "@store/ThemeContext";
 
 const Submit: NextPage = ({ children }) => {
 	const { color, radius } = useTheme();
@@ -9,6 +9,7 @@ const Submit: NextPage = ({ children }) => {
 	const size = "py-2 px-4";
 
 	const styles = base + " " + theme + " " + size;
+
 	return (
 		<button type="submit" className={styles}>
 			{children}

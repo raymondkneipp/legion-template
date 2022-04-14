@@ -1,16 +1,15 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import { Button, Container, Divider, Typography } from "..";
+import { Button, Container, Divider, Typography } from "@components/index";
 import Centered from "../layout/Centered/Centered";
-import { attributes as home } from "../../../content/home.md";
-import { attributes as post } from "../../../content/post.md";
+import { attributes as home } from "@content/home.md";
+import { attributes as post } from "@content/post.md";
 
 const Hero: NextPage = () => {
-	let { image, tagline } = home;
 	return (
 		<section className="relative">
 			<Image
-				src={`/${image}`}
+				src={`/${home.image}`}
 				alt="CHANGE ME"
 				layout="fill"
 				objectFit="cover"
@@ -24,7 +23,7 @@ const Hero: NextPage = () => {
 							Welcome to {post.name} American Legion Post {post.number}
 						</Typography>
 						<Typography variant="lead" color="light">
-							{tagline}
+							{home.tagline}
 						</Typography>
 						<div className="gap-6 flex items-center flex-row flex-wrap justify-center">
 							<Button to="/apply" lg>

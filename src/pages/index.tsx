@@ -5,15 +5,14 @@ import {
 	CTA,
 	Hero,
 	Layout,
-	Services,
 	Testimonials,
 	Stats,
 	News,
 	Points,
 	Meeting,
 	Pricing,
-} from "../components";
-import { getNews } from "../utils";
+} from "@components/index";
+import { getNews } from "@utils/index";
 
 const Home: NextPage<any> = ({ newsList }) => {
 	return (

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import { About, CTA, FAQ, Layout, Testimonials } from "../components";
+import { About, CTA, FAQ, Layout, Testimonials } from "@components/index";
 
 const AboutPage: NextPage = () => {
 	return (

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
-import { Container, Typography, Wide } from "..";
+import { Container, Typography, Wide } from "@components/index";
 import TestimonialItem from "./TestimonialItem/TestimonialItem";
-import { attributes } from "../../../content/about.md";
+import { attributes as about } from "@content/about.md";
 
 interface Props {
 	simple?: boolean;
@@ -15,8 +15,7 @@ interface IOfficer {
 }
 
 const Testimonaials: NextPage<Props> = ({ simple }) => {
-	let { officers } = attributes;
-	let length = simple ? 3 : officers.length;
+	let length = simple ? 3 : about.officers.length;
 
 	return (
 		<section className="my-36">
@@ -29,15 +28,17 @@ const Testimonaials: NextPage<Props> = ({ simple }) => {
 					}
 					slave={
 						<>
-							{officers.slice(0, length).map((officer: IOfficer, i: number) => (
-								<TestimonialItem
-									name={officer.name}
-									quote={officer.description}
-									image={`/${officer.image}`}
-									title={officer.title}
-									key={i}
-								/>
-							))}
+							{about.officers
+								.slice(0, length)
+								.map((officer: IOfficer, i: number) => (
+									<TestimonialItem
+										name={officer.name}
+										quote={officer.description}
+										image={`/${officer.image}`}
+										title={officer.title}
+										key={i}
+									/>
+								))}
 						</>
 					}
 				/>

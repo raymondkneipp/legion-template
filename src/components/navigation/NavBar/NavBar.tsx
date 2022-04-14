@@ -2,11 +2,11 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Container, Typography } from "../..";
+import { Container, Typography } from "@components/index";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
-import { attributes as post } from "../../../../content/post.md";
-import { useTheme } from "../../../store/ThemeContext";
+import { attributes as post } from "@content/post.md";
+import { useTheme } from "@store/ThemeContext";
 
 const NavBar: NextPage = () => {
 	const [show, setShow] = useState(false);
@@ -19,7 +19,7 @@ const NavBar: NextPage = () => {
 					<Link href="/">
 						<a className={`flex items-center space-x-2 ${radius}`}>
 							<Image
-								src="/American-Legion-Emblem.png"
+								src="/img/American-Legion-Emblem.png"
 								alt="Logo"
 								width="80"
 								height="80"

@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { FaMedal } from "react-icons/fa";
-import { Container, IconCard, Tile } from "..";
-import { useTheme } from "../../store/ThemeContext";
+import { Container, IconCard, Tile } from "@components/index";
+import { useTheme } from "@store/ThemeContext";
 
 const Points: NextPage = () => {
 	const { color } = useTheme();

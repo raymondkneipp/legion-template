@@ -1,7 +1,7 @@
 import { NextPage } from "next";
-import { Container, Typography, Wide } from "..";
+import { Container, Typography, Wide } from "@components/index";
 import FAQItem from "./FAQItem/FAQItem";
-import { attributes as about } from "../../../content/about.md";
+import { attributes as about } from "@content/about.md";
 
 interface IFAQ {
 	question: string;

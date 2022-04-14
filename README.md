@@ -1,7 +1,7 @@
 # Todo
 
 - merge list items components together
-- content alias
+- simplify list items icons
 - add logo to netlify cms
 - favicon
 - events page
@@ -13,3 +13,6 @@
 - rent hall cms
 - points cms
 - affiliated websites check links
+- section spacing component
+- logo component
+- better post not found page
