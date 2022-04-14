@@ -11,37 +11,51 @@ const Pricing: NextPage = () => {
 						<>
 							<Typography variant="h2">Rent Our Hall</Typography>
 							<Typography variant="lead">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Inventore sit debitis facilis, corrupti eius hic quo tempora
-								repellat rem quibusdam velit non quod dicta
+								Our hall is perfect for many different occasions, including
+								rehearsal dinners, showers, birthday parties, retirements or
+								anniversary dinners, celebrations of life, sports banquets,
+								gatherings, corporate meetings, seminars, conferences, and even
+								reunions.
 							</Typography>
 						</>
 					}
 					slave={
 						<>
 							<PricingItem
-								name="Weekdays"
+								name="Half Hall"
 								description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-								price={25}
-								perks={"Lorem ipsum dolor sit amet consectetur adipisicing elit".split(
-									"s"
-								)}
+								price={30}
+								perks={[
+									"100 seats",
+									"1 Keg",
+									"1 Bartender",
+									"Access to kitchen",
+									"100 table covers",
+								]}
 							/>
 							<PricingItem
-								name="Weekends"
+								name="Full Hall"
 								description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-								price={60}
-								perks={"Lorem ipsum dolor sit amet consectetur adipisicing elit".split(
-									"s"
-								)}
+								price={55}
+								perks={[
+									"200 seats",
+									"2 Kegs",
+									"2 Bartenders",
+									"Access to kitchen",
+									"200 table covers",
+								]}
 							/>
 							<PricingItem
 								name="Holidays"
 								description="Lorem ipsum dolor sit amet consectetur adipisicing elit"
-								price={90}
-								perks={"Lorem ipsum dolor sit amet consectetur adipisicing elit".split(
-									"s"
-								)}
+								price={80}
+								perks={[
+									"200 seats",
+									"3 Kegs",
+									"2 Bartenders",
+									"Access to kitchen",
+									"200 table covers",
+								]}
 							/>
 						</>
 					}
