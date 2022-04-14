@@ -11,6 +11,12 @@ collections:
   - name: "setup"
     label: "Setup"
     files:
+      - label: "Banner"
+        name: "banner"
+        file: "content/banner.md"
+        fields:
+          - { label: "Show Banner", name: "show", widget: "boolean" }
+          - { label: "Banner Text", name: "text", widget: "string" }
       - label: "Post Information"
         name: "post"
         file: "content/post.md"
