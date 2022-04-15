@@ -1,19 +1,9 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
+import Router from "next/router";
 import { Centered, Layout, Post, Typography } from "../../components/index";
 
 const NewsPostPage: NextPage<any> = ({ post }) => {
-	if (!post) {
-		return (
-			<Layout>
-				<NextSeo title="Post Not Found" />
-				<Centered className="min-h-screen">
-					<Typography variant="h1">Post Not Found</Typography>
-				</Centered>
-			</Layout>
-		);
-	}
-
 	const {
 		attributes: { title, date, thumbnail },
 		html,
@@ -27,13 +17,23 @@ const NewsPostPage: NextPage<any> = ({ post }) => {
 	);
 };
 
-NewsPostPage.getInitialProps = async ({ query }) => {
+NewsPostPage.getInitialProps = async ({ res, query }) => {
 	const { slug } = query;
+
 	const post = await import(`../../../content/news/${slug}.md`).catch(
-		(error) => {
-			return null;
-		}
+		(error) => null
 	);
+
+	if (!post) {
+		if (res) {
+			res.writeHead(307, { Location: "/404" });
+			res.end();
+		} else {
+			Router.replace("/404");
+		}
+
+		return {};
+	}
 
 	return {
 		post,
