@@ -5,6 +5,7 @@ import SEO from "../utils/seo.config";
 import { useState } from "react";
 import { ThemeContext } from "../store/ThemeContext";
 import { attributes as theme } from "../../content/theme.md";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [color] = useState(theme.color);
@@ -13,6 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<ThemeContext.Provider value={{ color, radius }}>
+				<Head>
+					<link rel="shortcut icon" href="/favicon.svg" />
+				</Head>
 				<DefaultSeo {...SEO} />
 				<Component {...pageProps} />
 			</ThemeContext.Provider>
