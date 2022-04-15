@@ -14,5 +14,5 @@
 - points cms
 - affiliated websites check links
 - section spacing component
-- logo component
 - add alias
+- Remove testimonial item css

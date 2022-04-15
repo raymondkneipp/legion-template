@@ -3,6 +3,7 @@ backend:
   branch: main
 media_folder: public/img
 public_folder: img
+logo_url: https://legion-template.netlify.app/img/American-Legion-Emblem.png
 slug:
   encoding: "ascii"
   clean_accents: true
