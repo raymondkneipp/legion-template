@@ -1,6 +1,7 @@
 # Todo
 
 - merge list items components together
+- add ordered list
 - simplify list items icons
 - add logo to netlify cms
 - favicon
@@ -16,3 +17,4 @@
 - section spacing component
 - add alias
 - Remove testimonial item css
+- change icons to other icons than font awesome
