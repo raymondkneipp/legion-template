@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { FaBook, FaBullseye, FaEye } from "react-icons/fa";
+import { FiTarget, FiEye, FiBookOpen, FiHeart } from "react-icons/fi";
 import { Container, IconCard, Tall, Typography } from "../../components/index";
 import { attributes as about } from "../../../content/about.md";
 import { attributes as post } from "../../../content/post.md";
@@ -25,20 +25,23 @@ const About: NextPage = () => {
 							<IconCard
 								title="Our Vision"
 								content={about.vision}
-								icon={FaEye}
+								icon={FiEye}
 							/>
 							<IconCard
 								title="Our Mission"
 								content={about.mission}
-								icon={FaBullseye}
+								icon={FiTarget}
 							/>
-							<div className="sm:col-span-2">
-								<IconCard
-									title="Our History"
-									content={about.history}
-									icon={FaBook}
-								/>
-							</div>
+							<IconCard
+								title="How We Started"
+								content={about.history}
+								icon={FiBookOpen}
+							/>
+							<IconCard
+								title="What We Value"
+								content={about.history}
+								icon={FiHeart}
+							/>
 						</>
 					}
 				/>

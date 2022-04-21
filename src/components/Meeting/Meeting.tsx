@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { FaMapMarkerAlt, FaCalendar, FaClock, FaList } from "react-icons/fa";
+import { FiMapPin, FiClock, FiCalendar, FiList } from "react-icons/fi";
 import { Container, IconCard, Tall, Typography } from "../../components/index";
 import { attributes as address } from "../../../content/address.md";
 
@@ -23,18 +23,18 @@ const Meeting: NextPage = () => {
 							<IconCard
 								title="Location"
 								content={`${address.street} ${address.city}, ${address.state} ${address.zip}`}
-								icon={FaMapMarkerAlt}
+								icon={FiMapPin}
 							/>
 							<IconCard
 								title="Date"
 								content="Monday April 18, 2022"
-								icon={FaCalendar}
+								icon={FiCalendar}
 							/>
-							<IconCard title="Time" content="7:00 pm" icon={FaClock} />
+							<IconCard title="Time" content="7:00 pm" icon={FiClock} />
 							<IconCard
 								title="Agenda"
 								content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
-								icon={FaList}
+								icon={FiList}
 							/>
 						</>
 					}

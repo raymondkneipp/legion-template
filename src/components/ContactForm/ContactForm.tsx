@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import {
 	Container,
 	DescriptionList,
@@ -37,14 +37,14 @@ const ContactForm: NextPage = () => {
 							<Typography variant="lead">{contact.description}</Typography>
 
 							<DescriptionList header="OTHER WAYS TO REACH US">
-								<DescriptionListItem icon={FaPhone}>
+								<DescriptionListItem icon={FiPhone}>
 									{contact.phone}
 								</DescriptionListItem>
 
-								<DescriptionListItem icon={FaEnvelope}>
+								<DescriptionListItem icon={FiMail}>
 									{contact.email}
 								</DescriptionListItem>
-								<DescriptionListItem icon={FaMapMarkerAlt}>
+								<DescriptionListItem icon={FiMapPin}>
 									{address.street} {address.city} {address.state} {address.zip}
 								</DescriptionListItem>
 							</DescriptionList>

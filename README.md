@@ -3,8 +3,6 @@
 - merge list items components together
 - add ordered list
 - simplify list items icons
-- add logo to netlify cms
-- favicon
 - events page
 - apply page
 - form functionality
@@ -13,8 +11,6 @@
 - stats cms
 - rent hall cms
 - points cms
-- affiliated websites check links
 - section spacing component
 - add alias
 - Remove testimonial item css
-- change icons to other icons than font awesome

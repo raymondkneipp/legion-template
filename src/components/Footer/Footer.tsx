@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import { FaRegCopyright } from "react-icons/fa";
 import {
 	Container,
 	DescriptionList,
@@ -73,9 +72,8 @@ const Footer: NextPage = () => {
 					}
 				/>
 				<div className="flex items-center justify-center text-center space-x-1 text-gray-600 pt-10">
-					<FaRegCopyright />
 					<Typography variant="p">
-						{new Date().getFullYear()} {post.name} American Legion Post{" "}
+						© {new Date().getFullYear()} {post.name} American Legion Post{" "}
 						{post.number}
 					</Typography>
 				</div>

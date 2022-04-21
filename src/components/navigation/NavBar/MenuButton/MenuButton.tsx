@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { Dispatch, SetStateAction } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FiMenu, FiX } from "react-icons/fi";
 import { useTheme } from "../../../../store/ThemeContext";
 
 interface Props {
@@ -18,7 +18,7 @@ const MenuButton: NextPage<Props> = ({ show, setShow }) => {
 			className={`p-3 hover:bg-gray-200 transition-colors block md:hidden ${radius}`}
 			aria-label="menu"
 		>
-			{show ? <FaTimes size={20} /> : <FaBars size={20} />}
+			{show ? <FiX size={20} /> : <FiMenu size={20} />}
 		</button>
 	);
 };

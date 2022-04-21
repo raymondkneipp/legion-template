@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { Container, Typography, Button } from "../../components/index";
 import { format, parseISO } from "date-fns";
-import { FaArrowLeft } from "react-icons/fa";
+import { FiArrowLeft } from "react-icons/fi";
 import { useTheme } from "../../store/ThemeContext";
 import { useRouter } from "next/router";
 
@@ -28,7 +28,7 @@ const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
 							router.back();
 						}}
 					>
-						<FaArrowLeft />
+						<FiArrowLeft />
 						<span>Back</span>
 					</Button>
 					<Typography variant="h1">{title}</Typography>
