@@ -14,7 +14,7 @@ lists:
       - text: The United States Navy
         link: https://www.navy.mil
       - text: The United States Marine Corps
-        link: https://www.usmc.mil
+        link: https://www.marines.mil
       - text: The United States Air Force
         link: https://www.af.mil
       - text: The United States Coast Guard
@@ -24,16 +24,16 @@ lists:
   - title: Military Academies
     links:
       - text: United State Military Academy
-        link: https://www.usma.edu
+        link: https://www.westpoint.edu/
       - text: United States Naval Academy
-        link: https://www.nadn.navy.mil
+        link: https://www.usna.edu/
       - text: United States Merchant Marine Academy
         link: https://www.usmma.edu
-      - link: https://www.cga.edu
+      - link: https://www.uscga.edu/
         text: United States Coast Guard Academy
       - text: United States Air Force Academy
         link: https://www.usafa.af.mil
-      - link: https://www.afoats.af.mil
+      - link: https://www.afrotc.com/
         text: United States Air Force ROTC
   - title: Branches of the Federal Government
     links:
