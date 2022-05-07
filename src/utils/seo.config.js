@@ -1,7 +1,5 @@
-import { attributes as post } from "../../content/post.md";
-
 export default {
-	titleTemplate: `%s | ${post.name} American Legion Post ${post.number}`,
+	titleTemplate: `%s | John Doe American Legion Post XXX`,
 	twitter: {
 		handle: "@handle",
 		site: "@site",

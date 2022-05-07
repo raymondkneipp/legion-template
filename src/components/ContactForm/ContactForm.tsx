@@ -11,8 +11,6 @@ import {
 	Textarea,
 	Typography,
 } from "../../components/index";
-import { attributes as contact } from "../../../content/contact.md";
-import { attributes as address } from "../../../content/address.md";
 
 interface IFormValues {
 	"Full Name": string;
@@ -34,18 +32,23 @@ const ContactForm: NextPage = () => {
 					master={
 						<>
 							<Typography variant="h1">Contact Us</Typography>
-							<Typography variant="lead">{contact.description}</Typography>
+							<Typography variant="lead">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+								velit cumque tenetur harum. Mollitia dolores, modi voluptatem
+								hic magnam quae necessitatibus vel dolorem dolorum. Ut optio
+								eveniet sequi neque veritatis.
+							</Typography>
 
 							<DescriptionList header="OTHER WAYS TO REACH US">
 								<DescriptionListItem icon={FiPhone}>
-									{contact.phone}
+									(777) 777-7777
 								</DescriptionListItem>
 
 								<DescriptionListItem icon={FiMail}>
-									{contact.email}
+									example@example.com
 								</DescriptionListItem>
 								<DescriptionListItem icon={FiMapPin}>
-									{address.street} {address.city} {address.state} {address.zip}
+									2442 Otter Ave Providence Rhode Island 03451
 								</DescriptionListItem>
 							</DescriptionList>
 						</>

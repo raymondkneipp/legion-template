@@ -7,12 +7,10 @@ import { useTheme } from "../../store/ThemeContext";
 interface Props {
 	simple?: boolean;
 	newsList: {
-		attributes: {
-			thumbnail: string;
-			date: string;
-			title: string;
-			content: string;
-		};
+		thumbnail: string;
+		date: string;
+		title: string;
+		content: string;
 	}[];
 }
 
@@ -40,12 +38,9 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 									<Link href={`/news/${item.slug}`} key={i}>
 										<a className={`h-full block ${radius}`}>
 											<Card
-												image={`/${item.attributes.thumbnail}`}
-												date={format(
-													parseISO(item.attributes.date),
-													"MMMM do yyyy"
-												)}
-												title={item.attributes.title}
+												image={`/${item.thumbnail}`}
+												date={format(parseISO(item.date), "MMMM do yyyy")}
+												title={item.title}
 												content={item.html}
 											/>
 										</a>

@@ -1,8 +1,6 @@
 import { NextPage } from "next";
 import { FiTarget, FiEye, FiBookOpen, FiHeart } from "react-icons/fi";
 import { Container, IconCard, Tall, Typography } from "../../components/index";
-import { attributes as about } from "../../../content/about.md";
-import { attributes as post } from "../../../content/post.md";
 
 const About: NextPage = () => {
 	return (
@@ -14,32 +12,37 @@ const About: NextPage = () => {
 							<Typography variant="h1">
 								We Are{" "}
 								<Typography variant="h1" element="span" color="primary">
-									Post {post.number}
+									Post XXX
 								</Typography>
 							</Typography>
-							<Typography variant="lead">{about.description}</Typography>
+							<Typography variant="lead">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+								nobis illum doloremque reiciendis molestiae laudantium, aliquid
+								deserunt iure temporibus? Voluptatibus placeat deleniti
+								reiciendis facere odit, velit magni temporibus perspiciatis est.
+							</Typography>
 						</>
 					}
 					slave={
 						<>
 							<IconCard
 								title="Our Vision"
-								content={about.vision}
+								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
 								icon={FiEye}
 							/>
 							<IconCard
 								title="Our Mission"
-								content={about.mission}
+								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
 								icon={FiTarget}
 							/>
 							<IconCard
 								title="How We Started"
-								content={about.history}
+								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
 								icon={FiBookOpen}
 							/>
 							<IconCard
 								title="What We Value"
-								content={about.history}
+								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
 								icon={FiHeart}
 							/>
 						</>

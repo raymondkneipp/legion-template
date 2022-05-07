@@ -1,7 +1,6 @@
 import { NextPage } from "next";
 import { FiMapPin, FiClock, FiCalendar, FiList } from "react-icons/fi";
 import { Container, IconCard, Tall, Typography } from "../../components/index";
-import { attributes as address } from "../../../content/address.md";
 
 const Meeting: NextPage = () => {
 	return (
@@ -22,7 +21,7 @@ const Meeting: NextPage = () => {
 						<>
 							<IconCard
 								title="Location"
-								content={`${address.street} ${address.city}, ${address.state} ${address.zip}`}
+								content={`2442 Otter Ave Providence, Rhode Island 34593`}
 								icon={FiMapPin}
 							/>
 							<IconCard

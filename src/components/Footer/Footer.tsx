@@ -8,14 +8,6 @@ import {
 	PageLink,
 	Logo,
 } from "../../components/index";
-import { attributes as post } from "../../../content/post.md";
-import { attributes as address } from "../../../content/address.md";
-import { attributes as contact } from "../../../content/contact.md";
-
-interface ISocial {
-	account: string;
-	link: string;
-}
 
 const Footer: NextPage = () => {
 	return (
@@ -26,8 +18,8 @@ const Footer: NextPage = () => {
 						<>
 							<Logo />
 							<Typography variant="p">
-								{post.name} American Legion Post {post.number} located on{" "}
-								{address.street} {address.city}, {address.state} {address.zip}
+								John Doe American Legion Post XXX located on 2442 Otter Ave
+								Providence, Rhode Island 45938
 							</Typography>
 						</>
 					}
@@ -55,26 +47,26 @@ const Footer: NextPage = () => {
 									<PageLink to="/affiliated" page="Affiliated Websites" />
 								</DescriptionListItem>
 								<DescriptionListItem>
-									<PageLink to="/admin" page="Login" />
+									<PageLink to="/login" page="Login" />
 								</DescriptionListItem>
 								<DescriptionListItem>
 									<PageLink to="/apply" page="Apply" />
 								</DescriptionListItem>
 							</DescriptionList>
 							<DescriptionList header="SOCIAL">
-								{contact.socials.map((social: ISocial, i: number) => (
-									<DescriptionListItem key={i}>
-										<PageLink to={social.link} page={social.account} />
-									</DescriptionListItem>
-								))}
+								<DescriptionListItem>
+									<PageLink to="https://www.facebook.com" page="Facebook" />
+								</DescriptionListItem>
+								<DescriptionListItem>
+									<PageLink to="https://www.twitter.com" page="Twitter" />
+								</DescriptionListItem>
 							</DescriptionList>
 						</div>
 					}
 				/>
 				<div className="flex items-center justify-center text-center space-x-1 text-gray-600 pt-10">
 					<Typography variant="p">
-						© {new Date().getFullYear()} {post.name} American Legion Post{" "}
-						{post.number}
+						© {new Date().getFullYear()} John Doe American Legion Post XXX
 					</Typography>
 				</div>
 			</Container>

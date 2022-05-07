@@ -7,14 +7,12 @@ import {
 	Typography,
 	Centered,
 } from "../../components/index";
-import { attributes as home } from "../../../content/home.md";
-import { attributes as post } from "../../../content/post.md";
 
 const Hero: NextPage = () => {
 	return (
 		<section className="relative">
 			<Image
-				src={`/${home.image}`}
+				src={`/img/hero.jpg`}
 				alt="CHANGE ME"
 				layout="fill"
 				objectFit="cover"
@@ -25,10 +23,13 @@ const Hero: NextPage = () => {
 				<Container>
 					<Centered className="min-h-screen">
 						<Typography variant="h1" color="light">
-							Welcome to {post.name} American Legion Post {post.number}
+							Welcome to John Doe American Legion Post XXX
 						</Typography>
 						<Typography variant="lead" color="light">
-							{home.tagline}
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+							earum distinctio veritatis quis nam minima assumenda accusamus
+							officia, consectetur expedita doloribus unde quam facilis hic
+							quidem? Facilis illum quas repudiandae.
 						</Typography>
 						<div className="gap-6 flex items-center flex-row flex-wrap justify-center">
 							<Button to="/apply" lg>

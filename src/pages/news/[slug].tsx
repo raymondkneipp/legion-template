@@ -1,18 +1,16 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Router from "next/router";
-import { Centered, Layout, Post, Typography } from "../../components/index";
+import { Layout, Post } from "../../components/index";
+import news from "../../utils/news";
 
 const NewsPostPage: NextPage<any> = ({ post }) => {
-	const {
-		attributes: { title, date, thumbnail },
-		html,
-	} = post;
+	const { title, date, thumbnail, content } = post;
 
 	return (
 		<Layout>
 			<NextSeo title={title} description="CHANGE ME" />
-			<Post title={title} date={date} thumbnail={thumbnail} content={html} />
+			<Post title={title} date={date} thumbnail={thumbnail} content={content} />
 		</Layout>
 	);
 };
@@ -20,9 +18,7 @@ const NewsPostPage: NextPage<any> = ({ post }) => {
 NewsPostPage.getInitialProps = async ({ res, query }) => {
 	const { slug } = query;
 
-	const post = await import(`../../../content/news/${slug}.md`).catch(
-		(error) => null
-	);
+	const post = news.find((item) => item.slug === slug);
 
 	if (!post) {
 		if (res) {

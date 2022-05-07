@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Container, Typography, Logo } from "../../../components/index";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
-import { attributes as post } from "../../../../content/post.md";
 import { useTheme } from "../../../store/ThemeContext";
 
 const NavBar: NextPage = () => {
@@ -19,7 +18,7 @@ const NavBar: NextPage = () => {
 						<a className={`flex items-center space-x-2 ${radius}`}>
 							<Logo />
 							<Typography variant="h4" color="primary" element="span">
-								Post {post.number}
+								Post XXX
 							</Typography>
 						</a>
 					</Link>

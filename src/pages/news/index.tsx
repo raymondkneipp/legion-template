@@ -1,24 +1,16 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import { CTA, Layout, News } from "../../components/index";
-import { getNews } from "../../utils/index";
+import news from "../../utils/news";
 
-const NewsPage: NextPage<any> = ({ newsList }) => {
+const NewsPage: NextPage<any> = () => {
 	return (
 		<Layout>
 			<NextSeo title="News" description="CHANGE ME" />
-			<News newsList={newsList} />
+			<News newsList={news} />
 			<CTA />
 		</Layout>
 	);
-};
-
-NewsPage.getInitialProps = async () => {
-	const newsList = await getNews();
-
-	return {
-		newsList,
-	};
 };
 
 export default NewsPage;

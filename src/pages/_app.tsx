@@ -3,13 +3,12 @@ import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import SEO from "../utils/seo.config";
 import { useState } from "react";
-import { ThemeContext } from "../store/ThemeContext";
-import { attributes as theme } from "../../content/theme.md";
+import { Color, Radius, ThemeContext } from "../store/ThemeContext";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
-	const [color] = useState(theme.color);
-	const [radius] = useState(theme.radius);
+	const [color] = useState(Color.Sky);
+	const [radius] = useState(Radius.Small);
 
 	return (
 		<>

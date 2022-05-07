@@ -1,14 +1,16 @@
 import type { NextPage } from "next";
 import { Banner, Footer, NavBar, Typography } from "../../../components/index";
-import { attributes as banner } from "../../../../content/banner.md";
 
 const Layout: NextPage = ({ children }) => {
 	return (
 		<>
-			{banner.show && (
+			{true && (
 				<Banner>
 					<Typography variant="p" color="light">
-						{banner.text}
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dicta
+						consequuntur iste possimus praesentium magnam reiciendis, nulla
+						impedit eaque quo, pariatur molestias saepe ducimus nam tempore
+						voluptatibus eum, quae hic?
 					</Typography>
 				</Banner>
 			)}
