@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { Typography } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 import styles from "./TestimonialItem.module.css";
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 }
 
 const TestimonialItem: NextPage<Props> = ({ quote, name, image, title }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<figure className={`${styles.testimonialItem__grid} ${radius}`}>

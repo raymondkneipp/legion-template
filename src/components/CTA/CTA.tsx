@@ -1,9 +1,9 @@
 import { NextPage } from "next";
 import { Button, Container, Divider, Typography, Centered } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 const CTA: NextPage = () => {
-	const { color } = useTheme();
+	const { color } = useAppSelector((state) => state.theme);
 
 	return (
 		<div className="relative">

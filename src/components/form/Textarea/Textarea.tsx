@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { UseFormRegister } from "react-hook-form";
 import { Typography } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	label: string;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Textarea: NextPage<Props> = ({ label, rows = 4, register }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<div className="flex flex-col space-y-1">

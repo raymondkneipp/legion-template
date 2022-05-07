@@ -17,7 +17,7 @@
 		"baseUrl": "src",
 		"paths": {
 			"@components": ["components/index"],
-			"@store/*": ["store/*"],
+			"@store": ["store/index"],
 			"@utils": ["utils/index"]
 		}
 	},

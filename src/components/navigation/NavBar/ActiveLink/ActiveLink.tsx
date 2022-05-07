@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	to: string;
@@ -9,7 +9,7 @@ interface Props {
 
 const ActiveLink: NextPage<Props> = ({ to, children }) => {
 	const router = useRouter();
-	const { color, radius } = useTheme();
+	const { color, radius } = useAppSelector((state) => state.theme);
 
 	const styles = `${
 		router.pathname == to

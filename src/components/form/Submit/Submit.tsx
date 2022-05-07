@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 const Submit: NextPage = ({ children }) => {
-	const { color, radius } = useTheme();
+	const { color, radius } = useAppSelector((state) => state.theme);
 
 	const base = `font-bold inline-block text-center transition-colors ${radius}`;
 	const theme = `bg-${color}-800 text-white hover:bg-${color}-600`;

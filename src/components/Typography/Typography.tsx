@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import React from "react";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 type Variant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "lead";
 type Element = Variant | "span" | "figcaption" | "blockquote" | "label" | "dt";
@@ -22,7 +22,7 @@ const Typography: NextPage<Props> = ({
 	children,
 	...rest
 }) => {
-	const { color: c } = useTheme();
+	const { color: c } = useAppSelector((state) => state.theme);
 
 	let styles: string;
 	let textColor: string;

@@ -2,23 +2,20 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
 import { SEO } from "@utils";
-import { useState } from "react";
-import { Color, Radius, ThemeContext } from "@store/ThemeContext";
 import Head from "next/head";
+import { Provider } from "react-redux";
+import { store } from "@store";
 
 function MyApp({ Component, pageProps }: AppProps) {
-	const [color] = useState(Color.Sky);
-	const [radius] = useState(Radius.Small);
-
 	return (
 		<>
-			<ThemeContext.Provider value={{ color, radius }}>
+			<Provider store={store}>
 				<Head>
 					<link rel="shortcut icon" href="/favicon.svg" />
 				</Head>
 				<DefaultSeo {...SEO} />
 				<Component {...pageProps} />
-			</ThemeContext.Provider>
+			</Provider>
 		</>
 	);
 }

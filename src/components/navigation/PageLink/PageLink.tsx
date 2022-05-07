@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	to: string;
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const PageLink: NextPage<Props> = ({ to, page }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<Link href={to}>

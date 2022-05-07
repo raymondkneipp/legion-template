@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { Dispatch, SetStateAction } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	show: boolean;
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const MenuButton: NextPage<Props> = ({ show, setShow }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<button

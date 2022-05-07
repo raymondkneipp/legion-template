@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createSlice } from "@reduxjs/toolkit";
 
 export enum Color {
 	Red = "red",
@@ -28,14 +28,26 @@ export enum Radius {
 	XXXL = "rounded-3xl",
 }
 
-export type ThemeContextType = {
+export interface ThemeState {
 	color: Color;
 	radius: Radius;
+}
+
+const initialState: ThemeState = {
+	color: Color.Sky,
+	radius: Radius.Large,
 };
 
-export const ThemeContext = createContext<ThemeContextType>({
-	color: Color.Sky,
-	radius: Radius.Default,
+export const themeSlice = createSlice({
+	name: "theme",
+	initialState,
+	reducers: {
+		dummy: (state) => {
+			state.color = state.color;
+		},
+	},
 });
 
-export const useTheme = () => useContext(ThemeContext);
+export const { dummy } = themeSlice.actions;
+
+export default themeSlice.reducer;

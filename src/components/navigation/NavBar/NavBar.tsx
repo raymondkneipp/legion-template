@@ -4,11 +4,11 @@ import { useState } from "react";
 import { Container, Typography, Logo } from "@components";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import MenuButton from "./MenuButton/MenuButton";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 const NavBar: NextPage = () => {
 	const [show, setShow] = useState(false);
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<nav className="bg-white border-b border-gray-300 py-2 sticky top-0 left-0 right-0 z-50">

@@ -12,7 +12,7 @@ import {
 	FiCalendar,
 } from "react-icons/fi";
 import { Centered, Container, Logo, Typography } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	to: string;
@@ -22,7 +22,7 @@ interface Props {
 }
 
 const LinkItem: NextPage<Props> = ({ to, icon, page, description }) => {
-	const { color, radius } = useTheme();
+	const { color, radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<Link href={to}>

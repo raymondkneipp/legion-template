@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import React from "react";
 import { IconType } from "react-icons";
 import { Typography } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	icon: IconType;
@@ -21,7 +21,7 @@ const IconCard: NextPage<Props> = ({
 	light = false,
 	center = false,
 }) => {
-	const { color, radius } = useTheme();
+	const { color, radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<article

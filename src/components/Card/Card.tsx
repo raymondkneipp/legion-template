@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Image from "next/image";
 import { Typography } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	image: string;
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Card: NextPage<Props> = ({ image, date, title, content }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<div className={`shadow-md flex flex-col h-full ${radius}`}>

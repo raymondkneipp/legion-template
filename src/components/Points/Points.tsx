@@ -1,10 +1,10 @@
 import { NextPage } from "next";
 import { FiAward } from "react-icons/fi";
 import { Container, IconCard, Tile } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 const Points: NextPage = () => {
-	const { color } = useTheme();
+	const { color } = useAppSelector((state) => state.theme);
 
 	return (
 		<section className={`my-10 py-20 bg-${color}-800`}>

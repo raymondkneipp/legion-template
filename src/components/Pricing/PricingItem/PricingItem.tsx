@@ -6,7 +6,7 @@ import {
 	DescriptionList,
 	DescriptionListItem,
 } from "@components";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	name: string;
@@ -16,7 +16,7 @@ interface Props {
 }
 
 const PricingItem: NextPage<Props> = ({ name, description, price, perks }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<div

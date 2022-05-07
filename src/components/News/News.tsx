@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import { Card, Container, Typography, Wide } from "@components";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	simple?: boolean;
@@ -16,7 +16,7 @@ interface Props {
 
 const News: NextPage<Props> = ({ simple = false, newsList }) => {
 	const length = simple ? 3 : newsList.length;
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 
 	return (
 		<section className="my-36">

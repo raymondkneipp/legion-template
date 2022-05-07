@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { useTheme } from "@store/ThemeContext";
+import { useAppSelector } from "@store";
 
 interface Props {
 	to: string;
@@ -18,7 +18,7 @@ const Button: NextPage<Props> = ({
 	onClick,
 	children,
 }) => {
-	const { color, radius } = useTheme();
+	const { color, radius } = useAppSelector((state) => state.theme);
 
 	const base = `inline-block text-center transition-colors inline-flex items-center space-x-2 justify-center ${radius}`;
 	const theme = !secondary
