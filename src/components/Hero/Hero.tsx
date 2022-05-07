@@ -1,12 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
-import {
-	Button,
-	Container,
-	Divider,
-	Typography,
-	Centered,
-} from "../../components/index";
+import { Button, Container, Divider, Typography, Centered } from "@components";
 
 const Hero: NextPage = () => {
 	return (

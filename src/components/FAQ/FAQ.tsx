@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Container, Typography, Wide } from "../../components/index";
+import { Container, Typography, Wide } from "@components";
 import FAQItem from "./FAQItem/FAQItem";
 
 interface IFAQ {

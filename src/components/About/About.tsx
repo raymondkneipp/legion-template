@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { FiTarget, FiEye, FiBookOpen, FiHeart } from "react-icons/fi";
-import { Container, IconCard, Tall, Typography } from "../../components/index";
+import { Container, IconCard, Tall, Typography } from "@components";
 
 const About: NextPage = () => {
 	return (

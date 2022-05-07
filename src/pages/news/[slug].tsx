@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 import Router from "next/router";
-import { Layout, Post } from "../../components/index";
-import news from "../../utils/news";
+import { Layout, Post } from "@components";
+import { news } from "@utils";
 
 const NewsPostPage: NextPage<any> = ({ post }) => {
 	const { title, date, thumbnail, content } = post;

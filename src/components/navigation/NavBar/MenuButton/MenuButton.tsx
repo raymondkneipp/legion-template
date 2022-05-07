@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import { Dispatch, SetStateAction } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { useTheme } from "../../../../store/ThemeContext";
+import { useTheme } from "@store/ThemeContext";
 
 interface Props {
 	show: boolean;

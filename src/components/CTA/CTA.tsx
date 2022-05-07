@@ -1,12 +1,6 @@
 import { NextPage } from "next";
-import {
-	Button,
-	Container,
-	Divider,
-	Typography,
-	Centered,
-} from "../../components/index";
-import { useTheme } from "../../store/ThemeContext";
+import { Button, Container, Divider, Typography, Centered } from "@components";
+import { useTheme } from "@store/ThemeContext";
 
 const CTA: NextPage = () => {
 	const { color } = useTheme();

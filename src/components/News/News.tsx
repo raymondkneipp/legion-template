@@ -1,8 +1,8 @@
 import { NextPage } from "next";
-import { Card, Container, Typography, Wide } from "../../components/index";
+import { Card, Container, Typography, Wide } from "@components";
 import { format, parseISO } from "date-fns";
 import Link from "next/link";
-import { useTheme } from "../../store/ThemeContext";
+import { useTheme } from "@store/ThemeContext";
 
 interface Props {
 	simple?: boolean;

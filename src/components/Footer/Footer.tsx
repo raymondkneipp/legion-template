@@ -7,7 +7,7 @@ import {
 	Typography,
 	PageLink,
 	Logo,
-} from "../../components/index";
+} from "@components";
 
 const Footer: NextPage = () => {
 	return (

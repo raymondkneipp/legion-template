@@ -11,8 +11,8 @@ import {
 	FiBell,
 	FiCalendar,
 } from "react-icons/fi";
-import { Centered, Container, Logo, Typography } from "../components/index";
-import { useTheme } from "../store/ThemeContext";
+import { Centered, Container, Logo, Typography } from "@components";
+import { useTheme } from "@store/ThemeContext";
 
 interface Props {
 	to: string;

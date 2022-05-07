@@ -10,7 +10,7 @@ import {
 	Tall,
 	Textarea,
 	Typography,
-} from "../../components/index";
+} from "@components";
 
 interface IFormValues {
 	"Full Name": string;

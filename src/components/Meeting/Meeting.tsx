@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { FiMapPin, FiClock, FiCalendar, FiList } from "react-icons/fi";
-import { Container, IconCard, Tall, Typography } from "../../components/index";
+import { Container, IconCard, Tall, Typography } from "@components";
 
 const Meeting: NextPage = () => {
 	return (

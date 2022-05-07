@@ -8,8 +8,7 @@ import {
 	PageLink,
 	Typography,
 	Wide,
-} from "../components/index";
-import { attributes as affiliated } from "../../content/affiliated.md";
+} from "@components";
 
 const AffiliatedPage: NextPage = () => {
 	return (
@@ -21,22 +20,78 @@ const AffiliatedPage: NextPage = () => {
 						master={
 							<>
 								<Typography variant="h1">Affiliated Websites</Typography>
-								<Typography variant="lead">{affiliated.description}</Typography>
+								<Typography variant="lead">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Laudantium rerum tempora veniam necessitatibus. Laborum quod
+									nam incidunt. Repellendus laboriosam quia nam aliquam rerum,
+									eligendi ducimus rem provident, libero odit illo?
+								</Typography>
 							</>
 						}
 						slave={
 							<>
-								{affiliated &&
-									affiliated.lists &&
-									affiliated.lists.map((list: any, i: number) => (
-										<DescriptionList header={list.title} key={i}>
-											{list.links.map((item: any, j: number) => (
-												<DescriptionListItem key={j + i}>
-													<PageLink to={item.link} page={item.text} />
-												</DescriptionListItem>
-											))}
-										</DescriptionList>
-									))}
+								<DescriptionList header="Some Links">
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+								</DescriptionList>
+
+								<DescriptionList header="Some Links">
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+								</DescriptionList>
+
+								<DescriptionList header="Some Links">
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+									<DescriptionListItem>
+										<PageLink to="https://google.com" page="Google" />
+									</DescriptionListItem>
+								</DescriptionList>
 							</>
 						}
 					/>

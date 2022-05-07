@@ -1,9 +1,9 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { DefaultSeo } from "next-seo";
-import SEO from "../utils/seo.config";
+import { SEO } from "@utils";
 import { useState } from "react";
-import { Color, Radius, ThemeContext } from "../store/ThemeContext";
+import { Color, Radius, ThemeContext } from "@store/ThemeContext";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {

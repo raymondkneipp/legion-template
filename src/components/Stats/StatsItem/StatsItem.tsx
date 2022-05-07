@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { Typography } from "../../../components/index";
+import { Typography } from "@components";
 
 interface Props {
 	title: string;
