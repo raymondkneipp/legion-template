@@ -2,7 +2,6 @@
 
 - merge list items components together
 - add ordered list
-- simplify list items icons
 - events page
 - apply page
 - form functionality
