@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { FiAward } from "react-icons/fi";
+import { BsAwardFill } from "react-icons/bs";
 import { Container, IconCard, Tile } from "@components";
 import { useAppSelector } from "@store";
 
@@ -11,7 +11,7 @@ const Points: NextPage = () => {
 			<Container>
 				<Tile>
 					<IconCard
-						icon={FiAward}
+						icon={BsAwardFill}
 						title="Lorem, ipsum dolor sit amet"
 						content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
 						light
@@ -19,7 +19,7 @@ const Points: NextPage = () => {
 						center
 					/>
 					<IconCard
-						icon={FiAward}
+						icon={BsAwardFill}
 						title="Lorem, ipsum dolor sit amet"
 						content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
 						light
@@ -27,7 +27,7 @@ const Points: NextPage = () => {
 						center
 					/>
 					<IconCard
-						icon={FiAward}
+						icon={BsAwardFill}
 						title="Lorem, ipsum dolor sit amet"
 						content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
 						light
@@ -35,7 +35,7 @@ const Points: NextPage = () => {
 						center
 					/>
 					<IconCard
-						icon={FiAward}
+						icon={BsAwardFill}
 						title="Lorem, ipsum dolor sit amet"
 						content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
 						light
@@ -43,7 +43,7 @@ const Points: NextPage = () => {
 						center
 					/>
 					<IconCard
-						icon={FiAward}
+						icon={BsAwardFill}
 						title="Lorem, ipsum dolor sit amet"
 						content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
 						light
@@ -51,7 +51,7 @@ const Points: NextPage = () => {
 						center
 					/>
 					<IconCard
-						icon={FiAward}
+						icon={BsAwardFill}
 						title="Lorem, ipsum dolor sit amet"
 						content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus quaerat voluptatum atque repellat at a pariatur assumenda"
 						light

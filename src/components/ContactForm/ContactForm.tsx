@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 import { useForm, SubmitHandler } from "react-hook-form";
-import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { BsEnvelopeFill, BsGeoAltFill, BsTelephoneFill } from "react-icons/bs";
 import {
 	Container,
 	DescriptionList,
@@ -40,14 +40,14 @@ const ContactForm: NextPage = () => {
 							</Typography>
 
 							<DescriptionList header="OTHER WAYS TO REACH US">
-								<DescriptionListItem icon={FiPhone}>
+								<DescriptionListItem icon={BsTelephoneFill}>
 									(777) 777-7777
 								</DescriptionListItem>
 
-								<DescriptionListItem icon={FiMail}>
+								<DescriptionListItem icon={BsEnvelopeFill}>
 									example@example.com
 								</DescriptionListItem>
-								<DescriptionListItem icon={FiMapPin}>
+								<DescriptionListItem icon={BsGeoAltFill}>
 									2442 Otter Ave Providence Rhode Island 03451
 								</DescriptionListItem>
 							</DescriptionList>

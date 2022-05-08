@@ -2,8 +2,8 @@ import { NextPage } from "next";
 import Image from "next/image";
 import { Container, Typography, Button } from "@components";
 import { format, parseISO } from "date-fns";
-import { FiArrowLeft } from "react-icons/fi";
-import { useTheme } from "@store";
+import { BsArrowLeft } from "react-icons/bs";
+import { useAppSelector } from "@store";
 import { useRouter } from "next/router";
 
 interface Props {
@@ -14,7 +14,7 @@ interface Props {
 }
 
 const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
-	const { radius } = useTheme();
+	const { radius } = useAppSelector((state) => state.theme);
 	const router = useRouter();
 
 	return (
@@ -28,7 +28,7 @@ const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
 							router.back();
 						}}
 					>
-						<FiArrowLeft />
+						<BsArrowLeft />
 						<span>Back</span>
 					</Button>
 					<Typography variant="h1">{title}</Typography>

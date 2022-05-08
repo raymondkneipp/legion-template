@@ -1,5 +1,10 @@
 import { NextPage } from "next";
-import { FiTarget, FiEye, FiBookOpen, FiHeart } from "react-icons/fi";
+import {
+	BsBullseye,
+	BsEyeFill,
+	BsBookmarkFill,
+	BsHeartFill,
+} from "react-icons/bs";
 import { Container, IconCard, Tall, Typography } from "@components";
 
 const About: NextPage = () => {
@@ -28,22 +33,22 @@ const About: NextPage = () => {
 							<IconCard
 								title="Our Vision"
 								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
-								icon={FiEye}
+								icon={BsEyeFill}
 							/>
 							<IconCard
 								title="Our Mission"
 								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
-								icon={FiTarget}
+								icon={BsBullseye}
 							/>
 							<IconCard
 								title="How We Started"
 								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
-								icon={FiBookOpen}
+								icon={BsBookmarkFill}
 							/>
 							<IconCard
 								title="What We Value"
 								content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est."
-								icon={FiHeart}
+								icon={BsHeartFill}
 							/>
 						</>
 					}

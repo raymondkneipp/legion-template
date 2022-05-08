@@ -18,6 +18,7 @@
 		"paths": {
 			"@components": ["components/index"],
 			"@store": ["store/index"],
+			"@store/*": ["store/*"],
 			"@utils": ["utils/index"]
 		}
 	},

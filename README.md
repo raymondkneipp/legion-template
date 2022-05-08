@@ -9,3 +9,4 @@
 - section spacing component
 - Remove testimonial item css
 - change icon pack
+- icon component

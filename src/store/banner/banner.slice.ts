@@ -17,9 +17,12 @@ export const bannerSlice = createSlice({
 		toggle: (state) => {
 			state.show = !state.show;
 		},
+		setText: (state, action: PayloadAction<string>) => {
+			state.text = action.payload;
+		},
 	},
 });
 
-export const { toggle } = bannerSlice.actions;
+export const { toggle, setText } = bannerSlice.actions;
 
 export default bannerSlice.reducer;

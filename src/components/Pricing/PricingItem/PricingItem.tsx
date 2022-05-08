@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { FiCheck } from "react-icons/fi";
+import { BsCheck2 } from "react-icons/bs";
 import {
 	Button,
 	Typography,
@@ -38,7 +38,7 @@ const PricingItem: NextPage<Props> = ({ name, description, price, perks }) => {
 
 			<DescriptionList header="WHAT'S INCLUDED">
 				{perks.map((perk, i) => (
-					<DescriptionListItem key={perk + i} icon={FiCheck}>
+					<DescriptionListItem key={perk + i} icon={BsCheck2}>
 						{perk}
 					</DescriptionListItem>
 				))}

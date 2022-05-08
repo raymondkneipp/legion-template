@@ -1,5 +1,10 @@
 import { NextPage } from "next";
-import { FiMapPin, FiClock, FiCalendar, FiList } from "react-icons/fi";
+import {
+	BsGeoAltFill,
+	BsClockFill,
+	BsCalendarFill,
+	BsStickyFill,
+} from "react-icons/bs";
 import { Container, IconCard, Tall, Typography } from "@components";
 
 const Meeting: NextPage = () => {
@@ -22,18 +27,18 @@ const Meeting: NextPage = () => {
 							<IconCard
 								title="Location"
 								content={`2442 Otter Ave Providence, Rhode Island 34593`}
-								icon={FiMapPin}
+								icon={BsGeoAltFill}
 							/>
 							<IconCard
 								title="Date"
 								content="Monday April 18, 2022"
-								icon={FiCalendar}
+								icon={BsCalendarFill}
 							/>
-							<IconCard title="Time" content="7:00 pm" icon={FiClock} />
+							<IconCard title="Time" content="7:00 pm" icon={BsClockFill} />
 							<IconCard
 								title="Agenda"
 								content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quae, id quo nostrum necessitatibus"
-								icon={FiList}
+								icon={BsStickyFill}
 							/>
 						</>
 					}

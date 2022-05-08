@@ -1,6 +1,7 @@
 import { NextPage } from "next";
 import { Dispatch, SetStateAction } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { BsX, BsList } from "react-icons/bs";
+
 import { useAppSelector } from "@store";
 
 interface Props {
@@ -18,7 +19,7 @@ const MenuButton: NextPage<Props> = ({ show, setShow }) => {
 			className={`p-3 hover:bg-gray-200 transition-colors block md:hidden ${radius}`}
 			aria-label="menu"
 		>
-			{show ? <FiX size={20} /> : <FiMenu size={20} />}
+			{show ? <BsX size={20} /> : <BsList size={20} />}
 		</button>
 	);
 };

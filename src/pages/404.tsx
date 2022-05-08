@@ -4,13 +4,13 @@ import React from "react";
 import { IconType } from "react-icons";
 import { NextSeo } from "next-seo";
 import {
-	FiChevronRight,
-	FiHome,
-	FiBookOpen,
-	FiPhone,
-	FiBell,
-	FiCalendar,
-} from "react-icons/fi";
+	BsCalendarEventFill,
+	BsChevronRight,
+	BsHouseFill,
+	BsInfoCircleFill,
+	BsMegaphoneFill,
+	BsTelephoneFill,
+} from "react-icons/bs";
 import { Centered, Container, Logo, Typography } from "@components";
 import { useAppSelector } from "@store";
 
@@ -36,7 +36,7 @@ const LinkItem: NextPage<Props> = ({ to, icon, page, description }) => {
 					</Typography>
 					<Typography variant="p">{description}</Typography>
 				</div>
-				<FiChevronRight size={20} />
+				<BsChevronRight size={20} />
 			</a>
 		</Link>
 	);
@@ -62,31 +62,31 @@ const Custom404: NextPage = () => {
 				<div className="flex flex-col items-stretch w-full space-y-2 pt-12">
 					<LinkItem
 						to="/"
-						icon={FiHome}
+						icon={BsHouseFill}
 						page="Home"
 						description="Go back to start"
 					/>
 					<LinkItem
 						to="/about"
-						icon={FiBookOpen}
+						icon={BsInfoCircleFill}
 						page="About Us"
 						description="Learn about our company"
 					/>
 					<LinkItem
 						to="/news"
-						icon={FiBell}
+						icon={BsMegaphoneFill}
 						page="News"
 						description="Read the latest news about our post"
 					/>
 					<LinkItem
 						to="/events"
-						icon={FiCalendar}
+						icon={BsCalendarEventFill}
 						page="Events"
 						description="View upcoming events"
 					/>
 					<LinkItem
 						to="/contact"
-						icon={FiPhone}
+						icon={BsTelephoneFill}
 						page="Contact Us"
 						description="Find a way to get ahold of us"
 					/>
