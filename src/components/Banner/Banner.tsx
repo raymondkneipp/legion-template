@@ -5,7 +5,7 @@ import { useAppSelector } from "@store";
 
 const Banner: NextPage = () => {
 	const { show, text } = useAppSelector((state) => state.banner);
-	const { color } = useAppSelector((state) => state.theme);
+	const { color, radius } = useAppSelector((state) => state.theme);
 
 	if (show) {
 		return (
