@@ -5,18 +5,19 @@ import { SEO } from "@utils";
 import Head from "next/head";
 import { Provider } from "react-redux";
 import { store } from "@store";
+import { Tenant } from "@components";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<>
-			<Provider store={store}>
+		<Provider store={store}>
+			<Tenant>
 				<Head>
 					<link rel="shortcut icon" href="/favicon.svg" />
 				</Head>
 				<DefaultSeo {...SEO} />
 				<Component {...pageProps} />
-			</Provider>
-		</>
+			</Tenant>
+		</Provider>
 	);
 }
 

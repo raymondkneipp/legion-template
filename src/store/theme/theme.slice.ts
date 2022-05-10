@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { getTheme } from "./theme.actions.ts";
 
 export enum Color {
 	Red = "red",
@@ -34,20 +35,22 @@ export interface ThemeState {
 }
 
 const initialState: ThemeState = {
-	color: Color.Sky,
-	radius: Radius.Large,
+	color: Color.Red,
+	radius: Radius.XXXL,
 };
 
 export const themeSlice = createSlice({
 	name: "theme",
 	initialState,
-	reducers: {
-		dummy: (state) => {
-			state.color = state.color;
-		},
+	reducers: {},
+	extraReducers: (builder) => {
+		builder.addCase(getTheme.fulfilled, (state, action) => {
+			state.color = action.payload.color;
+			state.radius = action.payload.radius;
+		});
 	},
 });
 
-export const { dummy } = themeSlice.actions;
+// export const {} = themeSlice.actions;
 
 export default themeSlice.reducer;

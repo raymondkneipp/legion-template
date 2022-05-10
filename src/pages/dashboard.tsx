@@ -4,6 +4,8 @@ import { Container, Input, Layout, Submit, Typography } from "@components";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useAppDispatch } from "@store";
 import { setText } from "@store/banner/banner.slice";
+import { getBanner } from "@store/banner/banner.actions";
+import { getTheme } from "@store/theme/theme.actions";
 
 interface IFormValues {
 	Banner: string;

@@ -16,7 +16,7 @@ export { default as Wide } from "./layout/Wide/Wide";
 export { default as Centered } from "./layout/Centered/Centered";
 export { default as Tile } from "./layout/Tile/Tile";
 
-// All Other Components
+// Display Components
 export { default as Footer } from "./Footer/Footer";
 export { default as Hero } from "./Hero/Hero";
 export { default as Banner } from "./Banner/Banner";
@@ -42,3 +42,6 @@ export { default as List } from "./list/List/List";
 export { default as ListItem } from "./list/List/ListItem/ListItem";
 export { default as DescriptionList } from "./list/DescriptionList/DescriptionList";
 export { default as DescriptionListItem } from "./list/DescriptionList/DescriptionListItem/DescriptionListItem";
+
+// Logic Components
+export { default as Tenant } from "./Tenant/Tenant";
