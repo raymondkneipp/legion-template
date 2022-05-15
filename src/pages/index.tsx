@@ -20,7 +20,7 @@ const Home: NextPage<any> = () => {
 			<Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
 			<NextSeo title="Home" description="CHANGE ME" />
 			<Hero />
-			<News newsList={news} simple />
+			<News simple />
 			<Meeting />
 			<Stats />
 			<Pricing />

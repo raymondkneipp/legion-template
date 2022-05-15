@@ -5,6 +5,8 @@ import { getPostData } from "@store/post/post.actions";
 import { setId } from "@store/post/post.slice";
 import { getTheme } from "@store/theme/theme.actions";
 import { getBanner } from "@store/banner/banner.actions";
+import { getHero } from "@store/hero/hero.actions";
+import { getNews } from "@store/news/news.actions";
 
 const Tenant: NextPage = ({ children }) => {
 	const dispatch = useAppDispatch();
@@ -18,8 +20,10 @@ const Tenant: NextPage = ({ children }) => {
 		} else {
 			dispatch(setId(arr[0]));
 			dispatch(getPostData());
-			dispatch(getBanner());
 			dispatch(getTheme());
+			dispatch(getBanner());
+			dispatch(getHero());
+			dispatch(getNews());
 		}
 	}, []);
 

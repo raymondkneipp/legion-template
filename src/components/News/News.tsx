@@ -6,17 +6,12 @@ import { useAppSelector } from "@store";
 
 interface Props {
 	simple?: boolean;
-	newsList: {
-		thumbnail: string;
-		date: string;
-		title: string;
-		content: string;
-	}[];
 }
 
-const News: NextPage<Props> = ({ simple = false, newsList }) => {
-	const length = simple ? 3 : newsList.length;
+const News: NextPage<Props> = ({ simple = false }) => {
 	const { radius } = useAppSelector((state) => state.theme);
+	const { entities } = useAppSelector((state) => state.news);
+	const length = simple ? 3 : entities.length;
 
 	return (
 		<section className="my-36">
@@ -33,7 +28,7 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 					}
 					slave={
 						<>
-							{newsList.slice(0, length).map((item: any, i: number) => {
+							{entities.slice(0, length).map((item: any, i: number) => {
 								return (
 									<Link href={`/news/${item.slug}`} key={i}>
 										<a className={`h-full block ${radius}`}>
@@ -41,7 +36,7 @@ const News: NextPage<Props> = ({ simple = false, newsList }) => {
 												image={`/${item.thumbnail}`}
 												date={format(parseISO(item.date), "MMMM do yyyy")}
 												title={item.title}
-												content={item.html}
+												content={item.content}
 											/>
 										</a>
 									</Link>

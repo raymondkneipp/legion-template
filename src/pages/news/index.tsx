@@ -7,7 +7,7 @@ const NewsPage: NextPage<any> = () => {
 	return (
 		<Layout>
 			<NextSeo title="News" description="CHANGE ME" />
-			<News newsList={news} />
+			<News />
 			<CTA />
 		</Layout>
 	);

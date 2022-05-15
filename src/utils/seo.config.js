@@ -1,5 +1,9 @@
+import { store } from "@store";
+
+const { id, name } = store.getState().post;
+
 export default {
-	titleTemplate: `%s | John Doe American Legion Post XXX`,
+	titleTemplate: `%s | ${name} American Legion Post ${id}`,
 	twitter: {
 		handle: "@handle",
 		site: "@site",
