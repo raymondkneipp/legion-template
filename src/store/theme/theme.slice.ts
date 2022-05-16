@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getTheme } from "./theme.actions.ts";
+import { getTheme } from "./theme.actions";
 
 export enum Color {
 	Red = "red",

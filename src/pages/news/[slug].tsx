@@ -1,8 +1,13 @@
 import type { NextPage } from "next";
+import { ParsedUrlQuery } from "querystring";
 import { NextSeo } from "next-seo";
 import { Layout, Post } from "@components";
 import { fetcher } from "@utils";
 import { wrapper } from "@store";
+
+interface IParams extends ParsedUrlQuery {
+	slug: string
+}
 
 const NewsPostPage: NextPage<any> = ({ post }) => {
 	const { title, date, thumbnail, content } = post;
@@ -17,7 +22,7 @@ const NewsPostPage: NextPage<any> = ({ post }) => {
 
 export const getServerSideProps = wrapper.getServerSideProps(
 	(store) => async (context) => {
-		const { slug } = context.params;
+		const { slug } = context.params as IParams;
 
 		let post;
 

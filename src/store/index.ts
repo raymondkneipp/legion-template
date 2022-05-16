@@ -16,7 +16,7 @@ const combinedReducer = combineReducers({
 });
 
 const reducer = (
-	state: ReturnType<typeof combinedReducer>,
+	state: ReturnType<any>,
 	action: AnyAction
 ) => {
 	if (action.type === HYDRATE) {
@@ -28,7 +28,7 @@ const reducer = (
 	return combinedReducer(state, action);
 };
 
-let store;
+let store: any;
 
 export const makeStore = () => {
 	store = configureStore({
@@ -41,7 +41,7 @@ export { store };
 
 type AppStore = ReturnType<typeof makeStore>;
 type RootState = ReturnType<AppStore["getState"]>;
-type AppDispatch = typeof store.dispatch;
+type AppDispatch = any;
 
 export const wrapper = createWrapper<AppStore>(makeStore);
 

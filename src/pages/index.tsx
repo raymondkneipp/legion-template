@@ -12,7 +12,6 @@ import {
 	Meeting,
 	Pricing,
 } from "@components";
-import { news } from "@utils";
 
 const Home: NextPage<any> = () => {
 	return (
