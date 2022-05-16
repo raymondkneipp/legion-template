@@ -41,8 +41,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 MyApp.getInitialProps = wrapper.getInitialPageProps(
 	(store) =>
-		async ({ ctx }) => {
-			const { req, res } = ctx;
+		async (context) => {
+			const { req, res } = context.ctx;
 			if (res) {
 				store.dispatch(setId(req.headers.host.split(".")[0]));
 
