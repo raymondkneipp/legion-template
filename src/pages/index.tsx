@@ -16,7 +16,6 @@ import {
 const Home: NextPage<any> = () => {
 	return (
 		<Layout>
-			<Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
 			<NextSeo title="Home" description="CHANGE ME" />
 			<Hero />
 			<News simple />
