@@ -9,7 +9,9 @@ const Hero: NextPage = () => {
 	return (
 		<section className="relative">
 			<Image
-				src={`http://localhost:3000/img/${image}`}
+				loader={(src) => `http://localhost:3000/${src}`}
+				unoptimized={true}
+				src={`img/${image}`}
 				alt="CHANGE ME"
 				layout="fill"
 				objectFit="cover"
