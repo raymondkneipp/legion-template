@@ -9,7 +9,7 @@ const Hero: NextPage = () => {
 	return (
 		<section className="relative">
 			<Image
-				src={`/img/${image}`}
+				src={`http://localhost:3000/img/${image}`}
 				alt="CHANGE ME"
 				layout="fill"
 				objectFit="cover"
