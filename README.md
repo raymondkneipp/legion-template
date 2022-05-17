@@ -10,3 +10,4 @@
 - Remove testimonial item css
 - change icon pack
 - icon component
+- nextjs middleware

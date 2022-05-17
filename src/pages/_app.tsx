@@ -48,10 +48,10 @@ MyApp.getInitialProps = wrapper.getInitialPageProps(
 
 				await store.dispatch(getPostData());
 
-				if (!store.getState().post.name) {
-					res.writeHead(307, { Location: "https://alpost.org" });
-					res.end();
-				}
+				//if (!store.getState().post.name) {
+					//res.writeHead(307, { Location: "https://alpost.org" });
+					//res.end();
+				//}
 
 				await store.dispatch(getTheme());
 				await store.dispatch(getBanner());
