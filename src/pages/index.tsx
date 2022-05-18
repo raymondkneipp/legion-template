@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-import Script from "next/script";
 import {
 	CTA,
 	Hero,

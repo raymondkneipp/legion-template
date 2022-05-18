@@ -11,3 +11,4 @@
 - change icon pack
 - icon component
 - nextjs middleware
+- cloudinary

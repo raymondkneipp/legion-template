@@ -6,8 +6,11 @@ import {
 	BsStickyFill,
 } from "react-icons/bs";
 import { Container, IconCard, Tall, Typography } from "@components";
+import { useAppSelector } from "@store";
 
 const Meeting: NextPage = () => {
+	const { address } = useAppSelector((state) => state.contact);
+
 	return (
 		<section className="my-36">
 			<Container>
@@ -26,7 +29,7 @@ const Meeting: NextPage = () => {
 						<>
 							<IconCard
 								title="Location"
-								content={`2442 Otter Ave Providence, Rhode Island 34593`}
+								content={`${address.street} ${address.city}, ${address.state} ${address.zip}`}
 								icon={BsGeoAltFill}
 							/>
 							<IconCard

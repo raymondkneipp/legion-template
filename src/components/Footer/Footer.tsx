@@ -8,8 +8,12 @@ import {
 	PageLink,
 	Logo,
 } from "@components";
+import { useAppSelector } from "@store";
 
 const Footer: NextPage = () => {
+	const { id, name } = useAppSelector((state) => state.post);
+	const { address } = useAppSelector((state) => state.contact);
+
 	return (
 		<footer className="py-10 bg-gray-100">
 			<Container>
@@ -18,8 +22,8 @@ const Footer: NextPage = () => {
 						<>
 							<Logo />
 							<Typography variant="p">
-								John Doe American Legion Post XXX located on 2442 Otter Ave
-								Providence, Rhode Island 45938
+								{name} American Legion Post {id} located on {address.street}{" "}
+								{address.city}, {address.state} {address.zip}
 							</Typography>
 						</>
 					}
@@ -66,7 +70,7 @@ const Footer: NextPage = () => {
 				/>
 				<div className="flex items-center justify-center text-center space-x-1 text-gray-600 pt-10">
 					<Typography variant="p">
-						© {new Date().getFullYear()} John Doe American Legion Post XXX
+						© {new Date().getFullYear()} {name} American Legion Post {id}
 					</Typography>
 				</div>
 			</Container>

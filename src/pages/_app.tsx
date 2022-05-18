@@ -9,6 +9,7 @@ import { getTheme } from "@store/theme/theme.actions";
 import { getBanner } from "@store/banner/banner.actions";
 import { getHero } from "@store/hero/hero.actions";
 import { getNews } from "@store/news/news.actions";
+import { getContact } from "@store/contact/contact.actions";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const { id, name } = useAppSelector((state) => state.post);
@@ -40,25 +41,25 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 MyApp.getInitialProps = wrapper.getInitialPageProps(
-	(store) =>
-		async (context: any) => {
-			const { req, res } = context.ctx;
-			if (res) {
-				store.dispatch(setId(req.headers.host.split(".")[0]));
+	(store) => async (context: any) => {
+		const { req, res } = context.ctx;
+		if (res) {
+			store.dispatch(setId(req.headers.host.split(".")[0]));
 
-				await store.dispatch(getPostData());
+			await store.dispatch(getPostData());
 
-				//if (!store.getState().post.name) {
-					//res.writeHead(307, { Location: "https://alpost.org" });
-					//res.end();
-				//}
+			//if (!store.getState().post.name) {
+			//res.writeHead(307, { Location: "https://alpost.org" });
+			//res.end();
+			//}
 
-				await store.dispatch(getTheme());
-				await store.dispatch(getBanner());
-				await store.dispatch(getHero());
-				await store.dispatch(getNews());
-			}
+			await store.dispatch(getTheme());
+			await store.dispatch(getBanner());
+			await store.dispatch(getHero());
+			await store.dispatch(getNews());
+			await store.dispatch(getContact());
 		}
+	}
 );
 
 export default wrapper.withRedux(MyApp);

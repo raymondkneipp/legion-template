@@ -6,6 +6,7 @@ import { useAppSelector } from "@store";
 const Hero: NextPage = () => {
 	const { id, name } = useAppSelector((state) => state.post);
 	const { text, image } = useAppSelector((state) => state.hero);
+
 	return (
 		<section className="relative">
 			<Image

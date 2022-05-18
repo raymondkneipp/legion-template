@@ -6,6 +6,7 @@ import themeReducer from "./theme/theme.slice";
 import postReducer from "./post/post.slice";
 import heroReducer from "./hero/hero.slice";
 import newsReducer from "./news/news.slice";
+import contactReducer from "./contact/contact.slice";
 
 const combinedReducer = combineReducers({
 	banner: bannerReducer,
@@ -13,12 +14,10 @@ const combinedReducer = combineReducers({
 	post: postReducer,
 	hero: heroReducer,
 	news: newsReducer,
+	contact: contactReducer,
 });
 
-const reducer = (
-	state: ReturnType<any>,
-	action: AnyAction
-) => {
+const reducer = (state: ReturnType<any>, action: AnyAction) => {
 	if (action.type === HYDRATE) {
 		return {
 			...state,

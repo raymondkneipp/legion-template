@@ -11,6 +11,7 @@ import {
 	Textarea,
 	Typography,
 } from "@components";
+import { useAppSelector } from "@store";
 
 interface IFormValues {
 	"Full Name": string;
@@ -25,6 +26,10 @@ const ContactForm: NextPage = () => {
 		alert(JSON.stringify(data));
 	};
 
+	const { content, phone, email, address } = useAppSelector(
+		(state) => state.contact
+	);
+
 	return (
 		<section className="my-36">
 			<Container>
@@ -32,23 +37,18 @@ const ContactForm: NextPage = () => {
 					master={
 						<>
 							<Typography variant="h1">Contact Us</Typography>
-							<Typography variant="lead">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-								velit cumque tenetur harum. Mollitia dolores, modi voluptatem
-								hic magnam quae necessitatibus vel dolorem dolorum. Ut optio
-								eveniet sequi neque veritatis.
-							</Typography>
+							<Typography variant="lead">{content}</Typography>
 
 							<DescriptionList header="OTHER WAYS TO REACH US">
 								<DescriptionListItem icon={BsTelephoneFill}>
-									(777) 777-7777
+									{phone}
 								</DescriptionListItem>
 
 								<DescriptionListItem icon={BsEnvelopeFill}>
-									example@example.com
+									{email}
 								</DescriptionListItem>
 								<DescriptionListItem icon={BsGeoAltFill}>
-									2442 Otter Ave Providence Rhode Island 03451
+									{address.street} {address.city}, {address.state} {address.zip}
 								</DescriptionListItem>
 							</DescriptionList>
 						</>

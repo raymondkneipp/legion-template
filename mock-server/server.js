@@ -24,7 +24,28 @@ let alposts = [
 			text: "I will see you soon then",
 			image: "hero.jpg",
 		},
-		news: [],
+		news: [
+			{
+				slug: "otters-are-real",
+				thumbnail: "img/hero.jpg",
+				date: "2019-05-12T19:11:44.396Z",
+				title: "Otters Are Real",
+				content:
+					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est.",
+			},
+		],
+		contact: {
+			content:
+				"Now is the winter of our discontent Made glorious summer by this sun of York; And all the clouds that lour'd upon our house In the deep bosom of the ocean buried.",
+			phone: "867-5309",
+			email: "theamazingotter@allottersgotoheaven.com",
+			address: {
+				street: "6446 Otter Ave",
+				city: "Providence",
+				state: "Rhode Island",
+				zip: "07242",
+			},
+		},
 	},
 	{
 		postId: "111",
@@ -69,6 +90,18 @@ let alposts = [
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est.",
 			},
 		],
+		contact: {
+			content:
+				"Now is the winter of our discontent Made glorious summer by this sun of York; And all the clouds that lour'd upon our house In the deep bosom of the ocean buried.",
+			phone: "754-3454",
+			email: "name@example.com",
+			address: {
+				street: "574 Main Street",
+				city: "Mango",
+				state: "Texas",
+				zip: "89234",
+			},
+		},
 	},
 	{
 		postId: "222",
@@ -113,6 +146,18 @@ let alposts = [
 					"Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nobis illum doloremque reiciendis molestiae laudantium, aliquid deserunt iure temporibus? Voluptatibus placeat deleniti reiciendis facere odit, velit magni temporibus perspiciatis est.",
 			},
 		],
+		contact: {
+			content:
+				"Now is the winter of our discontent Made glorious summer by this sun of York; And all the clouds that lour'd upon our house In the deep bosom of the ocean buried.",
+			phone: "111-9847",
+			email: "hey@hello.com",
+			address: {
+				street: "889 North Street",
+				city: "Bethel",
+				state: "Ohio",
+				zip: "45777",
+			},
+		},
 	},
 ];
 
@@ -157,6 +202,10 @@ app.get("/news", (req, res) => {
 app.get("/news/:slug", (req, res) => {
 	const { slug } = req.params;
 	return res.json(req.postData.news.find((item) => item.slug === slug));
+});
+
+app.get("/contact", (req, res) => {
+	return res.json(req.postData.contact);
 });
 
 const port = process.env.PORT || 5000;
