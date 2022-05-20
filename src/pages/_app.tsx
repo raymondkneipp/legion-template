@@ -1,8 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { DefaultSeo } from "next-seo";
-import Head from "next/head";
-import { wrapper, useAppSelector } from "@store";
+import { wrapper } from "@store";
 import { setId } from "@store/post/post.slice";
 import { getPostData } from "@store/post/post.actions";
 import { getTheme } from "@store/theme/theme.actions";
@@ -10,32 +8,23 @@ import { getBanner } from "@store/banner/banner.actions";
 import { getHero } from "@store/hero/hero.actions";
 import { getNews } from "@store/news/news.actions";
 import { getContact } from "@store/contact/contact.actions";
+import { SEO } from "@components";
 
-function MyApp({ Component, pageProps }: AppProps) {
-	const { id, name } = useAppSelector((state) => state.post);
+interface CustomAppProps extends AppProps {
+	found?: boolean;
+}
 
+function MyApp({ Component, pageProps, found = true }: CustomAppProps) {
 	return (
 		<>
-			<Head>
-				<link rel="shortcut icon" href="/favicon.svg" />
-			</Head>
-			<DefaultSeo
-				titleTemplate={`%s | ${name} American Legion Post ${id}`}
-				twitter={{
-					handle: "@handle",
-					site: "@site",
-					cardType: "summary_large_image",
-				}}
-				openGraph={{
-					images: [
-						{
-							url: "http://localhost:3000/hero.jpg",
-							alt: "Hero image alt",
-						},
-					],
-				}}
-			/>
-			<Component {...pageProps} />
+			<SEO />
+			{found ? (
+				<Component {...pageProps} />
+			) : (
+				<>
+					<h1>Not Found</h1>
+				</>
+			)}
 		</>
 	);
 }
@@ -44,14 +33,32 @@ MyApp.getInitialProps = wrapper.getInitialPageProps(
 	(store) => async (context: any) => {
 		const { req, res } = context.ctx;
 		if (res) {
-			store.dispatch(setId(req.headers.host.split(".")[0]));
+			// Get subdomain
+			const id = req.headers.host.split(".")[0];
+			const isDev =
+				!process.env.NODE_ENV || process.env.NODE_ENV === "development";
+
+			store.dispatch(setId(id));
+
+			if (isDev) {
+				if (id === "localhost:3000") {
+					// No subdomain given
+					return { found: false };
+				}
+			} else {
+				// In production
+				if (id === "alpost") {
+					// No subdomain given
+					return { found: false };
+				}
+			}
 
 			await store.dispatch(getPostData());
 
-			//if (!store.getState().post.name) {
-			//res.writeHead(307, { Location: "https://alpost.org" });
-			//res.end();
-			//}
+			// Check if subdomain is in database
+			if (!store.getState().post.name) {
+				return { found: false };
+			}
 
 			await store.dispatch(getTheme());
 			await store.dispatch(getBanner());

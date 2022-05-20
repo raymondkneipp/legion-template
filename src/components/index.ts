@@ -42,3 +42,6 @@ export { default as List } from "./list/List/List";
 export { default as ListItem } from "./list/List/ListItem/ListItem";
 export { default as DescriptionList } from "./list/DescriptionList/DescriptionList";
 export { default as DescriptionListItem } from "./list/DescriptionList/DescriptionListItem/DescriptionListItem";
+
+// Logic Components
+export { default as SEO } from "./SEO/SEO";
