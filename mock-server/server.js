@@ -1,10 +1,12 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
+const bodyParser = require("body-parser");
 
 const app = express();
 app.use(cors());
 app.use(morgan("tiny"));
+app.use(bodyParser());
 
 let alposts = [
 	{
@@ -168,13 +170,14 @@ app.use((req, res, next) => {
 		return res.sendStatus(404);
 	}
 
-	const postData = alposts.find((post) => post.postId === postId);
+	const index = alposts.findIndex((post) => post.postId === postId);
 
-	if (!postData) {
+	if (index === -1) {
 		return res.sendStatus(404);
 	}
 
-	req.postData = postData;
+	req.postData = alposts[index];
+	req.postData.index = index;
 
 	next();
 });
@@ -184,6 +187,13 @@ app.get("/theme", (req, res) => {
 });
 
 app.get("/", (req, res) => {
+	return res.json(req.postData.general);
+});
+
+app.patch("/", (req, res) => {
+	req.postData.general.name = req.body.name;
+	alposts[req.postData.index].general.name = req.body.name;
+
 	return res.json(req.postData.general);
 });
 

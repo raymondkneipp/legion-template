@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { getPostData } from "./post.actions";
+import { getPostData, updatePostData } from "./post.actions";
 
 export interface PostState {
 	id: string;
@@ -21,6 +21,9 @@ export const postSlice = createSlice({
 	},
 	extraReducers: (builder) => {
 		builder.addCase(getPostData.fulfilled, (state, action) => {
+			state.name = action.payload.name;
+		});
+		builder.addCase(updatePostData.fulfilled, (state, action) => {
 			state.name = action.payload.name;
 		});
 	},

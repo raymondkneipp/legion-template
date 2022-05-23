@@ -5,10 +5,10 @@
 - events page
 - apply page
 - form functionality
-- clean up code
 - section spacing component
 - Remove testimonial item css
-- change icon pack
 - icon component
 - nextjs middleware
 - cloudinary
+- focus style based on theme
+- Remove type any

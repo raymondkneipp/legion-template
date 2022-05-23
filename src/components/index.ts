@@ -2,6 +2,8 @@
 export { default as NavBar } from "./navigation/NavBar/NavBar";
 export { default as Button } from "./navigation/Button/Button";
 export { default as PageLink } from "./navigation/PageLink/PageLink";
+export { default as ColoredLink } from "./navigation/ColoredLink/ColoredLink";
+export { default as DashboardNav } from "./navigation/DashboardNav/DashboardNav";
 
 // Form Components
 export { default as Input } from "./form/Input/Input";
@@ -15,6 +17,7 @@ export { default as Tall } from "./layout/Tall/Tall";
 export { default as Wide } from "./layout/Wide/Wide";
 export { default as Centered } from "./layout/Centered/Centered";
 export { default as Tile } from "./layout/Tile/Tile";
+export { default as DashboardLayout } from "./layout/DashboardLayout/DashboardLayout";
 
 // Display Components
 export { default as Footer } from "./Footer/Footer";
