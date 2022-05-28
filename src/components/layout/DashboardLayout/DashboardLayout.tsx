@@ -1,13 +1,19 @@
 import type { NextPage } from "next";
-import { Container, DashboardNav, ColoredLink, Submit } from "@components";
+import { NextSeo } from "next-seo";
+import { Container, DashboardNav, Submit, Button } from "@components";
+import { useAppDispatch } from "@store";
+import { logout } from "@store/auth/auth.actions";
 
 interface Props {
 	onSubmit: any;
 }
 
 const DashboardLayout: NextPage<Props> = ({ children, onSubmit }) => {
+	const dispatch = useAppDispatch();
+
 	return (
 		<>
+			<NextSeo title="Dashboard" />
 			<Container>
 				<div className="flex">
 					<DashboardNav />
@@ -16,7 +22,9 @@ const DashboardLayout: NextPage<Props> = ({ children, onSubmit }) => {
 						onSubmit={onSubmit}
 					>
 						<div className="flex items-center justify-between">
-							<ColoredLink to="/" page="Cancel" />
+							<Button onClick={() => dispatch(logout())} to="/" secondary>
+								Logout
+							</Button>
 							<Submit>Save</Submit>
 						</div>
 						{children}
