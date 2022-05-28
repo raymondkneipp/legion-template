@@ -1,5 +1,13 @@
 import { NextPage } from "next";
 import {
+	BsFacebook,
+	BsInstagram,
+	BsLinkedin,
+	BsPinterest,
+	BsTwitter,
+	BsYoutube,
+} from "react-icons/bs";
+import {
 	Container,
 	DescriptionList,
 	DescriptionListItem,
@@ -58,11 +66,23 @@ const Footer: NextPage = () => {
 								</DescriptionListItem>
 							</DescriptionList>
 							<DescriptionList header="SOCIAL">
-								<DescriptionListItem>
+								<DescriptionListItem icon={BsFacebook}>
 									<PageLink to="https://www.facebook.com" page="Facebook" />
 								</DescriptionListItem>
-								<DescriptionListItem>
+								<DescriptionListItem icon={BsTwitter}>
 									<PageLink to="https://www.twitter.com" page="Twitter" />
+								</DescriptionListItem>
+								<DescriptionListItem icon={BsInstagram}>
+									<PageLink to="https://www.instagram.com" page="Instagram" />
+								</DescriptionListItem>
+								<DescriptionListItem icon={BsYoutube}>
+									<PageLink to="https://www.youtube.com" page="YouTube" />
+								</DescriptionListItem>
+								<DescriptionListItem icon={BsPinterest}>
+									<PageLink to="https://www.pinterest.com" page="Pinterest" />
+								</DescriptionListItem>
+								<DescriptionListItem icon={BsLinkedin}>
+									<PageLink to="https://www.linkedin.com" page="LinkedIn" />
 								</DescriptionListItem>
 							</DescriptionList>
 						</div>
