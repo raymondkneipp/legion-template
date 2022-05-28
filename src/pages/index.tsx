@@ -8,7 +8,7 @@ import {
 	Stats,
 	News,
 	Points,
-	Meeting,
+	Upcoming,
 	Pricing,
 } from "@components";
 
@@ -18,7 +18,7 @@ const Home: NextPage<any> = () => {
 			<NextSeo title="Home" description="CHANGE ME" />
 			<Hero />
 			<News simple />
-			<Meeting />
+			<Upcoming />
 			<Stats />
 			<Pricing />
 			<Points />

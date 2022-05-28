@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { wrapper } from "@store";
+import { useAppDispatch, useAppSelector, wrapper } from "@store";
 import { setId } from "@store/post/post.slice";
 import { getPostData } from "@store/post/post.actions";
 import { getTheme } from "@store/theme/theme.actions";
@@ -9,12 +9,30 @@ import { getHero } from "@store/hero/hero.actions";
 import { getNews } from "@store/news/news.actions";
 import { getContact } from "@store/contact/contact.actions";
 import { SEO } from "@components";
+import { useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@utils";
+import { clear, setUser } from "@store/auth/auth.slice";
 
 interface CustomAppProps extends AppProps {
 	found?: boolean;
 }
 
 function MyApp({ Component, pageProps, found = true }: CustomAppProps) {
+	const dispatch = useAppDispatch();
+
+	useEffect(() => {
+		const unsubscribe = onAuthStateChanged(auth, (user) => {
+			if (user) {
+				dispatch(setUser(user.email));
+			} else {
+				dispatch(clear());
+			}
+		});
+
+		return unsubscribe;
+	}, []);
+
 	return (
 		<>
 			<SEO />

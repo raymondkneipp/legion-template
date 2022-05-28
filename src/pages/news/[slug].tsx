@@ -2,11 +2,11 @@ import type { NextPage } from "next";
 import { ParsedUrlQuery } from "querystring";
 import { NextSeo } from "next-seo";
 import { Layout, Post } from "@components";
-import { fetcher } from "@utils";
 import { wrapper } from "@store";
+import { getNews } from "@store/news/news.actions";
 
 interface IParams extends ParsedUrlQuery {
-	slug: string
+	slug: string;
 }
 
 const NewsPostPage: NextPage<any> = ({ post }) => {
@@ -26,9 +26,13 @@ export const getServerSideProps = wrapper.getServerSideProps(
 
 		let post;
 
-		try {
-			post = await fetcher(`news/${slug}`);
-		} catch (error) {
+		store.dispatch(getNews());
+
+		let index = store
+			.getState()
+			.news.entities.findIndex((post: any) => post.slug === slug);
+
+		if (index === -1) {
 			return {
 				redirect: {
 					permanent: false,
@@ -36,6 +40,8 @@ export const getServerSideProps = wrapper.getServerSideProps(
 				},
 			};
 		}
+
+		post = store.getState().news.entities[index];
 
 		return {
 			props: { post },
