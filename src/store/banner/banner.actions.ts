@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { fetcher } from "@utils";
+import { getter } from "@utils";
 
-export const getBanner = createAsyncThunk("banner/getBanner", async () =>
-	fetcher("banner")
+export const getBanner = createAsyncThunk(
+	"banner/get",
+	async (_, { rejectWithValue }) => getter("banner", rejectWithValue)
 );

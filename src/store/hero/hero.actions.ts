@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { fetcher } from "@utils";
+import { getter } from "@utils";
 
-export const getHero = createAsyncThunk("hero/getHero", async () =>
-	fetcher("hero")
+export const getHero = createAsyncThunk(
+	"hero/get",
+	async (_, { rejectWithValue }) => getter("hero", rejectWithValue)
 );

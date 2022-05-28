@@ -23,7 +23,7 @@ export const newsSlice = createSlice({
 	reducers: {},
 	extraReducers: (builder) => {
 		builder.addCase(getNews.fulfilled, (state, action) => {
-			state.entities = action.payload;
+			state.entities = action.payload.entities;
 		});
 	},
 });

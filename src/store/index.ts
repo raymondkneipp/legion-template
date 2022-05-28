@@ -7,6 +7,7 @@ import postReducer from "./post/post.slice";
 import heroReducer from "./hero/hero.slice";
 import newsReducer from "./news/news.slice";
 import contactReducer from "./contact/contact.slice";
+import authReducer from "./auth/auth.slice";
 
 const combinedReducer = combineReducers({
 	banner: bannerReducer,
@@ -15,6 +16,7 @@ const combinedReducer = combineReducers({
 	hero: heroReducer,
 	news: newsReducer,
 	contact: contactReducer,
+	auth: authReducer,
 });
 
 const reducer = (state: ReturnType<any>, action: AnyAction) => {

@@ -1,11 +1,13 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { fetcher, patcher } from "@utils";
+import { getter, setter } from "@utils";
 
-export const getPostData = createAsyncThunk("post/getPostData", async () =>
-	fetcher("")
+export const getPostData = createAsyncThunk(
+	"post/get",
+	async (_, { rejectWithValue }) => getter("posts", rejectWithValue)
 );
 
 export const updatePostData = createAsyncThunk(
-	"post/updatePostData",
-	async (name: string) => patcher("", { name })
+	"post/update",
+	async (name: string, { rejectWithValue }) =>
+		setter("posts", { name }, rejectWithValue)
 );
