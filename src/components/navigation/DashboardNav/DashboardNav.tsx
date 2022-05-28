@@ -1,11 +1,9 @@
 import { NextPage } from "next";
-import Link from "next/link";
 import { Typography, Logo } from "@components";
 import ActiveLink from "./ActiveLink/ActiveLink";
 import { useAppSelector } from "@store";
 
 const DashboardNav: NextPage = () => {
-	const { radius } = useAppSelector((state) => state.theme);
 	const { id } = useAppSelector((state) => state.post);
 
 	return (
@@ -24,7 +22,6 @@ const DashboardNav: NextPage = () => {
 			<ActiveLink to="/dashboard/contact">Contact</ActiveLink>
 			<ActiveLink to="/dashboard/about">About</ActiveLink>
 			<ActiveLink to="/dashboard/events">Events</ActiveLink>
-			<ActiveLink to="/dashboard/upcoming">Upcoming Meeting</ActiveLink>
 			<ActiveLink to="/dashboard/stats">Statistics</ActiveLink>
 			<ActiveLink to="/dashboard/rental">Hall Rental</ActiveLink>
 			<ActiveLink to="/dashboard/misc">Miscellaneous</ActiveLink>
