@@ -10,6 +10,7 @@ import {
 	Tall,
 	Textarea,
 	Typography,
+	ColoredLink,
 } from "@components";
 import { useAppSelector } from "@store";
 
@@ -41,11 +42,11 @@ const ContactForm: NextPage = () => {
 
 							<DescriptionList header="OTHER WAYS TO REACH US">
 								<DescriptionListItem icon={BsTelephoneFill}>
-									{phone}
+									<ColoredLink to={`tel:${phone}`} page={phone} />
 								</DescriptionListItem>
 
 								<DescriptionListItem icon={BsEnvelopeFill}>
-									{email}
+									<ColoredLink to={`mailto:${email}`} page={email} />
 								</DescriptionListItem>
 								<DescriptionListItem icon={BsGeoAltFill}>
 									{address.street} {address.city}, {address.state} {address.zip}
