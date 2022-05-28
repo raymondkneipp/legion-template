@@ -9,38 +9,32 @@ interface IFAQ {
 
 const qa: IFAQ[] = [
 	{
-		question:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus fugit totam eaque ratione earum quisquam aperiam, id obcaecati error porro vero sit iste reiciendis enim qui quis! Nam, dolorem?",
+		question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore autem error culpa sed perspiciatis, cum laboriosam quas saepe exercitationem repellat. Dolorum autem eveniet blanditiis labore voluptas error corrupti quae?",
 	},
 	{
-		question:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus fugit totam eaque ratione earum quisquam aperiam, id obcaecati error porro vero sit iste reiciendis enim qui quis! Nam, dolorem?",
+		question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore autem error culpa sed perspiciatis, cum laboriosam quas saepe exercitationem repellat. Dolorum autem eveniet blanditiis labore voluptas error corrupti quae?",
 	},
 	{
-		question:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus fugit totam eaque ratione earum quisquam aperiam, id obcaecati error porro vero sit iste reiciendis enim qui quis! Nam, dolorem?",
+		question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore autem error culpa sed perspiciatis, cum laboriosam quas saepe exercitationem repellat. Dolorum autem eveniet blanditiis labore voluptas error corrupti quae?",
 	},
 	{
-		question:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus fugit totam eaque ratione earum quisquam aperiam, id obcaecati error porro vero sit iste reiciendis enim qui quis! Nam, dolorem?",
+		question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore autem error culpa sed perspiciatis, cum laboriosam quas saepe exercitationem repellat. Dolorum autem eveniet blanditiis labore voluptas error corrupti quae?",
 	},
 	{
-		question:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus fugit totam eaque ratione earum quisquam aperiam, id obcaecati error porro vero sit iste reiciendis enim qui quis! Nam, dolorem?",
+		question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore autem error culpa sed perspiciatis, cum laboriosam quas saepe exercitationem repellat. Dolorum autem eveniet blanditiis labore voluptas error corrupti quae?",
 	},
 	{
-		question:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis doloribus fugit totam eaque ratione earum quisquam aperiam, id obcaecati error porro vero sit iste reiciendis enim qui quis! Nam, dolorem?",
+		question: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
 		answer:
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolore autem error culpa sed perspiciatis, cum laboriosam quas saepe exercitationem repellat. Dolorum autem eveniet blanditiis labore voluptas error corrupti quae?",
 	},
