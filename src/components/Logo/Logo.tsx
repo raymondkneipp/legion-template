@@ -9,6 +9,7 @@ const Logo: NextPage = () => (
 		height="80"
 		layout="fixed"
 		objectFit="contain"
+		priority={true}
 	/>
 );
 
