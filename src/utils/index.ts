@@ -1,2 +1,3 @@
-export { default as fetcher } from "./fetcher";
-export { default as patcher } from "./patcher";
+export * from "./firebase";
+export { default as getter } from "./getter";
+export { default as setter } from "./setter";
