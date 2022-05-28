@@ -9,6 +9,7 @@ export { default as DashboardNav } from "./navigation/DashboardNav/DashboardNav"
 export { default as Input } from "./form/Input/Input";
 export { default as Textarea } from "./form/Textarea/Textarea";
 export { default as Submit } from "./form/Submit/Submit";
+export { default as Select } from "./form/Select/Select";
 
 // Layout Components
 export { default as Container } from "./layout/Container/Container";
@@ -36,9 +37,10 @@ export { default as IconCard } from "./IconCard/IconCard";
 export { default as News } from "./News/News";
 export { default as Points } from "./Points/Points";
 export { default as Card } from "./Card/Card";
-export { default as Meeting } from "./Meeting/Meeting";
+export { default as Upcoming } from "./Upcoming/Upcoming";
 export { default as Post } from "./Post/Post";
 export { default as Logo } from "./Logo/Logo";
+export { default as Alert } from "./Alert/Alert";
 
 // List Components and List Items Components
 export { default as List } from "./list/List/List";

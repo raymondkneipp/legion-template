@@ -34,7 +34,10 @@ const News: NextPage<Props> = ({ simple = false }) => {
 										<a className={`h-full block ${radius}`}>
 											<Card
 												image={`/${item.thumbnail}`}
-												date={format(parseISO(item.date), "MMMM do yyyy")}
+												date={format(
+													new Date(item.date.seconds * 1000),
+													"MMMM do yyyy"
+												)}
 												title={item.title}
 												content={item.content}
 											/>

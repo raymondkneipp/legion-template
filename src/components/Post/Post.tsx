@@ -8,7 +8,10 @@ import { useRouter } from "next/router";
 
 interface Props {
 	title: string;
-	date: string;
+	date: {
+		seconds: number;
+		nanoseconds: number;
+	};
 	thumbnail: string;
 	content: string;
 }
@@ -33,21 +36,21 @@ const Post: NextPage<Props> = ({ title, date, thumbnail, content }) => {
 					</Button>
 					<Typography variant="h1">{title}</Typography>
 					<Typography variant="lead" color="primary">
-						{format(parseISO(date), "EEEE, MMMM do, yyyy")}
+						{format(new Date(date.seconds * 1000), "EEEE, MMMM do, yyyy")}
 					</Typography>
 					<div className={`overflow-hidden ${radius}`}>
 						<Image
-							src={`/${thumbnail}`}
+							//loader={(src) => `http://localhost:3000/${src}`}
+							src={`/img/${thumbnail}`}
+							unoptimized={true}
+							alt="CHANGE ME"
 							width="400"
 							height="200"
 							layout="responsive"
 						/>
 					</div>
 
-					<div
-						className="space-y-6"
-						dangerouslySetInnerHTML={{ __html: content }}
-					/>
+					<Typography variant="p">{content}</Typography>
 				</div>
 			</Container>
 		</section>
