@@ -16,14 +16,21 @@ const Card: NextPage<Props> = ({ image, date, title, content }) => {
 	return (
 		<div className={`shadow-md flex flex-col h-full ${radius}`}>
 			<div className={`h-60 relative rounded-b-none overflow-hidden ${radius}`}>
-				<Image src={image} alt={title} layout="fill" objectFit="cover" />
+				<Image
+					loader={(src) => `http://localhost:3000/${src}`}
+					unoptimized={true}
+					src={`img/${image}`}
+					alt="CHANGE ME"
+					layout="fill"
+					objectFit="cover"
+					objectPosition="top"
+				/>
 			</div>
 			<div className="p-6 space-y-6 flex flex-col flex-1">
 				<Typography variant="h3">{title}</Typography>
-				<div
-					className="flex-1 max-h-36 overflow-hidden"
-					dangerouslySetInnerHTML={{ __html: content }}
-				/>
+				<div className="flex-1 max-h-36 overflow-hidden">
+					<Typography variant="p">{content}</Typography>
+				</div>
 
 				<Typography variant="p" color="primary">
 					{date}
