@@ -12,3 +12,5 @@
 - cloudinary
 - focus style based on theme
 - Remove type any
+- upcoming meeting -> upcoming event
+- split contact form up
